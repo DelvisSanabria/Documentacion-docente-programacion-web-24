@@ -1,0 +1,42 @@
+Primero debemos instalar TypeScript en nuestro equipo:
+    - Abre una carpeta donde desees instalar TypeScript
+    - ejecuta el comanto npm init -y (Para generar un archivo package.json)
+    - ejecuta el comando npm i typescript --save-dev
+
+Una vez unstalado esto podemos ejecutarlo....
+
+¿Como ejecutar TypeScript?
+
+TypeScript para ser utilizado debe ser compilado.
+
+Para compilar un archivo de formato .ts a un archivo .js
+es necesario abrir en la terminal la carpeta donde se encuentra el archivo e
+introducir el comando: tsc archivo.ts -w 
+
+No olvides colocar -w al final del comando,esto activa el modo Watch y que tras 
+cada cambio en un archivo ts se actualice el archivo js. (Igual que con SASS 😉)
+
+
+Tambien puedes crear un script en el package.json de la siguiente manera:
+
+{
+   ...otras props
+    "scripts": {
+        "start": "tsc nombreArchivo.ts -w"
+    }
+    ...otras props
+}
+
+
+
+NOTA: Si no te puedes ejecutar el comando tsc archivo.ts -w asegurate de activar la ejecucion
+de script en el power shell de tu equipo windows si guiendo estos pasos:
+
+    - abre como administrador la consola Power shell
+    - ejecuta el comando Get-ExecutionPolicy (Si la respuesta que obtienes es Restricted sigue con el paso 3)
+    - ejecuta Set-ExecutionPolicy Unrestricted
+    - presiona "s" y "enter" para aceptar el cambio y ya con esto podras compilar tus archivos .ts a .js
+
+
+PD: si deseas volver a restringir la ejecucion de script por seguridad escribe: Set-ExecutionPolicy Restricted
+y presiona "s" y "enter", Luego si colocas Get-ExecutionPolicy debera aparecer Restricted nuevamente.

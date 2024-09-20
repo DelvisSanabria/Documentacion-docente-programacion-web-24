@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/*  Each
+ *
+ *  each es una directiva que permite iterar (recorrer) sobre una lista y aplicar un conjunto
+ *  de declaraciones de estilo a cada elemento de la lista.
+ *  */
+.parrafo_red {
+  background-color: red;
+}
+
+.parrafo_blue {
+  background-color: blue;
+}
+
+.parrafo_orange {
+  background-color: orange;
+}
+
+.parrafo_purple {
+  background-color: purple;
+}
+
+.parrafo_yellow {
+  background-color: yellow;
+}
+
+.parrafo_gray {
+  background-color: gray;
+}
+
+.parrafo_skyblue {
+  background-color: skyblue;
+}
+
+.parrafo_greenyellow {
+  background-color: greenyellow;
+}
+
+.parrafo_pink {
+  background-color: pink;
+}
+
+.parrafo_aqua {
+  background-color: aqua;
+}
+
+.parrafo_brown {
+  background-color: brown;
+}
+
+.temporada_verano::before {
+  content: "Es la temporada de ";
+}
+
+.temporada_verano::after {
+  content: " del año 2024";
+}
+
+.temporada_otono::before {
+  content: "Es la temporada de ";
+}
+
+.temporada_otono::after {
+  content: " del año 2024";
+}
+
+.temporada_invierno::before {
+  content: "Es la temporada de ";
+}
+
+.temporada_invierno::after {
+  content: " del año 2024";
+}
+
+.temporada_primavera::before {
+  content: "Es la temporada de ";
+}
+
+.temporada_primavera::after {
+  content: " del año 2024";
+}
+
+.elemento-1 {
+  width: 100px;
+  height: 70px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-2 {
+  width: 200px;
+  height: 140px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-3 {
+  width: 300px;
+  height: 210px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-4 {
+  width: 400px;
+  height: 280px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-5 {
+  width: 500px;
+  height: 350px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-6 {
+  width: 600px;
+  height: 420px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-7 {
+  width: 700px;
+  height: 490px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-8 {
+  width: 800px;
+  height: 560px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-9 {
+  width: 900px;
+  height: 630px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}
+
+.elemento-10 {
+  width: 1000px;
+  height: 700px;
+  background: skyblue;
+  margin: 3.5px 0px 3.5px 0px;
+}/*# sourceMappingURL=style.css.map */

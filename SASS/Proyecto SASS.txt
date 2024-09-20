@@ -1,0 +1,23 @@
+Realizar una pagina web portafolio
+
+Debe contener las vistas:
+- Inicio: Debe contener un titular que indique de que trata la web, 
+seguido de una mini biografia y un call to action que lleve a la pagina "Sobre Mi".
+- Sobre mi: debe contener foto personal profesional e informacion de contacto como redes sociales, whatsapp o correo.
+Nota 1: editar para crear enlace personal de whatsapp, https://wa.me/+584141234567
+Nota 2: editar para crear enlace personal de correo, mailto:didacusdev@gmail.com
+Nota 3: si no sabes quitar el fondo a una foto con Photoshop, utiliza: https://new.express.adobe.com/tools/remove-background
+- Proyectos: Puedes hacer captura de pantalla de apps o webs que desees colocar como ejemplos de proyectos realizados.
+
+Ademas cada pagina debe contener Navbar y Footer con redirecciones entre las paginas.
+
+Puntos fuertes (A criterio del estudiante)
+- Animaciones (animaciones o transiciones)
+- @extend
+- @mixin con y sin parametros
+- $variables
+- modularizacion (@import)
+
+
+Fecha de Inicio: 26/ENE/2024
+Fecha de Fin: 02/FEB/2024

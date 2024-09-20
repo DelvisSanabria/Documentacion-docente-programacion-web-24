@@ -1,0 +1,64 @@
+// Especiales
+$px10: 10px
+$px15: $px10 + 5px
+$fondoTransparente: #ffffff55
+$borde:5px solid black
+
+
+@mixin colCenter()
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@mixin rowCenter()
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin boton()
+    background: radial-gradient(#1e6fa5 , #061625)
+    margin: $px10
+    padding: $px10 20px
+    border-radius: $px15
+    text:
+        decoration: none
+        transform: uppercase
+        align: center
+    font-weight: 800
+    color: #fff
+    border: none
+
+
+@mixin fotoGaleria($param1, $param2, $param3:null)
+    width: $param1
+    border-radius: $param2
+
+
+@mixin sombras($dropShadow:null, $boxShadow:null)
+    /*⚡💡☝🏻 filter: drop-shadow(2px 2px 2px black)
+        Propiedades de filter: https://developer.mozilla.org/es/docs/Web/CSS/filter-function
+        */
+    filter: $dropShadow
+    /*⚡💡☝🏻 
+        box-shadow: añade efectos de sombra alrededor del marco de un elemento (externo e interno)
+        box:shadow(inset + valores / solo valores) 
+        eje-x | eje-y | blur | crecimiento | color 
+        */
+    box-shadow: $boxShadow
+
+
+@keyframes saltoBoton
+    0%
+        transform: scale(1.0) rotate(0deg)
+        color: white
+    1%
+        transform: scale(1.0) rotate(-5deg)	
+        color: white
+    33.3%
+        transform: scale(1.05) rotate(5deg)	
+        color: #011621
+    66.6%
+        transform: scale(1.05) rotate(-5deg)
+    100%
+        transform: scale(1.0) rotate(5deg)	
+        color: white

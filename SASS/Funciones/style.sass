@@ -1,0 +1,39 @@
+/*
+    ¿Que son las Funciones?
+        Una funcion es un bloque de código que se puede reutilizar en multiples partes de un programa.
+    
+    ¿Como se define una funcion?
+        Para definir una funcion se utiliza la palabra clave @function seguido del nombre de la funcion y en caso 
+        requerir parametros se colocan entre parentesis.
+
+        Las funciones pueden o no retornar un unico valor, el cual se especifica con parabra reserva @return.
+
+    ¿Como se utilizan?
+        Para utilizar una funcion se utiliza el nombre de la funcion seguido del nombre del parametro
+    */
+
+@function aplicar-transparencia($color, $porcentaje) 
+    @return rgba($color, $porcentaje)
+
+
+#p1
+    background: aplicar-transparencia(red, 0.1)
+
+
+
+// Ejemplo 2
+$numeros: 2,3,4,5
+
+// Usamos la funcion set-nth para cambiar el ultimo elemento de la lista
+$numeros: set-nth($numeros, 1, 7)
+
+// Iterar la lista con each
+@each $numero in $numeros
+    #p#{$numero}:after
+        content: " #{$numero}"
+        color: red
+
+
+img
+    width: 300px
+    filter: invert(100%)

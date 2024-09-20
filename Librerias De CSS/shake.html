@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind + CSShake</title>
+        <!-- Script que incorpora Tailwind mediante CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Link que incorpora CSShake -->
+        <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    </head>
+    <body style="height: 200vh;" class="flex flex-col items-center pt-6 bg-gray-400">
+
+        <h1 class="text-4xl font-bold font-[Arvo] shake-rotate">CSShake</h1>
+
+        <main class="grid grid-cols-2 py-16 px-8 place-items-center gap-8 w-[100%] h-[100%]">
+            <div class="w-64 h-64 rounded-lg bg-red-600 grid place-items-center font-bold text-lg shake">shake</div>
+            <div class="w-64 h-64 rounded-lg bg-blue-600 grid place-items-center font-bold text-lg shake-hard">shake-hard</div>
+            <div class="w-64 h-64 rounded-lg bg-green-600 grid place-items-center font-bold text-lg shake-slow">shake-slow</div>
+            <div class="w-64 h-64 rounded-lg bg-orange-600 grid place-items-center font-bold text-lg shake-little">shake-little</div>
+            <div class="w-64 h-64 rounded-lg bg-slate-600 grid place-items-center font-bold text-lg shake-horizontal">shake-horizontal</div>
+            <div class="w-64 h-64 rounded-lg bg-sky-600 grid place-items-center font-bold text-lg shake-vertical">shake-vertical</div>
+            <div class="w-64 h-64 rounded-lg bg-zinc-600 grid place-items-center font-bold text-lg shake-rotate">shake-rotate</div>
+            <div class="w-64 h-64 rounded-lg bg-pink-600 grid place-items-center font-bold text-lg shake-opacity">shake-opacity</div>
+            <div class="w-64 h-64 rounded-lg bg-stone-600 grid place-items-center font-bold text-lg shake-crazy">shake-crazy</div>
+            <div class="w-64 h-64 rounded-lg bg-purple-600 grid place-items-center font-bold text-lg shake-chunk">shake-chunk</div>
+        </main>
+
+        <section class="grid grid-cols-2 cursor-pointer p-12 mb-10 rounded-lg mx-[25%] place-items-center gap-8 h-[100%] border-4 border-black border-solid shake-trigger">
+            <div class="w-64 h-64 rounded-lg bg-red-600 grid place-items-center font-bold text-lg shake">shake</div>
+            <div class="w-64 h-64 rounded-lg bg-blue-600 grid place-items-center font-bold text-lg shake-hard">shake-hard</div>
+            <div class="w-64 h-64 rounded-lg bg-green-600 grid place-items-center font-bold text-lg shake-slow">shake-slow</div>
+            <div class="w-64 h-64 rounded-lg bg-yellow-600 grid place-items-center font-bold text-lg shake-crazy">shake-crazy</div>
+        </section>
+    </body>
+</html>

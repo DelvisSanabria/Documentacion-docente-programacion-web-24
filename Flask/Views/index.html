@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Front-end / Flask</title>
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            top: 0;
+        }
+
+        body{
+            width: 100%;
+            background-color: #aeaeae;
+        }
+
+        nav{
+            width: 100%;
+            height: 40px;
+            position: sticky;
+            top: 0px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+        }
+
+        nav a{
+            color: white;
+        }
+
+        section{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px
+        }
+
+        div{
+            background-color: gray;
+            display: grid;
+            place-items: center;
+        }
+
+        #contenedor_buscador{
+            display: flex;
+            gap: 15px;
+            background-color: transparent;
+        }
+
+        #buscar{
+            width: 200px;
+            padding-block: 5px;
+            padding-left: 10px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        #boton_lupa{
+            width: 30px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        #boton_lupa:active{
+            background-color: rgb(149, 149, 149);
+        }
+
+        #lupa{
+            width: 100%;
+            /* Invertimos la pula horizontalmente */
+            transform: scaleX(-1);
+        }
+    </style>
+    
+    <body>
+        <nav>
+            <a href="http://localhost:1234" target="_blank">Home</a>
+            <a href="http://localhost:1234/estudiantes_json" target="_blank">Estudiantes</a>
+            <div id="contenedor_buscador">
+                <input type="text" id="buscar" placeholder="Buscar estudiante">
+                <button id="boton_lupa">
+                    <img id="lupa" src="https://static.vecteezy.com/system/resources/previews/024/091/594/non_2x/magnifying-glass-search-free-png.png" alt="lupa">
+                </button>
+            </div>
+            <a href="http://localhost:1234/estudiantes/1" target="_blank">Estudiante con id 1</a>
+            <a href="http://127.0.0.1:5502/Flask/Views/registro.html" target="_blank">Registrar</a>
+        </nav>
+
+        <section id="estudiantes">
+            <!-- Aqui se cargaran los estudiantes encontrados -->
+        </section>
+
+    </body>
+
+    <script>
+        let estudiantes;
+        
+        function obtenerEstudiantes(){
+            fetch("http://localhost:1234/estudiantes")
+            .then( respuesta => {
+                // El retorno debe ser explicito en el primer return
+                return respuesta.json()
+            })
+            .then(respuestaComoJson => {
+                estudiantes = respuestaComoJson;
+            })
+            .then(() => console.log(estudiantes))
+        }
+
+        obtenerEstudiantes();
+
+        const contenedor = document.getElementById("estudiantes");
+
+        setTimeout(() => {
+            for (let i = 0; i < estudiantes.length; i++) {
+                contenedor.innerHTML += `
+                    <div>
+                        <img style="width: 200px;" src="${estudiantes[i][8]}" placeholder="${estudiantes[i][1]} ${estudiantes[i][2]}"/>
+                        <p><strong>Nombre:</strong> ${estudiantes[i][1]} <strong>Apellido:</strong> ${estudiantes[i][2]}</p>
+                        <a href="http://localhost:1234/estudiantes_json/${estudiantes[i][0]}">Ver ID: ${estudiantes[i][0]}</a>
+                        <a href="http://localhost:1234/estudiantes_json/${estudiantes[i][4]}">Ver email: ${estudiantes[i][4]}</a>
+
+                        <div style="display: flex; gap: 15px; justify-content: space-evenly; margin-top: 15px">
+                            <button id="eliminar-${i}">
+                                Eliminar
+                            </button>
+                            <a href="http://localhost:5502/Flask/Views/editar.html?id=${estudiantes[i][0]}&email=${estudiantes[i][4]}">
+                                <button>
+                                    Editar
+                                </button>    
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }
+        },750);
+        
+
+        setTimeout(()=>{
+            for (let i = 0; i < estudiantes.length; i++) {
+                elemento = document.getElementById(`eliminar-${i}`);
+                elemento.addEventListener('click', () =>{
+                    console.log("evento activo");
+                    const id = estudiantes[i][0];
+                    const correo = estudiantes[i][4];
+                    if(confirm(`¿Estas seguro de eliminar a ${estudiantes[i][1]} ${estudiantes[i][2]}?`)){
+                        fetch(`http://localhost:1236/estudiante?id=${id}&email=${correo}`, {method: 'DELETE'})
+                        .then(() => {
+                            alert('Estudiante eliminado');
+                            window.location.reload();
+                        })
+                        .catch(error => console.error('Error:', error));
+                    }
+                
+                })                
+            }
+        },1100);
+    
+        
+        const buscador = document.getElementById("buscar");
+        // buscador.addEventListener("change", ()=>{
+
+        const boton_lupa = document.getElementById("boton_lupa");
+        boton_lupa.addEventListener("click", ()=>{
+            contenedor.innerHTML = "";
+            const busqueda = buscador.value.toLowerCase();
+            for (let i = 0; i < estudiantes.length; i++) {
+                if(estudiantes[i][1].toLowerCase().includes(busqueda) || estudiantes[i][2].toLowerCase().includes(busqueda) || estudiantes[i][4].toLowerCase().includes(busqueda) || estudiantes[i][5].toLowerCase().includes(busqueda) || estudiantes[i][6].toLowerCase().includes(busqueda)){
+                    contenedor.innerHTML += `
+                        <div>
+                            <img style="width: 200px;" src="${estudiantes[i][8]}" placeholder="${estudiantes[i][1]} ${estudiantes[i][2]}"/>
+                            <p><strong>Nombre:</strong> ${estudiantes[i][1]} <strong>Apellido:</strong> ${estudiantes[i][2]}</p>
+                            <a href="http://localhost:1234/estudiantes_json/${estudiantes[i][0]}">Ver ID: ${estudiantes[i][0]}</a>
+                            <a href="http://localhost:1234/estudiantes_json/${estudiantes[i][4]}">Ver email: ${estudiantes[i][4]}</a>
+                            <div style="display: flex; gap: 15px; justify-content: space-evenly; margin-top: 15px">
+                                <button id="eliminar-${i}">
+                                    Eliminar
+                                </button>
+                                <a href="http://localhost:5502/Flask/Views/editar.html?id=${estudiantes[i][0]}&email=${estudiantes[i][4]}">
+                                    <button>
+                                        Editar
+                                    </button>    
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+        });
+    
+    </script>
+</html>

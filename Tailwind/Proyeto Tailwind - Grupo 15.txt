@@ -1,0 +1,23 @@
+Proyeto Tailwind - Grupo 15
+
+
+Realizar una pagina de cualquier tematica (Clon, Portafilio, Original) que contenga:
+
+- Home
+- Pagina de productos
+- Pagina de Registrate
+- Pagina de Inicia Sesion
+
+Debes utilizar exclusivamente Tailwind para dar estilizado al Documento
+Ademas debes utilizar al menos 2 librerias de animaciones
+
+Librerias Sugeridas:
+- AOS (https://michalsnik.github.io/aos/)
+- CSShake (https://elrumordelaluz.github.io/csshake/)
+- Skeleton (https://skeleton-css.surge.sh/)
+- Animate CSS (https://animate.style/)
+- Scroll Custom (https://edward-alarco.github.io/scrollbar-custom.css/)
+
+
+Inicio: 06/FEB/2024
+Entrega: 13/FEB/2024

@@ -1,0 +1,73 @@
+Proyecto JavaScript - Grupo XV
+
+
+ *** Sistema de gestion de restaurant ***
+
+Elabora un sistema que permita lo siguiente:
+
+1- Registrarse como Cliente (necesitaras clases y localStorage)
+2- Iniciar Sesion como Administrador o Cliente (necesitaras condicionales y/o switch)
+3- Realizar acciones en base al rol (Administrador / Cliente)
+    3.1- Si es Cliente debera permitir realizar pedidos mediante un menú en el DOM y pagar
+    3.2- Si es administrador debera permitir acceder a vistas protegidas
+4- Procesar pagos (ficticios)
+    4.1- Para los Clientes el pago se debera realizar en 2 pasos
+        4.1.1- Primero se debe mostrar el total desglosado del carrito y tener 2 opciones: Pagar, Seguir comprando
+        4.1.2- Al presionar una opcion debe suceder lo siguiente:
+            - Si es pagar se debe solicitar un numero de TDC, Nombre y Apellido de titular y CVV (Usar REGEX para cada campo), 
+            posteriormente vaciar el carrito, deducir el monto respectivo a cada producto en el localstorage y llevar al home.
+            - Si es agregar se debe llevar a la seccion de productos.
+    4.2- Para Administrador se debe permitir ingresar a una vista que muestre todas las ventas realizadas, ver el stock de productos.
+5- Cerrar Sesion y eliminar los datos del cliente solamente del localStorage (NO BORRES LOS DATOS DE LOS PRODUCTOS)
+
+
+
+VISTAS REQUERIDAS
+    1- Home (USUARIO SIN INICIAR SESION)
+    2- Login (USUARIO SIN INICIAR SESION)
+    3- Register (USUARIO SIN INICIAR SESION)
+    4- Menu (CLIENTE / ADMIN)
+    5- Carrito (CLIENTE)
+    6- Pago (CLIENTE)
+    7- Ver Productos (ADMIN)
+    8- Ver ventas (ADMIN)
+
+
+VISTAS OPCIONALES
+    1- Comentarios de clientes
+    2- Sobre nosotros
+    3- Contactanos
+    4- Promociones
+
+
+TIPS:
+    1- Para las vistas protegidas utiliza condicionales y si un usuario de un rol desea ingresar a una vista que 
+    corresponde a otro rol emplea window.location.href = "urlDestino" para que no pueda ingresar a esa vista.
+    2- Ayudate con IA para generar los objetos de productos, de esta manera podras ganar minutos valiosos.
+    3- Puedes utilizar Tailwind, SASS, CSS o cualquier herramienta que desees
+    4- Se pueden utilizar plantillas prediseñadas (UIVerse, Flowbite, Tailwind Components, Codepen)
+    5- Puedes utilizar iconos de cualquier fuente (Google Fonts Icons, Lord Icon, Flat Icon, Font Awesome)
+    6- Puedes Usar IA para generar las imagenes del proyecto (Leonardo AI, Bing Image Creator)
+    7- Tambien puedes usar bancos de recursos libres de copyright (Freepik, Pixabay, Pexels)
+
+
+IMPORTANTE: 
+    1- Los Administradores se deben registrar manualmente (directamente en el localStorage).
+    2- Todos los datos deben estar almacenados el localStorage (como si fuera una base de datos)
+    Para ello debes ejecutar un archivo dedicado por separado pero dentro de la carpeta del proyecto
+    3- El restaurant (O tienda de comida) debera ofrecer minimo 2 categorias con minimo 10 productos c/u.
+    4- Cada producto debe contener: id, nombre, descripcion, urlImagen, precio, stock
+    5- Debe ser responsive al menos en mobile y desktop
+
+
+OPCIONAL:
+    1 - Para el administrador agrega la opcion de "Añadir nuevo producto" en la que se cree 
+    un nuevo producto en base a una clase y se solicite: id, nombre, descripcion, urlImagen, precio, stock.
+    2- Para el administrador agrega la opcion de "Editar producto" en la que se solicite el id del producto o el nombre
+    y posteriormente se muestre un formulario con los datos actuales del producto y se puedan modificar independientemente.
+
+
+Inicio: 19/03/2024
+Entrega: 02/04/2024
+Extension de tiempo: 09/04/2024
+Metodo de entraga: GitHub / Proyecto desplegado

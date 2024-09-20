@@ -1,0 +1,141 @@
+/* El "*"  es un selector universal, es decir que se utiliza para añadir estilos a todos los elementos */
+*{
+    /* 
+        La propiedad box-sizing nos permite definir el tamaño de nuestra caja.
+        El estilo border-box permite que el padding y el border se sumen a la anchura y altura de la caja
+        logrando que el tamaño de la caja sea el mismo que se indique.
+    */
+    box-sizing: border-box;
+
+    /* 
+        Las propiedades margin y padding se utilizan para asignar espaciados a la caja 
+
+        - margin: asigna el espaciado exterior de la caja.
+        - padding: asigna el espaciado interior de la caja.
+    */
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* Esta propiedad nos permite colocar un color de fondo */
+    /* background-color: #808000; */
+
+    /* La propiedad background-image nos permite colocar una imagen de fondo */
+    /* background-image: url("./Imagenes/fondo_1.png"); */
+    background-image: url("https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg");
+
+    /* 
+        Esta imagen se ve pequeña y se repite, para darle tamaño 
+        y evitar que se repita haremos lo siguiente.. 
+    */
+
+    /* background-repeat: se utiliza para que la imagen se repita o no */
+    background-repeat: no-repeat;
+
+
+    /* background-size: se utiliza para cambiar el tamaño de la imagen */
+    background-size: cover;
+
+    /* width: se utiliza para cambiar el ancho de la caja */
+    width: 100%;
+
+    /* height: se utiliza para cambiar el alto de la caja */
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+
+    /* background-color: rgba(6, 6, 6, 0.742); */
+
+    /*
+        Para agregar un degradado de fondo se usa la propiedad background
+        con alguno de los siguientes valores:
+
+        - linear-gradient: permite crear un degradado lineal.
+            Este tipo de degradado adicionalmente puede contener la direccion en la cual se mueve.
+            utilizando los valores: 
+            - to top: Para dirigir el degradado de abajo hacia arriba.
+            - to right: Para dirigir el degradado de izquierda a derecha.
+            - to bottom: Para dirigir el degradado de arriba hacia abajo.
+            - to left: Para dirigir el degradado de derecha a izquierda.
+            - to top right: Para dirigir el degradado de arriba hacia abajo y derecha a izquierda.
+            - to top left: Para dirigir el degradado de arriba hacia abajo e izquierda a derecha.
+            - to bottom right: Para dirigir el degradado de abajo hacia arriba y derecha a izquierda.
+            - to bottom left: Para dirigir el degradado de abajo hacia arriba e izquierda a derecha.
+            - Tambien se puede utilizar grados (deg)
+
+            La sintaxis seria la siguiente:
+
+            background: linear-gradient(to top right, #000000, #00000066, #000000);
+
+        - radial-gradient: permite crear un degradado circular
+        - conic-gradient: permite crear un degradado de cono
+
+        La sintaxis seria la siguiente:
+        background: radial-gradient( #000000, #00000066, #000000);
+        background: conic-gradient( #000000, #00000066, #000000);
+    */
+
+    background: linear-gradient(to bottom, black, #00000059, black);
+
+    /*
+        La propiedad display nos permite especificar como deseamos que se muestre un elemento.
+
+        Esta propiedad puede contener distintos valores:
+        
+        - block: Es el valor por defecto, muestra el elemento en una sola línea.
+        - flex: Muestra el elemento como un contenedor flexible.
+        - grid: Muestra el elemento como una grilla (cuadricula).
+    */
+
+    display: flex;
+
+    /*
+        la propiedad flex nos permite especificar el orden de los elementos dentro de la caja.
+        La direccion de como se muestran los elementos se indica usando la propiedad flex-direction.
+
+        Esta propiedad puede contener distintos valores:
+        - row: Es el valor por defecto, muestra los elementos de izquierda a derecha (Como una fila).
+        - column: Muestra los elementos de arriba hacia abajo (Como una columna).
+        - row-reverse: Muestra los elementos de derecha a izquierda (Como una fila invertida).
+        - column-reverse: Muestra los elementos de abajo hacia arriba (Como una columna invertida).
+    */
+
+    flex-direction: row;
+
+
+    /* 
+        Para posicionar los elementos en la pantalla usando flexbox (modelo de caja) se utilizas las propiedades:
+        - justify-content: permite posicionar los elementos en el eje principal de la alineacion actual.
+        - align-items: permite posicionar los elementos en el eje secundario de la alineacion actual.
+
+        Ambos valores (justify-content y align-items) se pueden combinar para posicionar los elementos en la 
+        pantalla de forma flexible utilizando los valores:
+        - flex-start: Posiciona los elementos al inicio del eje principal.
+        - start: Posiciona los elementos al inicio del eje principal.
+        - flex-end: Posiciona los elementos al final del eje principal.
+        - end: Posiciona los elementos al final del eje principal.
+        - center: Centra los elementos en el eje principal.
+        
+        Adicionalmente, con Justify-content tambien podemos usar los valores:
+        - space-between: Espacio entre los elementos sin reservar espacio para los bordes.
+        - space-around: Da prioridad al espacio entre los elementos y menos a los bordes.
+        - space-evenly: Espacio equitativo entre los elementos y el borde.
+    */
+
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(44, 63, 62);
+}
+
+p{
+    color: #086b12; 
+}

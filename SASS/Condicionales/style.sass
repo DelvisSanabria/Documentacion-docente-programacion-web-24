@@ -1,0 +1,49 @@
+// Estructuras de control: Condicionales
+
+// if: Ejecuta una instrucción si la condición es verdadera
+// else-if: en caso de que el bloque if no se cumpla, else if valua una condicion y la ejecuta si es verdadera
+// else: Ejecuta el bloque alernativo en caso de que la condicion no se cumpla
+
+
+$variable: 'caso7'
+
+*
+    box-sizing: border-box
+    margin: 0px
+    padding: 0px
+    font-size: 15px
+
+
+.condicionales
+    font-size: 2.5rem
+    @if $variable == 'caso1'
+        background-color: red
+        padding:10px
+    @else if $variable == 'caso2'
+        background-color: green
+        padding:20px
+    @else if $variable == 'caso3'
+        background-color: yellow
+        padding:30px
+    @else if $variable == 'caso4'
+        background-color: orange
+        padding:40px
+    @else if $variable == 'caso5'
+        background-color: purple
+        padding:50px
+    @else if $variable == 'caso6'
+        background-color: pink
+        padding:60px
+    @else
+        background-color: blue
+        padding:50px
+
+
+
+.claro
+    color: white
+    background: darkgray
+
+.oscuro
+    color: black
+    background: gray

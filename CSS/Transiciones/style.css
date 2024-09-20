@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(182, 182, 182);
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 10px;
+    border: 2px black solid;
+    opacity: 0.1;
+    
+    /* 
+        Las transiciones son animaciones que se aplican a los elementos para que los cambios de estilos
+        al estar en un estado (pseudoclase) especifico no sean abruptos sino sutiles.
+        Es importante que el elemento tenga estilos base y estilos finales para que la transicion se aplique correctamente.
+
+        Sintaxis: 
+            transition: propiedad a animar / duracion en segundos(s) o milisegundos(ms) / tipo de transicion 
+    */
+
+    transition: 
+        border-radius 3000ms ease, 
+        width 3s ease, 
+        height 3s ease,
+        background-color 8s ease,
+        opacity 5s ease;
+}
+
+div:hover{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    opacity: 1;
+}

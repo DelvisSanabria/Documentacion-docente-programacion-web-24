@@ -1,0 +1,6 @@
+Nombre                 Precio  Descripci�n        Cantidad
+-------------------  --------  ----------------  ----------
+asd                       123  asd                                                 123
+astronauta base tlf         7  peque�o astronauta que sostiene el telefono         500
+tesla       500000  auto automatico               100
+mouse          100  mouse normal           30

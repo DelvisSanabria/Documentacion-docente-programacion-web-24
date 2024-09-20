@@ -1,0 +1,50 @@
+Proyecto de React - Figma - Metodologia SCRUM
+
+
+Diseña y codigica una web que contenga lo siguiente:
+
+1- Home
+2- Vista de elementos en cuadricula
+  2.1- Debe permitir marcar elementos como favoritos y almacenarlos en localStorage
+  2.2- Debe permitir redirigir de manera dinamica a la visde individual de cada elemento
+  2.3- Debe tener paginacion (IMPORTANTE: Buscar una API que maneje paginación)
+3- Vista de elemento individual
+4- Vista de 404 en caso de que el usuario solicite una vista inexistente
+5- Vista de Register (usarLocalStorage)
+6- Vista de Login
+7- vista de elementos favoritos
+Opcional: Vista de recuperar contraseña
+Opcional: Vista de Contacto (Con campos validados)
+
+
+
+Puntos fuertes a evaluar (Requeridos):
+1- Diseño (Figma)
+2- Prototipado (Figma)
+3- Componentes (React / Figma)
+4- Consumo de API con Axios (O Fetch si lo deseas)
+5- Diseño Responsivo (Al menos en mobile y desktop)
+
+
+Caracteristicas:
+1- Busca y elige la API de tu preferencia, bien sea con Key o sin Key.
+2- La tematica del proyecto es libre, siempre y cuando cumpla los parametros expuestos en el enunciado.
+3- Se debe emplear la metodologia SCRUM.
+4- Se debe crear un repositorio privado (Solo para los miembros del equipo y el profesor en el cual c/u trabaje en una rama independiente).
+
+
+Duración: 3 Semanas
+Inicio: 04/JUN/2024
+Entrega: 25/JUN/2024
+Reuniones de SCRUM: Cada miercoles de 12PM - 2PM (Horario habitual de asesoria)
+Asesorias: Lunes, Martes, Jueves, Viernes de 4PM a 6PM (Hora Venezuela)
+Metodo de entrega: Repositorio en GitHub y URL de prouycto en Figma.
+
+
+
+GRUPOS:
+
+Grupo A: Gabriel Pereira
+Grupo B: David Limonche y Douglas Gonzales
+Grupo C: Juan Febres, Yaneisis Yaguara y Guillermo Gonzales
+Grupo D: Victor Hernandez y Alan Trasven

@@ -1,0 +1,107 @@
+// Loops
+/*
+    Each
+
+    each es una directiva que permite iterar (recorrer) sobre una lista y aplicar un conjunto
+    de declaraciones de estilo a cada elemento de la lista.
+    */
+
+
+$colores: red,blue,orange,purple,yellow,gray,skyblue,greenyellow,pink,aqua,brown
+
+// Esta linea se lee: Por cada elemento de la lista "colores" se va a realizar el codigo indicado.
+@each $elementoDeLista in $colores
+    // Este es el codigo que se realizara por cada elemento de la lista "colores"
+    .parrafo_#{$elementoDeLista}
+        background-color: $elementoDeLista
+
+
+$temporadas: verano,otono,invierno,primavera
+@each $diego in $temporadas
+    .temporada_#{$diego}::before
+        content: "Es la temporada de "
+
+    .temporada_#{$diego}::after
+        content:" del año 2024"
+
+
+
+
+// For
+
+$uno: 1
+$dos: 11
+
+
+@for $contador from $uno to $dos
+    .elemento-#{$contador}
+        width: 100px * $contador
+        height: 70px * $contador
+        background: skyblue
+        margin: 3.5px 0px 3.5px 0px
+
+/* 
+    Ejercicios para realizar en casa:
+
+    1- Crea dos listas 
+        1 lista de 15 productos
+        1 lista de 15 precios 
+    coloca el precio de cada producto usulizando el loop each, ::after y content.
+    Ademas, coloca un descuento del 10% a cada producto y muestra el precio final de cada producto, de las siguiente
+    manera: "Nombre: xxxxxxxx - Precio: $xxxx - Precio con descuento: $xxxx"
+
+    2- Crea una lista de 10 numeros y determina cual numero es par o impar
+    utilizando el loop each, if, else if y else. 
+    Muestra el resultado de la siguiente manera:
+        - Si el numero es par: "El numero xx es par"
+        - Si el numero es impar: "El numero xx es impar"
+    
+    Puedes utilizar los siguientes operadores aritmeticos:
+        - Suma: +
+        - Resta: -
+        - Multiplicacion: *
+        - Division: /
+        - Modulo o residuo: %
+
+
+/*
+    Soluciones a los ejercicios:
+    */  
+
+$productos: Camara, Laptop, TV, Microfono, Teclado, Audifonos, Mouse, RAM, Silla, Luces, Cargador, Mousepad, Control, Monitor, Procesador
+$precios: 200, 600, 500, 100, 50, 90, 30, 150, 70, 20, 10, 15, 25, 120, 720
+
+@each $producto in $productos
+    // Obtener el indice del producto
+    // index() es una funcion que permite obtener el indice de un elemento de una lista.
+    //                lista  ,  elemento
+    $indice: index($productos, $producto)
+
+    // Obtener el precio del producto
+    // nth() es una funcion que permite obtener el valor de un elemento de una lista,
+    // en base a su indice.
+    //            lista  ,  indice
+    $precio: nth($precios, $indice)
+
+    // Calcular el precio con descuento
+    $precio_descuento: $precio - ($precio * 0.10)
+
+    // Imprimir el resultado
+    .producto-#{$indice}::after
+        content: "#{$producto} - Precio: $#{$precio} - Precio con descuento: $#{$precio_descuento}"
+
+
+
+
+$numeros: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+@each $numero in $numeros
+    // Verificar si el numero es par o impar
+    @if $numero % 2 == 0
+        // Si el numero es par
+        .numero-#{$numero}::after
+            content: "El numero #{$numero} es par"
+    @else
+        // Si el numero es impar
+        .numero-#{$numero}::after
+            content: "El numero #{$numero} es impar"

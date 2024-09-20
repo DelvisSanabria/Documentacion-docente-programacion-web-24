@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#444, #111);
+    color: white;
+}
+
+
+/*
+    ¿Que es el diseño responsivo o responsive design?
+    El diseño responsivo es la capacidad que un sitio web tiene de adaptarse a diferentes tamaños de pantalla.
+
+    Para ello se utilizan reglas especiales que permiten detectar la resolucion actual del viewport y mostrar 
+    el sitio web con un diseño adaptado a cada resolucion.
+
+    Las reglas que se utilizan se llaman media queries y determinan los breakpoints o puntos de corte para cada resolucion.
+    
+
+    Estas reglas se definen de la siguiente forma:
+    
+    - Para resoluciones de menos de 600px (Telefonos)
+    @media (max-width: 600px) { ... }
+
+    - Para resoluciones entre 600px y 900px (Tablets)
+    @media (min-width: 600px) and (max-width: 900px) { ... }
+
+    - Para resoluciones entre 900px y 1200px (Laptops)
+    @media (min-width: 900px) and (max-width: 1200px) { ... }
+
+    - Para resoluciones mas de 1200px (Monitores de escritorio, TVs pequeños)
+    @media (min-width: 1200px) { ... }
+*/
+
+
+/* Para resoluciones de hasta 600px (telefonos)*/
+@media (max-width: 600px) {
+    body{
+        background-color: rgb(171, 171, 163);
+        width: 100%;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        width: 100%;
+        place-items: center;
+    }
+
+    .caja{
+        width: 400px;
+        height: 400px;
+        border-radius: 15px;
+    }
+}
+
+/* Para resoluciones entre 600px y 900px (tablets) */
+@media (min-width: 600px) and (max-width: 900px) {
+    body{
+        background-color: rgb(72, 102, 106);
+        width: 100%;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        width: 100%;
+        place-items: center;
+    }
+
+    .caja{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    body{
+        background-color: rgb(163, 121, 102);
+        width: 100%;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        width: 100%;
+        place-items: center;
+    }
+
+    .caja{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body{
+        background-color: rgb(145, 102, 163);
+        width: 100%;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        width: 100%;
+        place-items: center;
+    }
+
+    .caja{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+}

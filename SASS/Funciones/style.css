@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*  ¿Que son las Funciones?
+ *      Una funcion es un bloque de código que se puede reutilizar en multiples partes de un programa.
+ *  ¿Como se define una funcion?
+ *      Para definir una funcion se utiliza la palabra clave @function seguido del nombre de la funcion y en caso 
+ *      requerir parametros se colocan entre parentesis.
+ *
+ *      Las funciones pueden o no retornar un unico valor, el cual se especifica con parabra reserva @return.
+ *
+ *  ¿Como se utilizan?
+ *      Para utilizar una funcion se utiliza el nombre de la funcion seguido del nombre del parametro
+ *  */
+#p1 {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+#p7:after {
+  content: " 7";
+  color: red;
+}
+
+#p3:after {
+  content: " 3";
+  color: red;
+}
+
+#p4:after {
+  content: " 4";
+  color: red;
+}
+
+#p5:after {
+  content: " 5";
+  color: red;
+}
+
+img {
+  width: 300px;
+  filter: invert(100%);
+}/*# sourceMappingURL=style.css.map */

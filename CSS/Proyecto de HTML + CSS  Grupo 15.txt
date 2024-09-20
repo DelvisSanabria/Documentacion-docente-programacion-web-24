@@ -1,0 +1,24 @@
+Proyecto de HTML + CSS / Grupo 15
+
+Elaborar una pagina que contenga:
+
+- Barra de navegacion (nav)
+- Cuadricula de elementos
+- Pie de pagina (footer)
+
+Puedes elegir una de las siguientes alternativas:
+
+1- Amazon
+2- Mercadolibre
+3- Airbnb
+4- Farmatodo
+5- Mediamarkt
+6- Falabella
+
+
+** IMPORTANTE **
+Para entregar el proyecto deberas crear un repositorio en el cual alojarlo y subirlo a GitHub.
+
+
+Fecha de inicio: 05/01/2024
+Fecha de entrega: 12/01/2024

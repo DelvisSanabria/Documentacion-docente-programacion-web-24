@@ -1,0 +1,90 @@
+Proyecto de Flask - Grupo 15
+
+Elaborar una API que maneje rutas GET, POST, PUT y DELETE para una tabla de usuarios, productos y ventas.
+
+Debe permitir lo siguiente:
+  
+  - Registrar un usuario
+    - Mostrar TODOS los usuarios registrados
+    - Mostrar un usuario segun su correo
+    - Mostrar un usuario segun su ID
+    - Mostrar los usuarios de un pais especifico y si no hay usuarios en ese pais mostrar un mensaje que diga "No hay usuarios registrados en este pais".
+    - Editar un usuario segun su ID
+    - Eliminar un usuario segun su ID
+  
+  - Registrar un producto
+    - Mostrar todos los productos registrados
+    - Mostrar un producto segun su ID
+    - Mostrar un producto segun su nombre
+    - Mostrar los productos de una categoria especifica y si no hay productos en esa categoria mostrar un mensaje que diga "No hay productos registrados en esta categoria".
+    - Editar un producto segun su ID
+    - Eliminar un producto segun su ID
+  
+  - Registrar una venta
+    - Mostrar todas las ventas registradas
+    - Mostrar una venta segun su ID
+    - Mostrar las ventas de un usuario especifico y si no hay ventas de ese usuario mostrar un mensaje que diga "No hay ventas registradas de este usuario".
+    - Mostrar las ventas de un producto especifico y si no hay ventas de ese producto mostrar un mensaje que diga "No hay ventas registradas de este producto".
+    - Eliminar una venta segun su ID
+
+
+La tabla de usuarios debe contener:
+- ID (UNICO)
+- Nombres
+- Apellidos
+- Edad
+- Telefono (UNICO)
+- Correo (UNICO)
+- Clave
+- Ciudad
+- Pais
+- Registro (Timestamp)
+
+
+La tabla de productos debe contener:
+- ID (UNICO)
+- Nombre
+- Descripcion
+- Precio
+- Categoria
+- Stock
+- Registro (Timestamp)
+
+
+La tabla de ventas debe contener:
+- ID (UNICO)
+- ID_Usuario (Clave foranea que referencia al ID de la tabla de usuarios)
+- ID_Producto (Clave foranea que referencia al ID de la tabla de productos)
+- Cantidad
+- Total_Venta
+- Registro (Timestamp)
+
+IMPORTANTE: El la API debe estas modularizada con la siguiente estructura de carpetas
+root/
+|__ rutas/
+|    |__ usuarios/
+|    |    |__ get_usuarios.py
+|    |    |__ post_usuarios.py
+|    |    |__ put_usuarios.py
+|    |    |__ delete_usuarios.py
+|    |__ productos/
+|    |    |__ get_productos.py
+|    |    |__ post_productos.py
+|    |    |__ put_productos.py
+|    |    |__ delete_productos.py
+|    |__ ventas/
+|    |    |__ get_ventas.py
+|    |    |__ post_ventas.py
+|    |    |__ delete_ventas.py
+|__ main.py
+
+
+
+Si deseas diseñar una intarfaz con HTML,CSS y JS para la API, puedes hacerlo, incluso usando React,
+pero no es obligatorio, del mismo modo que una interfaz con TKinter tambien es opcional.
+Es decir, la API debe funcionar sin necesidad de una interfaz grafica, solo con Postman, Insomnia, etc, la interfaz es totalmente opcional.
+PD: La base de datos debe ser MySQL ya que se reciclara para el proyecto de PHP.
+
+
+Fecha de inicio: 16/AGO/2024
+Fecha de entrega: 26/AGO/2024

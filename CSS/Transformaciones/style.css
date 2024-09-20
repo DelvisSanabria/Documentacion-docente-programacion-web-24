@@ -1,0 +1,130 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(0, 238, 255), rgb(5, 92, 105));
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    color: rgb(237, 237, 237);
+    border-radius: 10px;
+    background: linear-gradient(rgb(0, 175, 140), rgb(15, 83, 83));
+    padding: 16px 10px;
+}
+span{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 15px;
+}
+.container{
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#cajita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 10px;
+
+    transition:
+        transform 3s ease;
+}
+
+#cajita:hover{
+    transform: rotate(360deg);
+}
+
+
+#cajita2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(42, 165, 122);
+    border-radius: 10px;
+
+    transition:
+        transform 3s ease;
+}
+
+#cajita2:hover{
+    /*         
+        Eje x: Positivo = derecha
+        Eje x: Negativo = izquierda
+        Eje y: Positivo = abajo
+        Eje y: Negativo = arriba
+                translate( X , Y )  
+    */
+    transform: translate(100px, 100px);
+
+    /* transform: translateX(100px) translateY(100px); */
+}
+
+#cajita3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(114, 42, 165);
+    border-radius: 10px;
+
+    transition:
+        transform 5s ease;
+}
+
+#cajita3:hover{
+    transform: skew(50deg, 30deg);
+}
+
+#cajita4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(153, 165, 42);
+    border-radius: 10px;
+
+    transition:
+        transform 3s ease;
+}
+
+
+#cajita4:hover{
+    /*
+        La funcion scale() permite escalar un elemento n veces su tamaño original.
+
+        Ejemplo si deseamos tripilicar el tamaño de un contenedor haremos:
+        scale(3)
+
+        o si deseamos agrandar un elemento la mitad de su tamaño haremos:
+        scale(1.5)
+
+        o si deseamos achicar un elemento a la mitad de su tamaño original haremos:
+        scale(0.5)
+    */
+    transform: scale(2);
+}

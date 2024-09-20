@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage y SessionStorage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300">
+    <nav class="w-[100%] h-[70px] px-16 flex justify-between items-center bg-gray-500 font-bold">
+        <img class="w-[150px]" src="https://lexpin.online/assets/Lexpin_Logo_color-eCehvIY4.png" alt="Logo">
+        
+        <p class="">
+            Bienvenido 
+            <span id="usuarioNombre" class="text-cyan-400"></span>
+        </p>
+
+        <div class="flex w-[15%] gap-[10%] mr-16">
+            <a href="">Inicio</a>
+            <a href="">Nosotros</a>
+            <a href="">Servicios</a>
+            <a href="">Contacto</a>
+        </div>
+    </nav>
+    <h1 class="font-bold text-3xl text-center my-12">LocalStorage y SessionStorage</h1>
+
+    <section id="contenedor" class="flex flex-col items-center gap-8">
+        <h3 class="font-bold text-xl">Login</h3>
+        
+        <div class="flex gap-4">
+            <input class="border-2 pl-2 py-2 border-black rounded-lg" type="text" placeholder="Usuario" id="usuario">
+            <input class="border-2 pl-2 py-2 border-black rounded-lg" type="password" placeholder="Contraseña" id="clave">
+        </div>
+        <button id="btnLogin" class="rounded-full font-bold px-4 py-2 w-[150px] h-[40px] bg-gray-400 hover:bg-gray-500">Iniciar Sesion</button>
+    </section>
+</body>
+<script src="LocalStorage_y_SessionStorage.js"></script>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Etiquetas de SEO -->
+
+    <!-- Titulo -->
+    <title>SEO</title>
+
+    <!-- 
+        Descripcion: La descripción no debe sobrepasar los 160 caracteres de longitud, ya que se corre el riesgo 
+        de que esta aparezca incompleta en la lista de resultados. 
+    -->
+    <meta name="description" content="En esta pagina se explica que es el seo y la importancia de usarlo para el posicionamiento de la página web"/>
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Comprar, Alquilar, Descargar, Vender, Suscribir, Buscar"/>
+
+    <!-- Autor y Copyright -->
+    <meta name="author" content="Nelson Paz" />
+    <meta name="copyright" content="©Copyright 2022 - Nelson Paz" />
+
+    <!-- 
+        Robots: Una de las principales funciones de los meta tags es proporcionar instrucciones para la indexación 
+        a los crawlers (Rasteadores, robots o googlebots). Esto se logra con la etiqueta meta “robots”. 
+        Con los siguientes meta tags es posible estipular si una página será indexada y, en consecuencia, si estará 
+        disponible para la búsqueda. 
+        
+        También se puede establecer si los robots han de seguir los enlaces salientes o si, por el contrario, han de 
+        ignorarlos. Esta información se cuenta entre los metadatos más relevantes para el SEO. 
+    -->
+    
+    <!-- 
+        permite la indexacion: Indexacion se refiere a diversos métodos para incluir, en el índice de internet, 
+        el contenido de un sitio web. 
+
+        Por defecto todos los sitios se indexan a los resultados de busqueda.
+    -->
+    <meta name="robots" content="index"/> 
+
+    <!-- 
+        Se tiene que indicar expresamente si una página no debe ser incluida en el índice. 
+        Este tag prohíbe al buscador transferir contenidos de una página HTML a su base de datos.
+    -->
+    <meta name="robots" content="noindex,nofollow"/>
+
+    <!-- Follow
+        El comportamiento estándar de los motores de búsqueda consiste en recorrer los enlaces 
+        que encuentra en una página de HTML, a no ser que se les indique lo contrario. 
+        Esta información se puede incluir en las metaetiquetas, aunque no es necesario 
+    -->
+    <meta name="robots" content="follow"/>
+
+    <!-- 
+        Si se quiere impedir que un robot de búsqueda alcance determinadas subpáginas de un sitio o rastree 
+        los enlaces en otro dominio se añade nofollow.
+
+        El robot ignora, así, los enlaces por completo, pero no el contenido de la página, que sí será 
+        transferido a la base de datos del buscador.
+    -->
+    <meta name="robots" content="nofollow"/>
+
+
+    <!-- Control de Caché
+        Para asegurar la fluidez del funcionamiento de Internet, las webs se suelen guardar en servidores proxy 
+        intermedios o en el caché del navegador para ser descargadas fácilmente en el futuro.
+        
+        Para impedirlo usamos el meta tag “cache-control” con el valor no-cache 
+    -->
+    <meta http-equiv="cache-control" content="no-cache"/>
+
+    <!-- Expires
+        Es posible que no se quiera prohibir el almacenamiento temporal en caché de forma absoluta. 
+        En este caso se puede usar el atributo “http-equiv” para definir una fecha de expiración 
+        para los datos HTML solicitados.  
+    -->
+    
+    <!-- Asignamos el tiempo de vida de la cache en 1 dia -->
+    <meta http-equiv="expires" content="86400"/>
+    
+    <!-- Tiempo de expiracion -->
+    <meta http-equiv="expires" content="0"/>
+
+    <!-- 
+        También es posible definir períodos de tiempo o fechas concretas, siempre en formato internacional y 
+        según el GMT (Greenwich Mean Time): 
+    -->
+    <meta http-equiv="expires" content="Sat, 31 Dec 2023 23:59:59 GMT"/>
+
+    <!-- 
+        refresh: permite redirigir a una direccion definida luego de cierto tiempo
+        en este caso se definen 10seg luego se define el url al cual se redirigira
+    -->
+    <meta http-equiv="refresh" content="10; url=https://www.google.com/"/>
+
+</head>
+<body>
+    <h1>Aprendiendo SEO</h1>
+</body>
+
+    <!-- 
+        Esquema de datos:
+        Los motores de búsqueda utilizan los esquemas de datos para entender mejor el contenido de una página web. 
+        Los esquemas de datos son una forma de etiquetar el contenido de una página web para que los motores de 
+        búsqueda puedan entenderlo y mostrarlo de manera más efectiva en los resultados de búsqueda.
+    -->
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Diego Education",
+        "image": "",
+        "@id": "",
+        "url": "https://diegoarc.tech",
+        "telephone": "934887809",
+        "priceRange": "65",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Santiago",
+            "addressLocality": "Santiago",
+            "postalCode": "113456",
+            "addressCountry": "CL"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": "https://instagram.com/didacusdev" 
+        }
+    </script>
+</html>

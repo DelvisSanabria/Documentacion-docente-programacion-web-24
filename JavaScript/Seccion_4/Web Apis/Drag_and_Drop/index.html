@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drag & Drop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="w-[100%] h-[90vh] flex justify-center mt-8 gap-8 bg-gray-500 px-2">
+        
+        <!-- Zona A -->
+        <section class="bg-gray-700 w-[100%] grid grid-cols-2 place-items-center rounded-lg" id="zonaA">
+            
+            <!-- Arrastrables -->
+            <div class="caja w-32 h-32 flex justify-center items-center" draggable="true" id="Mario">
+                <img 
+                    class="max-w-[100%] max-h-[100%] drop-shadow-lg shadow-black"
+                    src="https://i.pinimg.com/originals/e8/bb/b7/e8bbb719dff7201aa84de5495a9c8908.png"
+                >
+            </div>
+            
+            <div class="caja w-32 h-32 flex justify-center items-center" draggable="true" id="Luigi">
+                <img 
+                    class="max-w-[100%] max-h-[100%] drop-shadow-lg shadow-black"
+                    src="https://purepng.com/public/uploads/large/purepng.com-luigimariofictional-charactervideo-gamefranchisenintendodesigner-1701528631379ubgt6.png"
+                >
+            </div>
+            
+            <div class="caja w-32 h-32 flex justify-center items-center" draggable="true" id="Joshi">
+                <img 
+                    class="max-w-[100%] max-h-[100%] drop-shadow-lg shadow-black"
+                    src="https://www.pngall.com/wp-content/uploads/11/Yoshi-PNG-HD-Image.png"
+                >
+            </div>
+            
+            <div class="caja w-32 h-32 flex justify-center items-center" draggable="true" id="Peach">
+                <img 
+                    class="max-w-[100%] max-h-[100%] drop-shadow-lg shadow-black"
+                    src="https://images.wikidexcdn.net/mwuploads/esssbwiki/d/d5/latest/20211026212042/Peach_Mario_Party_Superstars.png"
+                >
+            </div>
+        </section>
+
+        <!-- Zona B -->
+        <section class="bg-gray-500 w-[100%] h-[100%] border-2 rounded-lg grid grid-cols-2 place-items-center" id="zonaB">
+
+        </section>
+        
+        <!-- Zona C -->
+        <section class="bg-gray-500 w-[100%] h-[100%] border-2 rounded-lg grid grid-cols-2 place-items-center" id="zonaC">
+
+        </section>
+    </body>
+    <script src="script.js"></script>
+</html>

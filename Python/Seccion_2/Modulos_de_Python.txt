@@ -1,0 +1,201 @@
++---------------------+----------------------------------------------------------------------------------+
+| Módulo              | Descripción                                                                      |
++---------------------+----------------------------------------------------------------------------------+
+| abc                 | Abstract Base Classes (Clases Base Abstractas).                                   |
+| aifc                | Soporte para leer y escribir archivos AIFF y AIFC.                                |
+| argparse            | Parsing de argumentos en la línea de comandos.                                    |
+| array               | Implementación eficiente de arrays de valores numéricos básicos.                  |
+| ast                 | Módulo para analizar y manipular árboles de sintaxis abstracta de Python.         |
+| asynchat            | Framework para construir servidores y clientes de red asincrónicos.               |
+| asyncio             | Biblioteca para escribir código concurrente utilizando la programación asíncrona. |
+| asyncore            | Framework base para escribir servidores y clientes de red asincrónicos.           |
+| atexit              | Registro de funciones para ser ejecutadas al finalizar el programa.               |
+| audioop             | Manipulación de datos de audio.                                                   |
+| base64              | Codificación y decodificación en Base16, Base32 y Base64.                         |
+| bdb                 | Framework para la implementación de depuradores.                                  |
+| binascii            | Convertir entre representaciones binarias y ASCII de varios codecs.               |
+| bisect              | Algoritmo para mantener listas ordenadas.                                         |
+| builtins            | Contiene los objetos internos de Python.                                          |
+| bz2                 | Soporte para compresión y descompresión de archivos usando bzip2.                 |
+| cProfile            | Herramienta de perfilado de rendimiento para Python.                              |
+| calendar            | Funciones relacionadas con el calendario.                                         |
+| cgi                 | Soporte para escribir scripts CGI.                                                |
+| cgitb               | Módulo para depuración CGI.                                                       |
+| chunk               | Leer archivos IFF (Interchange File Format).                                      |
+| cmath               | Funciones matemáticas para números complejos.                                     |
+| cmd                 | Framework para escribir intérpretes de línea de comandos.                         |
+| code                | Herramientas para análisis y compilación de código.                               |
+| codecs              | Codificación y decodificación de datos.                                           |
+| codeop              | Herramientas para análisis y compilación de código.                               |
+| collections         | Tipos de datos contenedores.                                                      |
+| colorsys            | Conversión entre diferentes sistemas de color.                                    |
+| compileall          | Compilar todos los archivos .py a .pyc.                                           |
+| concurrent.futures  | Ejecutores para programación concurrente.                                         |
+| configparser        | Análisis de archivos de configuración estilo INI.                                 |
+| contextlib          | Utilidades para con context managers.                                             |
+| contextvars         | Soporte para variables de contexto.                                               |
+| copy                | Operaciones de copia superficial y profunda.                                      |
+| copyreg             | Registro de funciones pickling.                                                   |
+| crypt               | Funciones de cifrado.                                                             |
+| csv                 | Lectura y escritura de archivos CSV.                                              |
+| ctypes              | Una biblioteca de funciones C.                                                    |
+| curses              | Soporte para la biblioteca de interfaces de usuario curses.                       |
+| dataclasses         | Decoradores y funciones para crear clases inmutables y mutables.                  |
+| datetime            | Manipulación de fechas y horas.                                                   |
+| dbm                 | Interfaces a bases de datos estilo Unix.                                          |
+| decimal             | Implementación de aritmética decimal.                                             |
+| difflib             | Herramientas para calcular y trabajar con diferencias entre secuencias.           |
+| dis                 | Desensamblado de bytecode de Python.                                              |
+| distutils           | Utilidades para distribución de módulos Python.                                   |
+| doctest             | Testeo basado en documentos.                                                      |
+| email               | Paquete para gestionar correo electrónico.                                        |
+| encodings           | Paquete de codecs para diferentes esquemas de codificación.                       |
+| enum                | Implementación de enumeraciones.                                                  |
+| errno               | Números de errores de sistema.                                                    |
+| faulthandler        | Módulo para manipular errores.                                                    |
+| fcntl               | Interfaces al control de archivo del sistema Unix.                                |
+| filecmp             | Comparación de archivos y directorios.                                            |
+| fileinput           | Iterar sobre líneas de múltiples archivos de entrada.                             |
+| fnmatch             | Comparar nombres de archivo usando patrones de Unix.                              |
+| fractions           | Soporte para aritmética de fracciones racionales.                                 |
+| ftplib              | Cliente FTP.                                                                      |
+| functools           | Funciones de orden superior y operaciones sobre funciones.                        |
+| gc                  | Interfaz al recolector de basura.                                                 |
+| getopt              | Análisis de opciones y argumentos de línea de comandos.                           |
+| getpass             | Obtener entradas de contraseña sin mostrarla en la consola.                       |
+| gettext             | Soporte para internacionalización.                                                |
+| glob                | Expansión de patrones de nombres de archivo.                                      |
+| grp                 | Obtener y manipular entradas del grupo Unix.                                      |
+| gzip                | Soporte para archivos comprimidos con gzip.                                       |
+| hashlib             | Implementación de algoritmos de resumen criptográfico.                            |
+| heapq               | Implementación de colas de prioridad (heaps).                                     |
+| hmac                | Implementación de HMAC (Hash-based Message Authentication Code).                  |
+| html                | Manipulación de datos HTML.                                                       |
+| http                | Implementación de HTTP y herramientas relacionadas.                               |
+| imaplib             | Cliente IMAP.                                                                     |
+| imghdr              | Determinación del tipo de archivo de imagen.                                      |
+| imp                 | Acceso a las funcionalidades de importación internas.                             |
+| importlib           | Soporte para la importación de módulos.                                           |
+| inspect             | Recuperación de información sobre objetos en tiempo de ejecución.                 |
+| io                  | Herramientas para trabajar con flujos de entrada y salida.                        |
+| ipaddress           | Manipulación de direcciones IP.                                                   |
+| itertools           | Funciones para crear iteradores eficientes.                                       |
+| json                | Análisis y generación de datos JSON.                                              |
+| keyword             | Proporciona la lista de palabras clave de Python.                                 |
+| lib2to3             | Biblioteca para convertir código Python 2 a Python 3.                             |
+| linecache           | Acceso eficiente a líneas de archivos.                                            |
+| locale              | Internacionalización de programas Python.                                         |
+| logging             | Sistema de registro de eventos.                                                   |
+| lzma                | Soporte para archivos comprimidos con lzma.                                       |
+| mailbox             | Manipulación de conjuntos de mensajes en formatos estándar de buzón.              |
+| mailcap             | Leer y manejar archivos mailcap.                                                  |
+| marshal             | Serialización interna de objetos Python.                                          |
+| math                | Funciones matemáticas básicas.                                                    |
+| mimetypes           | Manipulación de tipos MIME.                                                       |
+| mmap                | Soporte para archivos de memoria mapeada.                                         |
+| modulefinder        | Encuentra módulos importados en un script.                                        |
+| msilib              | Soporte para archivos MSI de Windows.                                             |
+| multiprocessing     | Soporte para ejecutar tareas en paralelo usando procesos.                         |
+| netrc               | Leer archivos .netrc para autenticación.                                          |
+| nntplib             | Cliente NNTP.                                                                     |
+| numbers             | Definiciones abstractas de números.                                               |
+| operator            | Implementación de funciones de operadores estándar.                               |
+| optparse            | Parsing de opciones de línea de comandos.                                         |
+| os                  | Interfaz para operaciones del sistema operativo.                                  |
+| pathlib             | Manipulación de rutas de archivos.                                                |
+| pdb                 | Depurador interactivo para programas Python.                                      |
+| pickle              | Serialización y deserialización de objetos Python.                                |
+| pickletools         | Herramientas para trabajar con pickle.                                            |
+| pipes               | Interfaz para la ejecución de comandos del sistema a través de pipes.             |
+| pkgutil             | Utilidades para la manipulación de paquetes.                                      |
+| platform            | Acceso a información sobre la plataforma en la que se ejecuta Python.             |
+| plistlib            | Manipulación de archivos de listas de propiedades (plists).                       |
+| poplib              | Cliente POP3.                                                                     |
+| posix               | Interfaz para llamadas del sistema POSIX (Unix).                                  |
+| pprint              | Impresión de representaciones formateadas de estructuras de datos.                |
+| profile             | Herramienta de perfilado de rendimiento para Python.                              |
+| pstats              | Manipulación de datos de perfiles de rendimiento.                                 |
+| pty                 | Pseudo-terminal utilities.                                                        |
+| pwd                 | Obtener y manipular entradas de usuarios Unix.                                    |
+| py_compile          | Compilar archivos Python a bytecode.                                              |
+| pyclbr              | Lectura de clases Python en archivos fuente.                                      |
+| pydoc               | Generación de documentación Python desde los docstrings.                          |
+| queue               | Implementación de colas multi-productor y multi-consumidor.                       |
+| quopri              | Codificación y decodificación en Quoted-Printable.                                |
+| random              | Generación de números pseudo-aleatorios.                                          |
+| re                  | Expresiones regulares.                                                            |
+| readline            | Interfaz para la biblioteca GNU readline.                                         |
+| reprlib             | Generación de representaciones abreviadas de objetos.                             |
+| resource            | Interfaz para la administración de recursos del sistema.                          |
+| rlcompleter         | Finalización de nombres en la consola interactiva.                                |
+| runpy               | Localización y ejecución de módulos Python.                                       |
+| sched               | Planificador de eventos.                                                          |
+| secrets             | Generación de números aleatorios criptográficamente seguros.                      |
+| select              | Espera eficiente en múltiples sockets.                                            |
+| selectors           | Interfaces de alto nivel para multiplexar I/O.                                    |
+| shelve              | Persistencia de objetos Python usando bases de datos.                             |
+| shlex               | Análisis de cadenas utilizando reglas de shell.                                   |
+| shutil              | Utilidades de alto nivel para manejo de archivos y colecciones de archivos.       |
+| signal              | Manipulación de señales del sistema.                                              |
+| site                | Configuración específica del entorno del intérprete.                              |
+| smtpd               | Servidor SMTP.                                                                    |
+| smtplib             | Cliente SMTP.                                                                     |
+| sndhdr              | Determinación del tipo de archivo de sonido.                                      |
+| socket              | Interfaz de red de bajo nivel.                                                    |
+| socketserver        | Framework para escribir servidores de red.                                        |
+| spwd                | Acceso a la base de datos de contraseñas shadow en sistemas Unix.                 |
+| sqlite3             | Soporte para bases de datos SQLite.                                               |
+| ssl                 | Soporte para Secure Sockets Layer (SSL).                                          |
+| stat                | Definiciones de constantes y funciones útiles para interpretar resultados de      |
+|                     | os.stat().                                                                        |
+| statistics          | Funciones para cálculos estadísticos básicos.                                     |
+| string              | Operaciones comunes con cadenas de texto.                                         |
+| stringprep          | Implementación de perfiles de preparación de cadenas para Unicode.                |
+| struct              | Empaquetado y desempacotado de datos binarios.                                    |
+| subprocess          | Módulo para ejecutar procesos.                                                    |
+| sunau               | Soporte para archivos AU de sonido de Sun.                                        |
+| symbol              | Constantes utilizadas por el módulo parser.                                       |
+| symtable            | Interfaz para acceder a la tabla de símbolos de un código Python.                 |
+| sys                 | Parámetros y funciones específicos del sistema.                                   |
+| sysconfig           | Acceso a la configuración del intérprete.                                         |
+| tabnanny            | Detección de problemas con la indentación de código.                              |
+| tarfile             | Lectura y escritura de archivos tar.                                              |
+| telnetlib           | Cliente Telnet.                                                                   |
+| tempfile            | Creación de archivos y directorios temporales.                                    |
+| termios             | Configuración de interfaces de terminal POSIX.                                    |
+| test                | Paquete de pruebas de la biblioteca estándar de Python.                           |
+| textwrap            | Formateo de texto en párrafos.                                                    |
+| threading           | Soporte para programación concurrente usando hilos (threads).                     |
+| time                | Acceso a funciones de tiempo.                                                     |
+| timeit              | Medición de tiempos de ejecución de pequeños fragmentos de código.                |
+| tkinter             | Interfaz para el toolkit GUI de Tcl/Tk.                                           |
+| token               | Constantes utilizadas por el módulo tokenize.                                     |
+| tokenize            | Tokenización de código fuente Python.                                             |
+| trace               | Seguimiento de la ejecución del código Python.                                    |
+| traceback           | Manejo de trazas de excepciones.                                                  |
+| tracemalloc         | Seguimiento de la asignación de memoria.                                          |
+| tty                 | Configuración de interfaces de terminal.                                          |
+| turtle              | Gráficos para principiantes y educación.                                          |
+| types               | Definiciones de tipos incorporados.                                               |
+| typing              | Soporte para anotaciones de tipo.                                                 |
+| unicodedata         | Base de datos Unicode.                                                            |
+| unittest            | Framework para pruebas unitarias.                                                 |
+| urllib              | Manejo de URLs.                                                                   |
+| uu                  | Codificación y decodificación en formato UU.                                      |
+| uuid                | Generación de identificadores únicos universales (UUID).                          |
+| venv                | Creación de entornos virtuales de Python.                                         |
+| warnings            | Control de advertencias.                                                          |
+| wave                | Lectura y escritura de archivos WAV.                                              |
+| weakref             | Implementación de referencias débiles.                                            |
+| webbrowser          | Interfaz para abrir documentos en navegadores web.                                |
+| winreg              | Acceso a la base de datos del registro de Windows.                                |
+| winsound            | Reproducción de sonidos en sistemas Windows.                                      |
+| wsgiref             | Implementación de referencia para servidores WSGI.                                |
+| xdrlib              | Codificación y decodificación en formato XDR.                                     |
+| xml                 | Paquete de herramientas XML.                                                      |
+| xmlrpc              | Soporte para crear clientes y servidores XML-RPC.                                 |
+| zipapp              | Creación de archivos ejecutables desde archivos ZIP.                              |
+| zipfile             | Lectura y escritura de archivos ZIP.                                              |
+| zipimport           | Soporte para importar módulos desde archivos ZIP.                                 |
+| zlib                | Compresión y descompresión usando zlib.                                           |
++---------------------+----------------------------------------------------------------------------------+

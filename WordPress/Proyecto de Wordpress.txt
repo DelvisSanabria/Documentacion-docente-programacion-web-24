@@ -1,0 +1,16 @@
+Proyecto de Wordpress
+
+Elabora una web que contenga las siguientes paginas:
+
+Opcion 1: Web Personal (Portafolio o Web de artista) que contenga Home, About, Galeria (Productos o Trabajos realizados), Contactanos (Forminator)
+Opcion 2: Web Empresarial (E-Commerce o Web informativa) que contenga Home, About, Contacto/Cotizacion(Forminator) , Galeria
+
+Referencias: 
+	1- https://www.ionheat.com/es
+	2- https://vicmantattoo.com/
+	3- https://johannycm.github.io/PROYECTO.CSS/index.html
+	4- http://drmolcas.epizy.com/?i=2
+
+Fecha de inicio: 23/ABR/2024
+Fecha de entrega: 02/MAY/2024
+Metodo de entrega: Presentacion en vivo

@@ -1,0 +1,6 @@
+1- Realiza una lista ul que contenga 15 elementos li y añade el color de fondo a cada elemento li 
+con el looop each
+
+
+2 - Realiza 2 animaciones que se hereden entre 5 elementos usando extend y mixins con parametros
+que permitan personalizar el comportamiento de las animaciones

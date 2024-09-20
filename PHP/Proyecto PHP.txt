@@ -1,0 +1,89 @@
+Desarrollo de un Mini-Ecommerce en PHP
+
+Objetivo del Proyecto:
+Desarrollar una aplicación web de ecommerce básica en PHP que permita la gestión de productos y usuarios, 
+incluyendo la funcionalidad de login, registro, y manejo de roles (administrador y usuario). 
+
+La aplicación debe incluir formularios para la gestión de datos, utilizar MySQL como base de datos, implementar 
+validaciones de campo, sesiones para la autenticación de usuarios, y una interfaz responsiva utilizando Tailwind CSS.
+
+Duración: 1 Semana
+Inicio: 06/SEP/2024
+Entrega: 13/SEP/2024
+
+
+Requisitos Funcionales:
+
+  Gestión de Usuarios:
+     Los usuarios deben poder registrarse y iniciar sesión.
+     Los usuarios deben tener roles: Administrador y Usuario.
+     Los administradores deben poder ver y gestionar todos los usuarios registrados.
+     Implementar validaciones en los formularios de registro e inicio de sesión (campos requeridos, formato de correo electrónico, 
+     longitud mínima de la contraseña 8 caracteres, etc.).
+
+  Gestión de Productos:
+     Los administradores deben poder agregar, editar y eliminar productos.
+     Los usuarios deben poder ver la lista de productos y los detalles de cada producto.
+     Implementar validaciones en los formularios de gestión de productos (campos requeridos, precios numéricos, imágenes válidas, etc.).
+
+  Carrito de Compras:
+     Los usuarios deben poder agregar productos al carrito de compras.
+     Mostrar el resumen del carrito con la opción de eliminar productos del mismo.
+
+  Manejo de Sesiones: 
+     Implementar sesiones para mantener la autenticación de los usuarios.
+  
+  Control de acceso: 
+     los usuarios no autenticados deben ser redirigidos al formulario de inicio de sesión.
+
+  Control de permisos: 
+     los usuarios con rol Usuario no deben poder acceder a las funciones de administración.
+
+
+Interfaz de Usuario:
+     La aplicación debe ser responsiva utilizando Tailwind CSS.
+     Diseñar una interfaz de usuario simple y clara para la navegación entre las funcionalidades.
+
+Requisitos Técnicos:
+     Lenguaje: PHP (versión 7.4 o superior).
+     Base de Datos: MySQL.
+
+Frontend: HTML5, JavaScript (opcional para interactividad adicional), Tailwind CSS.
+
+Validaciones: Validaciones de campo en el backend con PHP y en el frontend con JavaScript.
+Autenticación y Autorización: Uso de $_SESSION para manejar la autenticación y roles de usuario.
+
+
+
+Estructura de Base de Datos:
+
+     Tabla usuarios:
+          id (INT, AUTO_INCREMENT, PRIMARY KEY)
+          nombre (VARCHAR)
+          apellido (VARCHAR)
+          correo (VARCHAR, UNIQUE)
+          clave (VARCHAR) -- NOTA: Debe ser un HASH, es decir, debe estar encriptada.
+          rol (ENUM: 'admin', 'usuario')
+          url_foto (VARCAHR)
+          registrado (TIMESTAMP)
+
+     Tabla productos:
+          id (INT, AUTO_INCREMENT, PRIMARY KEY)
+          nombre (VARCHAR)
+          descripcion (TEXT)
+          precio (DECIMAL)
+          imagen_url (VARCHAR)
+          creado (TIMESTAMP)
+
+Formularios:
+  Registro de Usuarios: Nombre, correo, contraseña (con confirmación), rol (opcionalmente visible solo para admins).
+  Login: Correo y contraseña.
+  Gestión de Productos: Nombre, descripción, precio, imagen (subida de archivos).
+ 
+
+Criterios de Evaluación:
+  Correcto manejo de roles y permisos.
+  Validaciones de formulario adecuadas en frontend y backend.
+  Uso efectivo de sesiones para la autenticación y autorización.
+  Interfaz responsiva y visualmente agradable utilizando Tailwind CSS.
+  Código limpio y organizado siguiendo buenas prácticas de desarrollo.

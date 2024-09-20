@@ -1,0 +1,10 @@
+Habia una vez tres cerditos que vivian en el bosque. 
+Cada uno de ellos decidio construir su propia casa. 
+El primer cerdito construyo su casa de paja, el segundo cerdito 
+construyo su casa de madera y el tercer cerdito construyo su casa de ladrillos. 
+
+Un dia, un lobo feroz llego al bosque y comenzo a soplar para derribar las casas de los cerditos. 
+La casa de paja y la casa de madera fueron destruidas fácilmente, pero la casa de ladrillos se mantuvo firme. 
+Los cerditos se refugiaron en la casa de ladrillos y el lobo no pudo entrar. 
+
+Al final, el lobo se dio por vencido y los cerditos vivieron felices y seguros en su casa de ladrillos.

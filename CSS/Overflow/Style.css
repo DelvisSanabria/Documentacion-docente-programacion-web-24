@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: bisque;
+}
+
+p{
+    background-color: rgb(17, 39, 39);
+    padding: 15px;
+    color: white;
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+}
+
+
+p:hover{
+    color: greenyellow;
+}

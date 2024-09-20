@@ -1,0 +1,4 @@
+Realizar una pagina con HTML que contenga: 
+- 5 imagenes, 2 de ellas con CDN y 3 con ruta relativa (local)
+- inputs que soliciten: nombre, apellido, edad, email, clave, validar clave, fecha de nacimiento
+- 3 listas que contengan: Aspiraciones para el proximo año, expectativas con el curso, tecnologias dominadas (ofimatica, diseño, etc)

@@ -1,0 +1,61 @@
+Elabora un software que permita gestionar la información de clientes, ventas y productos.
+
+El software debe permitir:
+- Registrar clientes
+- Registrar productos
+- Registrar ventas
+- Consultar clientes
+- Consultar productos
+- Consultar ventas
+- Eliminar clientes
+- Eliminar productos
+- Enviar un Correo o WhatsApp al cliente con la confirmaicón de su registro
+- Enviar un Correo o WhatsApp al cliente con la información de la venta
+- Descargar un archivo con la información de los clientes (con tabulate)
+- Descargar un archivo con la información de los productos (con tabulate)
+- Descargar un archivo con la información de las ventas (con tabulate)
+
+
+Cada cliente debe tener:
+- Nombre
+- Apellido
+- Correo
+- Teléfono
+- Dirección
+- Ciudad
+- País
+
+Opcional para el cliente:
+- Código de cliente
+- Fecha de nacimiento
+- Género
+
+
+
+Cada producto debe tener:
+- SKU (codigo unico)
+- Nombre
+- Descripción
+- Precio
+- Stock
+
+Opcional para el producto:
+- Categoría
+- Marca
+- Fabricante
+
+
+
+Cada venta debe tener:
+- Cliente
+- Producto(s)
+- Fecha
+- Total
+
+Opcional  para la venta:
+- Estado (En proceso, Enviado, Entregado)
+
+
+
+Fecha de Inicio: 22/Jul/2024
+Fecha de Entrega: 1/Ago/2024

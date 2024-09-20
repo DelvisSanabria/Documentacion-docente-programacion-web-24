@@ -1,0 +1,43 @@
+// Globales
+*
+    box-sizing: border-box
+    top: 0px
+    margin: 0px
+    padding: 0px
+
+a:link, a:active, a:visited
+    text-decoration: none
+    color: white
+
+body
+    width: 100%
+    /*Fondos SVG Gratis
+        https://app.haikei.app/
+        https://www.svgbackgrounds.com/
+        */
+    background-image: url(../images/background.svg)
+    background-size: cover
+    font-family: 'Lato', sans-serif
+    &::-webkit-scrollbar
+        width: 0.7vmax
+        background-color: #0F0F0F
+    &::-webkit-scrollbar-thumb
+        background: radial-gradient(#0aa2d9, #000)
+        border-radius: $px10
+        border: white
+
+/* Pseudoelementos para editar el SCROLLBAR
+    ::-webkit-scrollbar la barra de desplazamiento
+    ::-webkit-scrollbar-button los botones de la barra de desplazamiento (flechas que apuntan hacia arriba y hacia abajo).
+    ::-webkit-scrollbar-thumb el controlador de desplazamiento arrastrable.
+    ::-webkit-scrollbar-track la pista (barra de progreso) de la barra de desplazamiento.
+    ::-webkit-scrollbar-track-piece la pista (barra de progreso) NO está cubierta por el mango.
+    ::-webkit-scrollbar-cornerla esquina inferior de la barra de desplazamiento, donde se encuentran las barras de desplazamiento horizontal y vertical.
+    ::-webkit-resizerel controlador de cambio de tamaño arrastrable que aparece en la esquina inferior de algunos elementos.
+    */
+
+main
+    display: grid
+    grid-template-columns: 72% 28%
+    width: 100%
+    height: 100vh

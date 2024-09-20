@@ -1,0 +1,18 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "Fundamentos.ts",
+  "scripts": {
+    "start": "tsc Fundamentos.ts -w",
+    "eventos": "tsc Eventos.ts -w",
+    "funciones": "tsc Funciones.ts -w",
+    "funcionestipo": "tsc Funciones_de_Tipo.ts -w",
+    "todos": "tsc -w"
+  },
+  "author": "Diego",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.5.2"
+  }
+}

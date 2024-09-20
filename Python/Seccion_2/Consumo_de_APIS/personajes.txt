@@ -1,0 +1,22 @@
+  id  Nombre                     Especie    Genero    Origen
+----  -------------------------  ---------  --------  -----------------------------
+   1  Rick Sanchez               Human      Male      Earth (C-137)
+   2  Morty Smith                Human      Male      unknown
+   3  Summer Smith               Human      Female    Earth (Replacement Dimension)
+   4  Beth Smith                 Human      Female    Earth (Replacement Dimension)
+   5  Jerry Smith                Human      Male      Earth (Replacement Dimension)
+   6  Abadango Cluster Princess  Alien      Female    Abadango
+   7  Abradolf Lincler           Human      Male      Earth (Replacement Dimension)
+   8  Adjudicator Rick           Human      Male      unknown
+   9  Agency Director            Human      Male      Earth (Replacement Dimension)
+  10  Alan Rails                 Human      Male      unknown
+  11  Albert Einstein            Human      Male      Earth (C-137)
+  12  Alexander                  Human      Male      Earth (C-137)
+  13  Alien Googah               Alien      unknown   unknown
+  14  Alien Morty                Alien      Male      unknown
+  15  Alien Rick                 Alien      Male      unknown
+  16  Amish Cyborg               Alien      Male      unknown
+  17  Annie                      Human      Female    Earth (C-137)
+  18  Antenna Morty              Human      Male      unknown
+  19  Antenna Rick               Human      Male      unknown
+  20  Ants in my Eyes Johnson    Human      Male      unknown

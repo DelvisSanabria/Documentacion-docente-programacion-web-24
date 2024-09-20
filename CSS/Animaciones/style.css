@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    background: radial-gradient(rgb(0, 132, 255), rgb(10, 45, 98));
+    overflow-x: hidden;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(31, 195, 80),rgb(2, 51, 21));
+    padding: 30px 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+/*  
+    Las animaciones son una forma de darle un efecto visual a un elemento HTML.
+    Se realizan mediante la propiedad CSS: animation y reciben una serie de valores.
+
+    propiedades que se utilizan para generar una animacion:
+
+    1) animation-name(nombre de la animacion).
+    NO SE EJECUTA HASTA... indicar la duracion y la funcion de tiempo.
+
+    2) Duracion(s o ms), indica el tiempo que tomara desde el inicio su  fin.
+
+    3) funcion de tiempo, es la velocidad que tendra la animacion
+    Los valores predefinidos son: linear, ease, ease-in, ease-out, ease-in-out y cubic-bezier().
+    Este ultimo es una funcion de tiempo personalizada.
+    Presionar ctrl + clic en el link para ir a: https://cubic-bezier.com/ y generar una funcion de tiempo personalziada.
+
+    4) Contador de repeticiones/Iteraciones (numero o infinite)
+
+    5) animation-play-state(paused o running)
+    define el estado de la animacion
+
+    6) animation-direction(normal / reverse / alternate / alternatereverse) 
+    permite elejir como se recorrera la animacion, 
+    por defecto es de inicio a fin, pero se puede colocar de inicio a fin y de vuelta
+
+    7) animation-delay(s,ms) 
+    permite indicar el tiempo de retraso de una animacion
+*/
+
+
+
+/*Estilos de caja 1*/
+.caja1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(117, 53, 177); 
+
+
+    /* 
+        Indicamos el nombre de la animacion que deseamos aplicar 
+        - nombre de la funcion: en este caso cambiarColor
+        - variable: que contenga el nombre de la funcion.
+    */
+    animation-name: cambiarColor;
+
+    /* 
+        Indicamos la duracion de la animacion 
+        - s: segundos
+        - ms: milisegundos
+    */
+    animation-duration: 2s;
+
+    /* 
+        Indicamos la funcion de tiempo 
+        - linear: animacion lineal
+        - ease: animacion suave
+        - ease-in: animacion suave en el inicio
+        - ease-out: animacion suave en el final
+        - ease-in-out: animacion suave en el inicio y final
+        - cubic-bezier: animacion suave personalizada
+    */
+    animation-timing-function: linear;
+
+    /* 
+        Indicamos el numero de repeticiones 
+        - infinite: la animacion se repite infinitamente
+        - un numero: la animacion se repite un numero de veces
+    */
+    animation-iteration-count: infinite;
+
+    /* 
+        Indicamos el estado de la animacion
+        - paused: la animacion se detiene
+        - running: la animacion se reproduce
+    */
+    animation-play-state: running;
+
+    /* 
+        Indicamos la direccion de la animacion
+        - normal: de inicio a fin
+        - reverse: de fin a inicio
+        - alternate: de inicio a fin y de fin a inicio
+        - alternatereverse: de fin a inicio y de inicio a fin
+    */
+    animation-direction: alternate;
+
+    /* 
+        Indicamos el delay (retraso) de la animacion 
+        - s: segundos
+        - ms: milisegundos
+    */
+    animation-delay: 1.5s;
+}
+
+
+/*Estilos de caja 2*/
+.caja2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(226, 98, 43);
+
+    animation: 
+        moverHorizontal 2s 2s linear alternate infinite running;
+}
+
+
+/*Estilos de caja 3*/
+.caja3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(13, 150, 17);
+
+    animation: 
+        cambiarColor 5s ease alternate infinite paused,
+        moverHorizontal 5s ease-in-out alternate infinite running,
+        convertirEnCirculo 2s linear alternate infinite;
+}
+
+.caja3:hover{
+    animation-play-state: running;
+}
+
+/* Animaciones */
+@keyframes cambiarColor{
+    from{
+        background-color: rgb(67, 177, 53);
+    }to{
+        background-color: rgb(177, 65, 53);
+    }
+}
+
+
+@keyframes moverHorizontal{
+    0%{
+        transform: translateX(250px);
+    }
+    50%{
+        transform: translateX(0px) scale(1.5);
+    }
+    100%{
+        transform: translateX(-250px);
+    }
+}
+
+
+@keyframes convertirEnCirculo{
+    from{
+        border-radius: 0px;
+    }
+    to{
+        border-radius: 100%;
+    }
+}

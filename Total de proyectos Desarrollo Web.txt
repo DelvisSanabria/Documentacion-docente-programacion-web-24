@@ -1,0 +1,15 @@
+Total de proyectos Desarrollo Web
+
+- HTML + CSS
+- HTML + SASS
+- HTML + Tailwind
+- JavaScript
+- Wordpress
+- React
+- Python
+- Flask + MySQL
+- PHP + MySQL
+- Proyecto Final (MongoDB + Express + React + Node.js / Flask + MySQL | MongoDB + React)
+
+
+Requerido para graduarse (70% de los proyectos + proyecto final)

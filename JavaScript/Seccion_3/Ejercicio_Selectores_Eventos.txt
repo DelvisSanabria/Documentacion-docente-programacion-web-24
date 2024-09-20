@@ -1,0 +1,15 @@
+Ejercicio 1: Selector de colores
+    Crea un selector de colores (input) interactivo donde el usuario pueda 
+    elegir un color de fondo para la página. 
+
+    Requiere de: Eventos y Selectores.
+
+
+
+Ejercicio 2: Lista de tareas
+    Crea una lista de tareas interactiva donde el usuario pueda
+    1- Agregar tareas.
+    2- Marcar tareas como completadas.
+    3- Eliminar tareas. 
+
+    Requiere de: Arrays, Metodos de Arrays, Selectores, Eventos, Condicionales.

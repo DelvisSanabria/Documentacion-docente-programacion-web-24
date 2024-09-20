@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regex</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-400 flex flex-col justify-center items-center h-screen w-[100%]">
+        <h1 class="text-4xl font-bold mb-4">Regex</h1>
+        <main>
+            <section class="flex flex-col border-2 border-solid border-black px-16 py-6 rounded" id="seccion-1">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="px-2 py-2 rounded-full my-3 outline-none">
+                
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" id="correo" class="px-2 py-2 rounded-full my-3 outline-none">
+                
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="nacimiento" class="px-2 py-2 rounded-full my-3 outline-none">
+                
+                <label for="telefono">Telefono</label>
+                <input type="number" name="telefono" id="telefono" class="px-2 py-2 rounded-full my-3 outline-none">
+                
+                <label for="clave">Clave</label>
+                <input type="password" name="clave" id="clave" class="px-2 py-2 rounded-full my-3 outline-none">
+
+                <div class="w-[100%] h-[60px] flex justify-center items-center">
+                    <button id="registrar" class="px-2 py-2 bg-blue-500 text-white rounded-full">Registrar</button>
+                </div>
+            </section>
+
+            <!-- Aqui se añaden los usuarios registrados -->
+            <section id="seccion-2" class="bg-gray-600 w-[100%] min-h[60px] rounded-lg pl-2 flex flex-col gap-3">
+            
+            </section>
+        </main>
+    </body>
+    <script src="Regex.js"></script>
+</html>

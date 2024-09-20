@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*  ¿Que es un mixin?
+ *      Un mixin es una funcion que aloja una plantilla de estilos que se pueden reutilizar 
+ *      y personalizar en cualquier parte del codigo.
+ *
+ *  ¿Como se categorizan?
+ *      - Mixin sin parametros
+ *      - Mixin con parametros
+ *
+ *  ¿Que son parametros?
+ *      Los parametros son variables temporales que se utilizan para movilizar datos en una funcion.
+ *      Estos datos se utilizaran en el interior de la funcion cada vez que sean solicitados.
+ *
+ *      Los parametros pueden ser cualquier cosa y se definen con el simbolo de "$" seguido del nombre del parametro.
+ *      Adicionalmente pueden tener valores predefinidos utilizando ":" para agregar o asignar un valor,
+ *      de esta manera si el parametro no se envia ya tendra un valor previamente definido.
+ *
+ *  ¿Como se definen?
+ *      Para definir un mixin se utiliza la palabra clave @mixin seguido del nombre del mixin.
+ *
+ *      NOTA: En caso de que se requiera parametros se colocan entre parentesis despues del nombre del mixin.
+ *
+ *
+ *  ¿Como se usan?
+ *      Para utilizar un mixin se utiliza la palabra clave @include seguido del nombre del mixin.
+ *
+ *      NOTA: En caso de que el mixin maneje parametros, se envian en los parentesis y en el orden
+ *      definido en el mixin.
+ *  */
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*  ¿Que es el nesting?
+ *      El nesting es una forma de organizacion de elementos
+ *      que consiste en anidar o agrupar elementos dentro de otros.
+ *  */
+body {
+  background: radial-gradient(#5cc048, #083705);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body div #parrafo-1 {
+  background-color: black;
+  color: yellow;
+  font-weight: 500;
+  font-size: 15px;
+}
+body div #parrafo-2 {
+  background-color: skyblue;
+  color: white;
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+}
+body div #parrafo-3 {
+  background-color: white;
+  color: pink;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+body div #parrafo-4 {
+  background-color: greenyellow;
+  color: black;
+  font-family: "Verdana";
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 50px;
+}
+body section {
+  background: skyblue;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* & Hace referencia a el selector padre 
+ *  en este caso & = .contenedor */
+/* & Hace referencia a el selector padre 
+ *  en este caso & = .contenedor_box */
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  width: 90vw;
+  height: 90vh;
+  margin-top: 20px;
+  gap: 5px;
+  padding-inline: 8px;
+}
+.contenedor_box {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+}
+.contenedor_box #p1, .contenedor_box #p2, .contenedor_box #p3, .contenedor_box #p4, .contenedor_box #p5, .contenedor_box #p6, .contenedor_box #p7, .contenedor_box #p8, .contenedor_box #p9, .contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  background-color: black;
+  color: yellow;
+  font-weight: 500;
+  font-size: 15px;
+}
+.contenedor_box #p2, .contenedor_box #p3, .contenedor_box #p4, .contenedor_box #p5, .contenedor_box #p6, .contenedor_box #p7, .contenedor_box #p8, .contenedor_box #p9, .contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  padding: 15px;
+}
+.contenedor_box #p3, .contenedor_box #p4, .contenedor_box #p5, .contenedor_box #p6, .contenedor_box #p7, .contenedor_box #p8, .contenedor_box #p9, .contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  border-radius: 10px;
+}
+.contenedor_box #p5, .contenedor_box #p6, .contenedor_box #p7, .contenedor_box #p8, .contenedor_box #p9, .contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  font-size: 20px;
+}
+.contenedor_box #p5:hover::before, .contenedor_box #p6:hover::before, .contenedor_box #p7:hover::before, .contenedor_box #p8:hover::before, .contenedor_box #p9:hover::before, .contenedor_box #p10:hover::before, .contenedor_box #p11:hover::before, .contenedor_box #p12:hover::before {
+  content: "Esta es la ";
+}
+.contenedor_box #p4:hover, .contenedor_box #p5:hover, .contenedor_box #p6:hover, .contenedor_box #p7:hover, .contenedor_box #p8:hover, .contenedor_box #p9:hover, .contenedor_box #p10:hover, .contenedor_box #p11:hover, .contenedor_box #p12:hover {
+  background: skyblue;
+}
+.contenedor_box #p6:hover::after, .contenedor_box #p7:hover::after, .contenedor_box #p8:hover::after, .contenedor_box #p9:hover::after, .contenedor_box #p10:hover::after, .contenedor_box #p11:hover::after, .contenedor_box #p12:hover::after {
+  content: "!";
+}
+.contenedor_box #p7, .contenedor_box #p8, .contenedor_box #p9, .contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  color: green;
+}
+.contenedor_box #p8, .contenedor_box #p9, .contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  padding: 30px;
+}
+.contenedor_box #p9, .contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  background-color: orange;
+}
+.contenedor_box #p10, .contenedor_box #p11, .contenedor_box #p12 {
+  border-radius: 50%;
+}
+.contenedor_box #p11, .contenedor_box #p12 {
+  font-family: Arial;
+  padding-block: 60px;
+}
+.contenedor_box #p12 {
+  font-weight: 900;
+  animation: rotar 3s infinite linear;
+}
+.contenedor_box #p12:hover {
+  background: purple;
+}/*# sourceMappingURL=style.css.map */

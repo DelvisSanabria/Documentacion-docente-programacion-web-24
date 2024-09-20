@@ -1,0 +1,295 @@
+:root {
+	--fondoPrimario: #4c92d7;
+	--azul: #3860EC;
+}
+
+*{
+	box-sizing: border-box;
+	top: 0px;
+	margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: linear-gradient(190deg,var(--fondoPrimario),rgb(24, 44, 77));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin-bottom: 50px;
+}
+
+ul{
+	margin: 0;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	background-color: rgba(255, 255, 255, 0.319);
+	border-radius: 20px;
+	gap: 10px;
+	width: 80vw;
+	padding: 20px;
+}
+
+.titulo{
+	font-size: 35px;
+	background: linear-gradient(var(--fondoPrimario), rgb(9, 47, 78));
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(234, 233, 233);
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+label{
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 900;
+}
+
+/* Selecciones Multiples */
+.caja div p, 
+.caja div div, 
+.caja div span, 
+.caja ul li,
+.caja div h1,
+.caja div h2, 
+.caja div h3, 
+.caja div h4{
+	background: #dbdbdb;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+#boton{
+	background: linear-gradient(rgb(0, 187, 59),rgb(1, 73, 47));
+}
+
+#links{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background: #dbdbdb;
+	height: 210px;
+	border-radius: 10px;
+	padding-top: 20px;
+}
+
+#grupo1{
+	list-style:none;
+	padding-left: 0px;
+}
+
+.enlace{
+    font-weight: 500;
+    font-family: 'consolas';
+}
+
+
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+/* El estado :active se aplica a un elemento cuando el usuario hace clic sobre él. */
+#ancla:active{
+    color: green;
+}
+
+/* El estado :link se aplica a un elemento cuando tiene un enlace que no ha sido visitado. */
+.enlace:link{
+    color: red;
+}
+
+/* El estado :visited se aplica el url de un enlace cuando ha sido visitado. */
+.enlace:visited{
+    color: rgb(108, 92, 1);
+}
+
+
+/* El estado :hover se aplica a un elemento cuando el usuario pasa el ratón sobre aquí. */
+#boton:hover{
+    background: black;
+    color: white;
+}
+
+
+/* ? --- --- --- --- PARRAFOS --- --- --- --- */
+
+/*
+    Las pseudoclases :first-child y :last-child
+    se aplica al primer y último elemento hijo de otro elemento.
+*/
+
+#parrafos :first-child{
+	background: var(--azul);
+	color: #fff;
+}
+
+#parrafos :last-child{
+	background: #000;
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- ELEMENTOS --- --- --- --- */
+
+/*
+	Las pseudoclases (tipo):first-of-type y (tipo):last-of-type
+	se aplica al primer y último elemento de tipo especifico hijo de otro elemento.
+*/
+
+#elementos p:first-of-type{
+	background: var(--azul);
+	color: #fff;
+}
+
+#elementos p:last-of-type{
+	background: #000;
+	color: #fff;
+}
+
+#elementos div:last-of-type{
+	background: #064a27;
+	color: #fff;
+}
+
+#elementos div:first-of-type{
+	background: #37cd80;
+}
+
+
+/* ? --- --- --- --- GRUPO 1 --- --- --- --- */
+
+/*
+	Las pseudoclases :nth-child(n) y :nth-last-child(n)
+	se aplica al elemento hijo n de otro elemento.
+*/
+
+#grupo1 :nth-child(3){
+	background: var(--azul);
+	color: #fff;
+}
+
+#grupo1 :nth-child(5){
+	background: #000;
+	color: #fff;
+}
+
+#grupo1 :nth-child(1){
+	background: #064a27;
+	color: #fff;
+} 
+
+
+#grupo1 :nth-last-child(2){
+	background: #37cd80;
+}
+
+/* Utilizando un selector multiple */
+#grupo1 :nth-child(2), 
+#grupo1 :nth-child(4), 
+#grupo1 :nth-child(6),  
+#grupo1 :nth-child(8){
+	background: #813c2c;
+	color: white;
+}
+
+
+
+
+/* ? --- --- --- --- GRUPO 2 --- --- --- --- */
+
+/*
+	Las pseudoclases :nth-of-type(n) y :nth-last-of-type(n)
+	se aplica al elemento hijo n de otro elemento de tipo especifico.
+*/
+
+#grupo2 p:nth-of-type(1){
+	background: var(--azul);
+	color: #fff;
+}
+
+#grupo2 p:nth-last-of-type(1){
+	background: #000;
+	color: #fff;
+}
+
+
+
+
+/* ? --- --- --- --- GRUPO 3 --- --- --- --- */
+
+/*
+	La pseudoclase :only-child
+	se aplica al elemento que sea el unico hijo de otro elemento.
+
+	Si hay mas de un elemento hijo, no se aplica ningun estilo.
+*/
+
+#grupo3 :only-child{
+	background: var(--azul);
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- GRUPO 4 --- --- --- --- */
+
+
+/*
+	La pseudoclase (tipo):only-of-type
+	se aplica al elemento que sea el unico hijo de otro elemento de tipo especifico.
+*/
+
+
+#grupo4 p:only-of-type{
+	background: var(--azul);
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- GRUPO 5 --- --- --- --- */
+
+/*
+	La pseudoclase :not(tipo/s)
+	se aplica a todos los elementos que no coincidan con el selector indicado.
+*/
+
+#grupo5 :not(p){
+	background: var(--azul);
+	color: #fff;
+}
+
+
+/* 
+#grupo5 :not(h1,h2){
+	background: var(--azul);
+	color: #fff;
+} 
+*/
+
+
+
+/* ? --- --- --- --- GRUPO 6 --- --- --- --- */
+
+
+/*
+	La pseudoclase :focus
+	se aplica a un elemento cuando tiene el foco, es decir, cuando el usuario lo ha seleccionado y
+*/
+
+#input{
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#input:focus{
+	background: skyblue;
+	border: solid 3px red;
+}

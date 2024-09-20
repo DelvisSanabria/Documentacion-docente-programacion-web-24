@@ -1,0 +1,351 @@
+:root{
+    /*
+        ¿Que son variables?
+        - Son espacios de memoria que se utilizan para almacenar información.
+
+        Se definen con los simbolos "--" seguido del nombre de la variable y la asignacion del valor correspondiente.
+    */
+
+    --fondoYoutube: #0f0f0f;
+    --medida1: 0px;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: var(--medida1);
+    padding: var(--medida1);
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: var(--fondoYoutube);
+    display: grid;
+
+    /*
+        grid: permite crear una grilla/cuadricula de elementos.
+
+        Adicionalmente:
+        - grid-template-columns: permite crear columnas
+        - grid-template-rows: permite crear filas
+    */
+
+    /* 
+        Indicamos que la primera columna (izquierda) tendra 5% del viewport y 
+        la segunda (derecha) tendra 95%.
+    */
+    grid-template-columns: 4% 96%;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    gap: 10px;
+    background-color: var(--fondoYoutube);;
+}
+
+aside a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 7px;
+}
+
+aside a p{
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: white;
+}
+
+aside a img{
+    width: 30px;
+}
+
+#home{
+    margin-top: 12px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    background-color: var(--fondoYoutube);
+}
+
+#logo{
+    width: 115px;
+}
+
+#contenedorNav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#contenedorNav1 div{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    background-color: #121313;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-left: 13px;
+    border: none;
+    width: 500px;
+    height: 40px;
+    color: white;
+    border-radius: 25px var(--medida1) var(--medida1) 25px;
+    /* arriba izquierda, arriba derecha, abajo derecha, abajo izquierda */
+    
+    /*
+        La propiedad border nos permite definir los estilos del borde de un elemento.
+
+        Recibe como valores:
+        - tipo de borde
+        - grosor de borde
+        - color de borde
+
+        Ejemplo: 
+        - border: 2px solid black
+
+
+        La sintaxis anterior abrevia a:
+
+        - border-width: 1px;
+        - border-color: #272626;
+        - border-style: solid; 
+    
+    */
+
+
+    border: 1px #272626 solid;
+    
+    outline: none;
+
+}
+
+#anclaLupa{
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 40px;
+    background-color: #222;
+    border-radius: var(--medida1) 25px 25px var(--medida1);
+    border: 1px #272626 solid;
+}
+
+#lupa{
+    width: 28px;
+}
+
+#anclaMicrofono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272626;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+#microfono{
+    width: 40px;
+    /* background-color: burlywood; */
+}
+
+#contenedorNav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+
+#contenedorNav2 a img{
+    width: 25px;
+}
+
+#miniaturaPerfil{
+    border-radius: 50%;
+}
+
+#barraRecomendaciones{
+    display: flex;
+    gap: 15px;
+}
+
+.recomendaciones{
+    background-color: #272626;
+    color: white;
+    text-decoration: none;
+    /*
+        La unidad de medida "rem" se utiliza para manejar el tamaño de fuente cuando se ha establecido uno por defecto.
+        Esto se conoce como tamaño por herencia.
+
+        En este caso el documento tiene establecido 10px como tamaño por defecto, por lo que 1rem equivale a 10px,
+        y 2rem equivalen a 20px, siguiendo esta secuencia se puede trabajar el tamaño deseado.
+
+        Ejemplo: font-size: 1.35rem;
+        Equivale a: font-size: 13.5px;
+    */
+    font-size: 1.35rem;
+
+    font-weight: 700;
+
+    padding: 7px 12px;
+
+    border-radius: 5px;
+}
+
+
+
+.contenedorVideo{
+    width: 100%;
+
+    /*
+        grid: permite crear una grilla/cuadricula de elementos.
+
+        Adicionalmente:
+        - grid-template-columns: permite crear columnas
+        - grid-template-rows: permite crear filas
+
+        La propiedad grid-template-columns, recibe como valores:
+        - Columnas en porcentajes: 5% 10% 85%. que en total hacen un 100% de la pantalla.
+        - Columnas en fracciones: 1fr 1fr 1fr. que en total hacen un 100% de la pantalla dividido en 3 fracciones (fr).
+        - Columnas en pixeles: 100px 200px 300px.
+        - Funciones de grid: repeat(3, 1fr), esta funcion permite establecer las columnas en fracciones y cuantificarlas.
+    */
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 15px;
+    gap: 15px;
+}
+
+
+.imgVideo{
+    width: 350px;
+    border-radius: 12px;
+}
+
+.inferiorVideo{
+    display: flex;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.imgCanal{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.infoVideo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tituloVideo{
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 900;
+}
+
+.canalVistas{
+    color: rgb(154, 154, 154);
+    font-size: 1.2rem;
+}
+
+
+
+
+/* Media queries */
+
+/* Para resoluciones de hasta 600px (telefonos) */
+@media (max-width: 600px){
+
+    body{
+        width: 100%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    #logo{
+        margin-right: 100px;
+    }
+
+    #contenedorNav2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    input{
+        display: none;
+    }
+
+    #anclaLupa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #232323;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+    }
+
+    aside{
+        display: none;
+    }
+
+    #barraRecomendaciones :nth-child(8),
+    #barraRecomendaciones :nth-child(7),
+    #barraRecomendaciones :nth-child(6){
+        display: none;
+    }
+
+    .contenedorVideo{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        width: 100%;
+    }
+}
+
+
+/* Para resoluciones desde 600px hasta 900px (tablets) */
+@media (min-width: 600px) and (max-width: 900px){
+
+}
+
+
+/* Para resoluciones desde 900px hasta 1200px (desktops) */
+@media (min-width: 900px) and (max-width: 1200px){
+
+}
+
+
+/* Para resoluciones superiores a 1200px (desktops) */
+@media (min-width: 1200px){
+
+}

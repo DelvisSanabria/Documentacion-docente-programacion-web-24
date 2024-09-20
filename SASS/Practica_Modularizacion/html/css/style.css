@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@keyframes saltoBoton {
+  0% {
+    transform: scale(1) rotate(0deg);
+    color: white;
+  }
+  1% {
+    transform: scale(1) rotate(-5deg);
+    color: white;
+  }
+  33.3% {
+    transform: scale(1.05) rotate(5deg);
+    color: #011621;
+  }
+  66.6% {
+    transform: scale(1.05) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(5deg);
+    color: white;
+  }
+}
+* {
+  box-sizing: border-box;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+a:link, a:active, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  width: 100%;
+  /*Fondos SVG Gratis
+  *  https://app.haikei.app/
+  *  https://www.svgbackgrounds.com/
+  *  */
+  background-image: url(../images/background.svg);
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 0.7vmax;
+  background-color: #0F0F0F;
+}
+body::-webkit-scrollbar-thumb {
+  background: radial-gradient(#0aa2d9, #000);
+  border-radius: 10px;
+  border: white;
+}
+
+/* Pseudoelementos para editar el SCROLLBAR
+ *  ::-webkit-scrollbar la barra de desplazamiento
+ *  ::-webkit-scrollbar-button los botones de la barra de desplazamiento (flechas que apuntan hacia arriba y hacia abajo).
+ *  ::-webkit-scrollbar-thumb el controlador de desplazamiento arrastrable.
+ *  ::-webkit-scrollbar-track la pista (barra de progreso) de la barra de desplazamiento.
+ *  ::-webkit-scrollbar-track-piece la pista (barra de progreso) NO está cubierta por el mango.
+ *  ::-webkit-scrollbar-cornerla esquina inferior de la barra de desplazamiento, donde se encuentran las barras de desplazamiento horizontal y vertical.
+ *  ::-webkit-resizerel controlador de cambio de tamaño arrastrable que aparece en la esquina inferior de algunos elementos.
+ *  */
+main {
+  display: grid;
+  grid-template-columns: 72% 28%;
+  width: 100%;
+  height: 100vh;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfil_avatar {
+  border-radius: 50%;
+  width: 230px;
+  background-color: rgba(79, 214, 255, 0.12);
+  padding: 20px 10px 0px 10px;
+}
+.perfil_nombre {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.perfil_titulo {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.perfil_boton, .galeria_boton {
+  background: radial-gradient(#1e6fa5, #061625);
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  border: none;
+}
+.perfil_boton:hover, .galeria_boton:hover {
+  animation: saltoBoton 700ms infinite;
+  background: radial-gradient(#0d72b6, #063e65);
+}
+
+.estadisticas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 50px 20px 50px;
+  border-radius: 20px;
+  box-shadow: -4px 5px 15px 2px black;
+}
+.estadisticas-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.estadisticas-elemento h3 {
+  font-size: italic;
+  font-weight: 900;
+}
+
+.perfil__minibio {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ubicacion--perfil {
+  margin-block: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ubicacion--perfil-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ubicacion--perfil-location {
+  margin-top: -22.5px;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+.galeria_fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: auto;
+  overflow-y: scroll;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+.galeria_fotos::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+}
+.galeria_fotos::-webkit-scrollbar-thumb {
+  background: radial-gradient(#0aa2d9, #000);
+  border-radius: 3px;
+}
+.galeria_fotos img {
+  width: 250px;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  position: sticky;
+}/*# sourceMappingURL=style.css.map */

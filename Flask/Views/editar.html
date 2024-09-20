@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editar estudiante</title>
+    </head>
+    <body>
+        <h1>Editar estudiante</h1>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre">
+
+            <label for="apellido">Apellidos</label>
+            <input id="apellido" type="text" name="apellido">
+
+            <label for="edad">Edad</label>
+            <input id="edad" type="number" name="edad">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+
+            <label for="ciudad">Ciudad</label>
+            <input id="ciudad" type="text" name="ciudad">
+
+            <label for="pais">Pais</label>
+            <input id="pais" type="text" name="pais">
+
+            <label for="url_foto">Foto</label>
+            <input id="url_foto" type="text" name="url_foto">
+
+            <button id="editar">Editar</button>
+        </div>
+    </body>
+    
+    
+    <script>
+        const querys = new URLSearchParams(window.location.search);
+        const id = querys.get('id');
+        const email = querys.get('email');
+
+        let estudiante;
+
+        fetch(`http://localhost:1234/estudiante?id=${id}&email=${email}`)
+        .then(respuesta => respuesta.json())
+        .then((respuesta)=>{
+            console.log(respuesta);
+            if(respuesta){
+                estudiante = respuesta.estudiante;
+                document.getElementById('nombre').value = respuesta.nombre;
+                document.getElementById('apellido').value = respuesta.apellido;
+                document.getElementById('edad').value = respuesta.edad;
+                document.getElementById('email').value = respuesta.email;
+                document.getElementById('ciudad').value = respuesta.ciudad;
+                document.getElementById('pais').value = respuesta.pais;
+                document.getElementById('url_foto').value = respuesta.url_foto;
+            }else{
+                alert('Error al cargar el estudiante');
+            }
+        }).then(()=>{
+            document.getElementById('editar').addEventListener('click', () => {
+                // Aqui irian las expresiones regulares
+                /*
+                    regex para los values obtenidos de los inputs...
+                */
+            
+                fetch(`http://localhost:1237/editar?id=${id}&email=${email}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        nombre: document.getElementById('nombre').value,
+                        apellido: document.getElementById('apellido').value,
+                        edad: document.getElementById('edad').value,
+                        email: document.getElementById('email').value,
+                        ciudad: document.getElementById('ciudad').value,
+                        pais: document.getElementById('pais').value,
+                        url_foto: document.getElementById('url_foto').value
+                    })
+                })
+                .then((respuesta) => {
+                    return respuesta.json();
+                })
+                .then((respuesta) => {
+                    if(respuesta){
+                        alert('Estudiante editado correctamente');
+                        window.location.href = 'http://localhost:5502/Flask/Views/index.html';
+                    }else{
+                        alert('Error al editar el estudiante');
+                    }
+                })
+            });
+        });
+    </script>
+</html>

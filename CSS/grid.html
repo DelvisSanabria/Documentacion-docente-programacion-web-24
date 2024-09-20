@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprendiendo Grid en Lexpin</title>
+        <link rel="stylesheet" href="grid.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    </head>
+    <!-- Clon de YouTube -->
+    <body>
+        <!-- Barra/Menu lateral -->
+        <aside>
+            <!-- Burger Menu -->
+            <a href="https://youtube.com" class="contenedor_aside">
+                <img src="./Imagenes/burgerMenu.png" alt="Burger Menu">
+            </a>
+
+            <!-- Home -->
+            <a id="home" href="https://youtube.com" class="contenedor_aside">
+                <img src="./Imagenes/HomeIcon.png" alt="Home">
+                <p class="parrafo_aside">Inicio</p>
+            </a>
+
+            <!-- Shorts -->
+            <a href="https://www.youtube.com/shorts/IemzxkkzI5s" class="contenedor_aside">
+                <img src="./Imagenes/Shorts.png" alt="Shorts">
+                <p class="parrafo_aside">Shorts</p>
+            </a>
+
+            <!-- Suscripciones -->
+            <a href="https://www.youtube.com/feed/subscriptions" class="contenedor_aside">
+                <img src="./Imagenes/suscripciones.png" alt="Suscripciones">
+                <p class="parrafo_aside">Suscripciones</p>
+            </a>
+
+            <!-- Biblioteca -->
+            <a href="https://www.youtube.com/feed/you" class="contenedor_aside">
+                <img src="./Imagenes/biblioteca.png" alt="Biblioteca">
+                <p class="parrafo_aside">Biblioteca</p>
+            </a>
+        </aside>
+        
+        <main>
+            <!-- Barra de navegacion -->
+            <nav>
+                <!-- Logo Youtube -->
+                <a  href="https://youtube.com">
+                    <img src="./Imagenes/LogoNavBar.png" id="logo" alt="">
+                </a>
+
+                <!-- Buscador, Lupa y Microfono -->
+                <div id="contenedorNav1">
+                    <!-- Contenedor del Buscador y la lupa -->
+                    <div>
+                        <input type="text" placeholder="Buscar">
+                        <a href="#" id="anclaLupa">
+                            <img src="./Imagenes/Lupa.png" id="lupa" alt="Lupa">
+                        </a>
+                    </div>
+
+                    <!-- Microfono -->
+                    <a href="#" id="anclaMicrofono">
+                        <img src="./Imagenes/VoiceSearch.png" id="microfono" alt="">
+                    </a>
+                </div>
+
+
+                <!-- Acciones del usuario -->
+                <div id="contenedorNav2">
+                    <a href="#">
+                        <img src="./Imagenes/SubirVideo.png" alt="Subir">
+                    </a>
+                    <a href="#">
+                        <img src="./Imagenes/Notificaciones.png" alt="Notificaciones">
+                    </a>
+                    <a href="#">
+                        <img src="./Imagenes/Perfil.png" id="miniaturaPerfil" alt="Perfil">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Barra de recomendaciones -->
+            <section id="barraRecomendaciones">
+                <a href="" class="recomendaciones">Música</a>
+                <a href="" class="recomendaciones">Música</a>
+                <a href="" class="recomendaciones">Música</a>
+                <a href="" class="recomendaciones">Música</a>
+                <a href="" class="recomendaciones">Música</a>
+                <a href="" class="recomendaciones">Música</a>
+                <a href="" class="recomendaciones">Música</a>
+                <a href="" class="recomendaciones">Música</a>
+            </section>
+
+            <!-- Cuadricula de videos -->
+            <section class="contenedorVideo">
+                
+                <!-- Video 1 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Best of drum & bass</p>
+                            <p class="canalVistas">SondPro</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div>
+                    <a href="https://www.youtube.com/watch?v=pm-xlwkQ_qc">
+                        <img class="imgVideo" src="https://i.ytimg.com/vi/pm-xlwkQ_qc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCflTWIDMwGVVN90NUSS_URvW8Y8A" alt="">
+                    </a>
+                    <div class="inferiorVideo">
+                        <img class="imgCanal" src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Trivium - Until the world goes cold</p>
+                            <p class="canalVistas">Trivium</p>
+                            <p class="canalVistas">72M vistas - hace 8 años</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 7 -->
+                <div>
+                    <img class="imgVideo" src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" alt="">
+                    <div class="inferiorVideo">
+                        <img class="imgCanal" src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 8 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 9 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 10 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 11 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 12 -->
+                <div>
+                    <img class="imgVideo" src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" alt="">
+                    <div class="inferiorVideo">
+                        <img class="imgCanal" src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 13 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 14 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 15 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 16 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 17 -->
+                <div>
+                    <img class="imgVideo" src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" alt="">
+                    <div class="inferiorVideo">
+                        <img class="imgCanal" src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 18 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 19 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 20 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 21 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 22 -->
+                <div>
+                    <img class="imgVideo" src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" alt="">
+                    <div class="inferiorVideo">
+                        <img class="imgCanal" src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 23 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 24 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 25 -->
+                <div>
+                    <img src="https://i.ytimg.com/vi/ExN66QlCf7Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMOGOb4mVnRA_z5xmTpkVm_U7YrA" class="imgVideo" alt="">
+                    <div class="inferiorVideo">
+                        <img src="https://yt3.ggpht.com/ytc/AIf8zZRFTPDOypwLD-cdrLp7zCQC_wAbZaengrWcH65lQA=s68-c-k-c0x00ffffff-no-rj" class="imgCanal" alt="">
+                        <div class="infoVideo">
+                            <p class="tituloVideo">Titulo</p>
+                            <p class="canalVistas">Canal</p>
+                            <p class="canalVistas">3k vistas - hace 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </body>
+</html>
