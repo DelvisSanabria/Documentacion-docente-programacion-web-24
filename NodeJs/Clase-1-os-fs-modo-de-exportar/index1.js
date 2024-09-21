@@ -10,7 +10,6 @@ import fs from 'node:fs/promises'
 
 // Importación de un módulo local, en este caso una función 'sum' desde './sum.js'
 import sum from './sum.js'
-import { start } from 'node:repl';
 
 // Importación usando CommonJS (alternativa para compatibilidad con versiones antiguas de Node.js)
 // const sum = require('./sum.js')

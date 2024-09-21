@@ -1,0 +1,16 @@
+{
+  "name": "clase-1-os-fs-modo-de-exportar",
+  "version": "1.0.0",
+  "main": "index1.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon Clase-1-os-fs-modo-de-exportar/index1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
