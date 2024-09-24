@@ -1,0 +1,55 @@
+Proyecto de Final  NodeJS: Sistema de Gestión de Tareas con Node.js, Express, JWT y MongoDB
+
+Descripción:
+
+Desarrolla una API RESTful para la gestión de tareas (To-Do List) utilizando Node.js y Express. Esta API debe permitir a los usuarios registrarse, iniciar sesión mediante JWT, y realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las tareas. Además, implementa la seguridad con CORS y tokenización de usuarios con JWT. La base de datos será MongoDB, gestionada con Mongoose, y las rutas y controladores estarán organizados en módulos separados.
+
+Funcionalidades del Proyecto:
+
+1. Autenticación y Autorización:
+   - Registro de usuarios con datos enviados a través del cuerpo de la solicitud (body).
+   - Inicio de sesión mediante JWT y validación de usuarios autenticados.
+   
+2. Gestión de Tareas:
+   - CRUD de tareas:
+     - Crear una tarea (requiere autenticación).
+     - Leer todas las tareas de un usuario autenticado.
+     - Actualizar tareas por ID.
+     - Eliminar tareas por ID.
+
+3. Organización del Proyecto:
+   - Separación de rutas, controladores y middlewares.
+   - Uso de CORS para permitir solicitudes desde diferentes orígenes.
+   
+4. Recepción y Envío de Datos:
+   - Uso de query params, params, y body para enviar y recibir datos:
+     - Filtrado de tareas por estado usando query params (?status=completed).
+     - Actualización de tareas mediante params (e.g., /tasks/:taskId).
+     - Creación de tareas con datos en el body de la solicitud (JSON).
+
+Requisitos Técnicos:
+
+- Autenticación:
+   - Utilizar JWT para proteger rutas.
+   - Implementar middleware de autorización que valide tokens JWT.
+   
+- CORS:
+   - Configurar y habilitar CORS en el servidor para permitir solicitudes desde diferentes orígenes.
+
+- MongoDB y Mongoose:
+   - Crear el esquema de usuarios y tareas.
+   - Guardar y actualizar los datos en la base de datos MongoDB.
+
+Especificaciones de Rutas:
+
+- POST /auth/register: Registro de nuevos usuarios (datos en el body).
+- POST /auth/login: Inicio de sesión, retorna un JWT.
+- POST /tasks: Crea una nueva tarea (requiere JWT, datos en el body).
+- GET /tasks: Lista todas las tareas del usuario autenticado (puede recibir filtros como query params, e.g., ?status=completed).
+- PATCH /tasks/:taskId: Actualiza una tarea por ID (params).
+- DELETE /tasks/:taskId: Elimina una tarea por ID (params).
+
+Recursos de Apoyo:
+- Uso de Mongoose para modelar las colecciones de usuarios y tareas en MongoDB.
+- Manejo de variables de entorno con dotenv (e.g., para la conexión a MongoDB y las claves JWT).
+- Implementación de middleware para validar JWT y habilitar CORS.
