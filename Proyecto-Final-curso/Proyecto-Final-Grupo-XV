@@ -421,3 +421,37 @@ POST /admin/notifications → Enviar notificaciones globales a los usuarios.
 Analítica:
 
 GET /admin/reports → Ver estadísticas de uso y generar reportes.
+
+Tareas a Realizar:
+
+1.Realizar diseño en figma (Desktop y Mobile), de todas las vistas posibles
+2.Crear el repositorio en Github para alojar el proyecto
+3.Creacion del proyecto base de Backend (crear carpetas, instalar dependecias)
+4.Realizar el maquetado de los modelos de usuario, publicacion, comentario, mensajes,subscripcion, transacion
+5.Realizar rutas (Todas) usuario
+6.Realizar rutas (Todas) admin
+7.Realizar rutas (Todas) autenticacion
+8.Realizar rutas (Todas) publicacion
+9.Realizar rutas (Todas) Mensajes
+10.Realizar rutas (Todas) subscripciones
+11.Realizar rutas (Todas) Transacciones
+12.2.Creacion del proyecto base de Frontend (crear carpetas, instalar dependecias)
+13.Crear estructura basica de archivos del frontend
+14.Crear vista de Home(Frontend)(todos los usuarios)
+15.Crear vista de login(Frontend)(todos los usuarios)
+16.Crear vista de Register(Frontend)(todos los usuarios)
+17.Crear vista de Recuperar contraseña(Frontend)(todos los usuarios)
+18.Crear vista de mensajes directos generales(Frontend)(todos los usuarios)
+19.Crear vista de mensajes directos con un usuario(Frontend)(todos los usuarios)
+20.Crear vista de mi perfil(Frontend)(todos los usuarios)
+21.Crear vista de editar mi perfil(Frontend)(todos los usuarios)
+22.Crear vista de subscripciones(Frontend)(todos los usuarios)
+23.Crear vista de ver mis subscripciones(Frontend)(todos los usuarios)
+24.Crear vista de cancelar mis subscripciones(Frontend)(todos los usuarios)
+25.Crear vista de todos los usuarios(Frontend)(admin)
+26.Crear vista de todas las subscripciones(Frontend)(admin)
+27.Crear vista de todos los usuarios bloqueados(Frontend)(admin)
+28.Crear vista de reportes(Frontend)(admin)
+29.Crear vista de todos los post(Frontend)(admin)
+30.Realizar extras(de desearlo)
+31.Realizar Deploy (de desearlo)
