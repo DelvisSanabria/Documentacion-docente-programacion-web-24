@@ -2,6 +2,8 @@ Proyecto final Curso XV:
 
 Proyecto de Desarrollo: Red Social con Subscripciones
 
+Duracion 6 semanas
+
 Enunciado:
 
 Tu objetivo es desarrollar una red social moderna que permita a los usuarios interactuar entre sí mediante publicaciones, comentarios, y mensajes privados. Además, implementarás un sistema de suscripciones que ofrecerá beneficios adicionales a los usuarios que opten por un plan de pago.
@@ -45,7 +47,7 @@ Instrucciones Específicas:
 1. Tecnologías Recomendadas:
    - Frontend: React.js, Next.js.
    - Backend: Node.js con Express.
-   - Base de Datos: MongoDB con Mongoose.
+   - Base de Datos: MongoDB con Mongoose
    - Autenticación: JWT y Bcrypt.
    - Pasarela de Pagos: PayPal.
 
@@ -128,12 +130,6 @@ Ruta: /payments/subscribe
 
 Formulario de suscripción y selección de métodos de pago.
 
-Notificaciones:
-
-Ruta: /notifications
-Vista para ver notificaciones de nuevas interacciones (likes, comentarios, seguidores).
-Panel de Administración:
-
 Ruta: /admin/dashboard
 
 Vista principal del panel de administración con estadísticas básicas.
@@ -151,12 +147,14 @@ Ruta: /admin/reports
 Generación de reportes y estadísticas.
 
 Vistas del Backend:
+
 Gestión de Usuarios:
 
 Rutas:
 GET /admin/users → Listar todos los usuarios.
 PATCH /admin/users/:userId → Editar usuarios (por admin).
 DELETE /admin/users/:userId → Eliminar o bloquear usuarios.
+
 Autenticación:
 
 Rutas:
@@ -164,6 +162,7 @@ POST /auth/register → Crear una nueva cuenta de usuario.
 POST /auth/login → Iniciar sesión.
 POST /auth/forgot-password → Enviar correo para recuperar contraseña.
 POST /auth/reset-password → Restablecer la contraseña.
+
 Gestión de Publicaciones:
 
 Rutas:
@@ -171,43 +170,46 @@ GET /posts → Obtener todas las publicaciones (Feed).
 POST /posts → Crear una nueva publicación.
 PATCH /posts/:postId → Editar publicación.
 DELETE /posts/:postId → Eliminar publicación.
+
 Comentarios:
 
 Rutas:
 POST /posts/:postId/comment → Comentar en una publicación.
 DELETE /comments/:commentId → Eliminar comentario.
+PATCH /comments/:commentId → Editar comentario.
+
 Mensajería:
 
 Rutas:
 GET /messages → Obtener todas las conversaciones del usuario.
 POST /messages → Enviar mensaje directo.
+
 Gestión de Subscripciones:
 
 Rutas:
 GET /subscriptions → Listar planes de suscripción.
 POST /subscriptions/subscribe → Crear una suscripción.
 PATCH /subscriptions/cancel → Cancelar suscripción activa.
+
 Gestión de Pagos:
 
 Rutas:
 POST /payments → Crear una transacción (proceso de pago).
 GET /payments/history → Obtener historial de pagos.
-Notificaciones:
 
-Rutas:
-GET /notifications → Obtener las notificaciones del usuario.
-Moderación de Contenidos (admin):
+
 
 Rutas:
 GET /admin/posts/reports → Ver reportes de publicaciones.
 DELETE /admin/posts/:postId → Eliminar contenido inapropiado.
+
 Analítica y Reportes:
 
 Rutas:
 GET /admin/reports → Generar reportes sobre la actividad en la plataforma.
 
 3. Extras Opcionales:
-   - Implementar una sección de búsqueda para encontrar usuarios y publicaciones.
+   - Implementar una sección de búsqueda para encontrar usuarios.
    - Agregar integración con redes sociales como Facebook o Google para el inicio de sesión.
    - Crear un sistema de recomendaciones basado en el contenido que sigue el usuario.
 
@@ -273,54 +275,54 @@ user: ObjectId, referencia al modelo User, obligatorio, usuario que realiza la t
 amount: Number, monto de la transacción.
 currency: String, la moneda usada para la transacción, como 'USD'.
 status: String, estado de la transacción, valores posibles: 'pending', 'completed', 'failed'.
-paymentMethod: String, método de pago usado (como Stripe, PayPal, etc.).
+paymentMethod: String, método de pago usado (PayPal)
 createdAt: Date, fecha de la transacción.
-
-
-Entregables:
-
-1. Repositorio de GitHub con el código fuente.
-2. Documentación que incluya cómo configurar e instalar el proyecto.
-3. Pruebas unitarias y de integración (usando Jest).
-4. Demo desplegado en un servicio como Heroku, Vercel, o DigitalOcean.
 
 Un usuario puede:
 
 Acciones Permitidas:
+
 Registro y Autenticación:
 
 Crear una cuenta.
 Iniciar sesión y cerrar sesión.
 Recuperar contraseña.
+
 Gestión de Perfil:
 
 Ver y editar el perfil propio (nombre de usuario, bio, foto de perfil).
 Seguir y dejar de seguir a otros usuarios.
 Ver perfiles de otros usuarios.
+
 Publicaciones y Contenidos:
 
 Crear nuevas publicaciones (texto, imagen, video).
 Ver, comentar, y darle "me gusta" a publicaciones de otros usuarios.
 Eliminar o editar sus propias publicaciones.
 Reportar publicaciones inapropiadas.
+
 Interacciones Sociales:
 
 Enviar y recibir mensajes directos.
-Ver notificaciones sobre interacciones (likes, comentarios, nuevos seguidores).
+
 Gestión de Subscripciones:
 
 Ver los planes de suscripción disponibles.
 Suscribirse a un plan (premium o enterprise).
 Cancelar una suscripción activa.
+
 Pagos y Transacciones:
 
 Realizar pagos para actualizar su plan de suscripción.
 Ver el historial de transacciones personales.
+
 Seguridad y Privacidad:
 
-Cambiar la contraseña y preferencias de seguridad.
+Cambiar la contraseña.
 Desactivar o eliminar su cuenta.
+
 Rutas de Acceso:
+
 Autenticación:
 
 POST /auth/register → Registrar una nueva cuenta.
@@ -368,13 +370,15 @@ Gestión de Usuarios:
 
 Ver, editar, o eliminar el perfil de cualquier usuario.
 Bloquear o desactivar cuentas de usuarios que violen los términos.
-Asignar roles ('user', 'admin', 'moderator').
+Asignar roles ('user', 'admin').
+
 Moderación de Contenido:
 
 Ver y gestionar todas las publicaciones.
 Eliminar publicaciones inapropiadas.
 Ver reportes de contenido.
 Gestionar comentarios (eliminar comentarios ofensivos).
+
 Gestión de Subscripciones:
 
 Ver todas las suscripciones activas y el estado de los usuarios.
@@ -385,11 +389,11 @@ Ver el historial de transacciones de cualquier usuario.
 Procesar y revisar pagos fallidos o en disputa.
 Gestión de Notificaciones Globales:
 
-Enviar notificaciones globales a todos los usuarios (ejemplo: anuncios importantes).
 Analítica y Reportes:
 
 Acceder a estadísticas de uso de la plataforma.
 Generar reportes de usuarios activos, ingresos por suscripción, etc.
+
 Rutas de Acceso:
 Gestión de Usuarios:
 
@@ -417,4 +421,3 @@ POST /admin/notifications → Enviar notificaciones globales a los usuarios.
 Analítica:
 
 GET /admin/reports → Ver estadísticas de uso y generar reportes.
-
