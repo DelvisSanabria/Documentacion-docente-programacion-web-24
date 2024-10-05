@@ -49,7 +49,7 @@ Especificaciones de Rutas:
 - POST /tasks: Crea una nueva tarea (requiere JWT, datos en el body).
 - GET /tasks: Lista todas las tareas del usuario autenticado (puede recibir filtros como query params, e.g., ?status=completed).
 - PATCH /tasks/:taskId: Actualiza una tarea por ID (params).
-- DELETE /tasks/:taskId: Elimina una tarea por ID (params).
+- PATCH /tasks/:taskId: Elimina una tarea por ID (params) (SoftDelete).
 
 Recursos de Apoyo:
 - Uso de Mongoose para modelar las colecciones de usuarios y tareas en MongoDB.
