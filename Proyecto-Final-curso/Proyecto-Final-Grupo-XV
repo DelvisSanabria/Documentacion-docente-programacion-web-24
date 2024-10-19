@@ -141,7 +141,7 @@ Ruta: /admin/reports
 
 Generación de reportes y estadísticas.
 
-Rutas del Backend (Referenciales, pueden usar mas si desean):
+## Rutas del Backend (Referenciales, pueden usar mas si desean):
 
 Gestión de Usuarios:
 
@@ -206,6 +206,9 @@ Analítica y Reportes:
 
 Rutas:
 GET /admin/reports → Generar reportes sobre la actividad en la plataforma.
+
+Gestion de WebSockets (Opcional):
+No usan una ruta especifica, usan una logica propia, pero pueden separarla en un archivo aparte
 
 1. Extras Opcionales:
     - Implementar una sección de búsqueda para encontrar usuarios.
@@ -465,23 +468,24 @@ Tareas a Realizar:
 10.Realizar rutas (Todas) Conversaciones
 11.Realizar rutas (Todas) subscripciones
 12.Realizar rutas (Todas) Transacciones
-13.2.Creacion del proyecto base de Frontend (crear carpetas, instalar dependecias)
-14.Crear estructura basica de archivos del frontend
-15.Crear vista de Home(Frontend)(todos los usuarios)
-16.Crear vista de login(Frontend)(todos los usuarios)
-17.Crear vista de Register(Frontend)(todos los usuarios)
-18.Crear vista de Recuperar contraseña(Frontend)(todos los usuarios)
-19.Crear vista de mensajes directos generales(Frontend)(todos los usuarios)
-20.Crear vista de mensajes directos con un usuario(Frontend)(todos los usuarios)
-21.Crear vista de mi perfil(Frontend)(todos los usuarios)
-22.Crear vista de editar mi perfil(Frontend)(todos los usuarios)
-23.Crear vista de subscripciones(Frontend)(todos los usuarios)
-24.Crear vista de ver mis subscripciones(Frontend)(todos los usuarios)
-25.Crear vista de cancelar mis subscripciones(Frontend)(todos los usuarios)
-26.Crear vista de todos los usuarios(Frontend)(admin)
-27.Crear vista de todas las subscripciones(Frontend)(admin)
-28.Crear vista de todos los usuarios bloqueados(Frontend)(admin)
-29.Crear vista de reportes(Frontend)(admin)
-30.Crear vista de todos los post(Frontend)(admin)
-31.Realizar extras(de desearlo)
-32.Realizar Deploy (de desearlo)
+13.Creacion de logica de WebSocket para el chat privado(Opcional)
+14Creacion del proyecto base de Frontend (crear carpetas, instalar dependecias)
+15.Crear estructura basica de archivos del frontend
+16.Crear vista de Home(Frontend)(todos los usuarios)
+17.Crear vista de login(Frontend)(todos los usuarios)
+18.Crear vista de Register(Frontend)(todos los usuarios)
+19.Crear vista de Recuperar contraseña(Frontend)(todos los usuarios)
+20.Crear vista de mensajes directos generales(Frontend)(todos los usuarios)
+21.Crear vista de mensajes directos con un usuario(Frontend)(todos los usuarios)
+22.Crear vista de mi perfil(Frontend)(todos los usuarios)
+23.Crear vista de editar mi perfil(Frontend)(todos los usuarios)
+24.Crear vista de subscripciones(Frontend)(todos los usuarios)
+25.Crear vista de ver mis subscripciones(Frontend)(todos los usuarios)
+26.Crear vista de cancelar mis subscripciones(Frontend)(todos los usuarios)
+27.Crear vista de todos los usuarios(Frontend)(admin)
+28.Crear vista de todas las subscripciones(Frontend)(admin)
+29.Crear vista de todos los usuarios bloqueados(Frontend)(admin)
+30.Crear vista de reportes(Frontend)(admin)
+31.Crear vista de todos los post(Frontend)(admin)
+32.Realizar extras(de desearlo)
+33.Realizar Deploy (de desearlo)
