@@ -1,4 +1,5 @@
 /*
+Archivo 5
     Se comoce como operadores logicos a los simbolos que nos permiten
     realizar operaciones binarias (true - false).
 

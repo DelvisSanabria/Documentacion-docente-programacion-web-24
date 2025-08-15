@@ -1,5 +1,7 @@
 /*
-    Se comoce como operadores aritmeticos a los simbolos que nos permiten
+Archivo 3
+
+    Se conoce como operadores aritmeticos a los simbolos que nos permiten
     realizar operaciones matematicas, sumar, restar, Multiplicar, Dividir.
 */
 

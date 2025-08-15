@@ -1,5 +1,7 @@
 /*
-    Se comoce como operadores de comparacion a los simbolos que nos permiten
+Archivo 4
+
+    Se conoce como operadores de comparacion a los simbolos que nos permiten
     realizar operaciones binarias(entre 2 elementos) de comparacion.
 */
 

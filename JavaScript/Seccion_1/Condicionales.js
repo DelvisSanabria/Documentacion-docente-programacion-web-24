@@ -1,4 +1,6 @@
 /*
+Archivo 7
+
     Una expresión condicional es un conjunto de instrucciones que evalúan una expresión
     y solo se ejecutarán si dicha expresión es verdadera. 
     JavaScript admite dos expresiones condicionales: (if...else) y (switch).
