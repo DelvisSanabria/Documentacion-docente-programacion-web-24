@@ -342,16 +342,6 @@ Minimarket 🛒\n
         alert("Lo sentimos el producto no se encuentra disponible");
 };
 
-
-
-
-
-
-
-
-
-
-
 /* ACTIVIDAD - Juego del semaforo.
 
     Crea un mensaje en pantalla que muestre 3 colores a elegir: 
@@ -471,4 +461,3 @@ if(color === "verde" || color === "amarillo" || color === "rojo"){
 }else{
     alert("Respuesta Invalida");
 };
-

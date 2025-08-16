@@ -1,5 +1,6 @@
 /*
 Archivo 5
+
     Se comoce como operadores logicos a los simbolos que nos permiten
     realizar operaciones binarias (true - false).
 
@@ -81,7 +82,3 @@ console.log(diez);
 console.log(once);
 console.log(doce);
 console.log(trece);
-
-
-
-
