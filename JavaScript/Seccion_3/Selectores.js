@@ -1,4 +1,6 @@
 /*
+Archivo 21
+
     Los selectores permiten seleccionar elementos del DOM (elementos HTML) para manipularlos en una página web.
     los selectores comunes son:
 
@@ -46,7 +48,18 @@ const titulo = document.getElementById("titulo");
 
 
 
-//Medotos usados con selectores:
+//Metodos usados con selectores:
+
+/* Una vez seleccionamos los elementos podemos modificar sus propiedades, atributos, contenido HTML, estilos, clases, etc.
+   Los metodos mas usados son los siguientes:
+   - elemento.getAttribute: obtiene el(los) valor(es) del atributo indicado en el elemento seleccionado.
+   - elemento.setAttribute: establece un atributo con su valor en el elemento seleccionado.
+   - elemento.innerHTML: obtiene o establece el contenido HTML de un elemento seleccionado.
+   - elemento.innerText: obtiene o establece el contenido de texto de un elemento seleccionado.
+   - elemento.style: permite acceder y manipular las propiedades CSS del elemento seleccionado. 
+
+
+*/
 
 
 // elemento.getAttribute: obtiene el(los) valor(es) del atributo indicado en el elemento seleccionado.
@@ -167,7 +180,7 @@ caja.appendChild(nuevaImagen);
 
 // 1- Crear un contenedor con un id "contenedor" y agregarlo al body.
 
-// 2- Crear un nuevo parrafo con el texto "TuNombre TuApellido - Grupo XVI - Lexpin",
+// 2- Crear un nuevo parrafo con el texto "TuNombre TuApellido - Grupo XXIV - Lexpin",
 //    darle estilos con CSS y agregarlo al contenedor creado en el punto 1.
 
 // 3- Crear una nueva imagen, asignarle un src con una imagen de tu elección, dale estilos con Tailwind

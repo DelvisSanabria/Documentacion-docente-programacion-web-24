@@ -1,4 +1,6 @@
 /* 
+Archivo 31
+
     Async-Await es en escencia lo mismo que las promesas, azucar sintactica, es decir es una manera
     mas facil de interpretar las promesas, sin dejar de ser un proceso asincronico.
 
@@ -19,17 +21,17 @@
 let usuarios = [
     {
         id: 1,
-        nombre: "Guillermo",
+        nombre: "Santiago",
         apellido: "Gonzalez",
         sexo: "Masculino",
         edad: 25,
         foto: "https://covalto.com/static/78498ccda70933a5f1e3edc3e40d3cbe/34aca/Hero_Mobile_Cuenta_Personas_V1_1_8046e424ea.webp"
     },{
         id: 2,
-        nombre: "Victor",
+        nombre: "Alejandro",
         apellido: "Hernandez",
         sexo: "Masculino",
-        edad: 17,
+        edad: 19,
         foto: "https://covalto-production-website.s3.amazonaws.com/Hero_Desktop_Acerca_De_Covalto_V1_79ce51b800.webp"
     },{
         id: 3,
@@ -41,7 +43,7 @@ let usuarios = [
     },{
         id: 4,
         nombre: "Luis",
-        apellido: "Tarifa",
+        apellido: "Hernandez",
         sexo: "Masculino",
         edad: 20,
         foto: "https://covalto-production-website.s3.amazonaws.com/Hero_Mobile_Pagare_Lealtad_V2_4c1bb0820b.jpg"
@@ -94,7 +96,7 @@ const obtenerUsuarios = ()=>{
 };
 
 
-// Esta funcion usiliza async-await para esperar a que la promesa se resuelva para continuar con el codigo
+// Esta funcion buscarDatos() utiliza async-await para esperar a que la promesa se resuelva para continuar con el codigo
 // en caso de que la promesa se resuelva, se imprime el mensaje que retorna la promesa, en caso contrario
 // se imprime un mensaje de error.
 

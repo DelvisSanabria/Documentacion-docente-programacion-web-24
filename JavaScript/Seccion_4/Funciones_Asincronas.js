@@ -1,4 +1,6 @@
 /* 
+Archivo 28
+
     ¿Qué es el asincronismo?
     El asincronismo es una técnica que permite a los programas ejecutar tareas de manera no bloqueante. 
     Esto permite que el programa puede continuar con otras tareas mientras se completa una tarea asíncrona, 
@@ -45,23 +47,23 @@ console.log("Numero 4");
 // setInterval es una función que nos permite ejecutar una tarea repetidamente cada cierto tiempo,
 // recibe como parametros una funcion (que se ejecutara repetidamente) y un tiempo de espera en milisegundos.
 
-// let contador = 0;
+let contador = 0;
 
-// setInterval(()=>{
-//     // Esta funcion se ejecutara cada 1 segundo
-//     // Por lo que la variable contador aumentara en 1 cada segundo que pase.
+setInterval(()=>{
+    // Esta funcion se ejecutara cada 1 segundo
+     // Por lo que la variable contador aumentara en 1 cada segundo que pase.
 
-//     // Aqui se realiza el incremento de la variable contador.
-//     contador++;
+    // Aqui se realiza el incremento de la variable contador.
+    contador++;
 
-//     // Aqui se imprime el valor de la variable contador.
-//     console.log("Contador: ",contador);
-// },1000); // 1000 milisegundos = 1 segundo.
+     // Aqui se imprime el valor de la variable contador.
+     console.log("Contador: ",contador);
+},1000); // 1000 milisegundos = 1 segundo.
 
 
 
 // Ejemplo 3
-// En este ejemplo utilizaremos la funcion setTimeout para realizar
+// En este ejemplo utilizaremos la funcion setInterval para realizar
 // aumentar el valor de un contador cada cierto tiempo e imprimirlo en el DOM.
 
 // Selecionamos el elemento del DOM que queremos modificar.
@@ -226,6 +228,6 @@ setInterval( () => document.getElementById("fecha").innerText = new Date().toLoc
 
 
 
-// Realiza un cronometro que capture horas, minutos y segundos y milisegundos.
+//Tarea extra: Realiza un cronometro que capture horas, minutos y segundos y milisegundos.
 // Este cronometro debe tener la capacidad de iniciar, detener, reiniciar el conteo y capturar un tiempo,
 // los tiempos capturados se deben mostrar en una seccion llamadas "Tiempos capturados".

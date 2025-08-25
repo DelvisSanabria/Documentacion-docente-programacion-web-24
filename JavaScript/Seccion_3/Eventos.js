@@ -1,4 +1,6 @@
 /*
+Archivo 22
+
     ¿Qué son Eventos?
     Los eventos son la manera en la cual JavaScript controla las acciones de los visitantes y define el 
     comportamiento de la página cuando estos se produzcan. 

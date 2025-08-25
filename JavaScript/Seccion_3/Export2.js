@@ -1,3 +1,5 @@
+/* Archivo 26.1 */
+
 export function calcularRaizCuadrada(numero) { return Math.sqrt(numero); };
 
 export function exponenciar(a, b) { return a ** b; };

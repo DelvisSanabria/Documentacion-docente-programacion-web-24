@@ -1,4 +1,5 @@
 /*
+Archivo 29
     ¿Que es un Callback?
         Un callback es una función que se pasa a otra función como argumento o parametro
         y se invoca después de que algún evento o proceso ha terminado, de alli 
@@ -21,12 +22,8 @@ const numerosDuplicados = numeros.map(
 );
 
 
-// console.log(`Los numeros originales son: ${numeros}`);
-// console.log(`Los numeros duplicados son: ${numerosDuplicados}`);
-
-
-
-
+console.log(`Los numeros originales son: ${numeros}`);
+console.log(`Los numeros duplicados son: ${numerosDuplicados}`);
 
 
 
@@ -69,16 +66,16 @@ function otraFuncion(){
 // El segundo parametro es el dato que sera agregado al array. 
 // El tercer parametro es un callback, una funcion.
 // Esta funcion va a llamar de vuelta (callback) va a ser ejecutada despues de que la funcion agregar() termine de ejecutarse.
-// agregar(nombres, "Diego", mostrarNombres);
-// agregar(nombres, "Gabriel", mostrarNombres);
-// agregar(nombres, 2024, mostrarNombres);
-// agregar(nombres, document.body, otraFuncion);
+agregar(nombres, "Delvis", mostrarNombres);
+agregar(nombres, "Gabriel", mostrarNombres);
+agregar(nombres, 2025, mostrarNombres);
+agregar(nombres, document.body, otraFuncion);
 
 
 
 
 
-// *** Ejemplo 2 *** (Realizar diferentes operaciones con un callback) 
+// Ejemplo 2 (Realizar diferentes operaciones con un callback) 
 
 // En este ejemplo se crea una funcion "operacion" que recibira 2 parametros numericos y un callback,
 // en su interior solo hay un retorno, en el cual asignará los 2 parametros (num1 y num2) recibidos dentro 
@@ -135,7 +132,7 @@ operacion(10, null, esPar);
 
 
 
-/*** EJEMPLO 3 ***/
+//EJEMPLO 3
 // Elabora una funcion que permita añadir elementos a un carrito mediante llamado de callbacks recursivo.
 
 
@@ -149,7 +146,14 @@ function agregarAlCarrito(callback){
 };
 
 
+//El callback hell es un problema recurrente al trabajar con callbacks cuando se acumulan
+/* 
 
+    muchos callbacks anidados, lo que puede hacer que el código sea difícil de leer y mantener.
+    Esto puede ocurrir cuando se tienen múltiples operaciones asíncronas que dependen unas de otras,
+    y cada operación requiere un callback para manejar su resultado.
+
+*/
 agregarAlCarrito(
     function mostrarCarrito(){
         console.log(carrito);

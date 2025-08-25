@@ -1,3 +1,5 @@
+//Archivo 23.2
+
 /*
     Crea un formulario basico que solicite nombre, apellido y edad, tambien debe contar con un boton(basico) 
     para registrar. 
@@ -5,7 +7,7 @@
     - Crea una funcion que obtenga los datos del formulario y cree nuevas instancias 
     de una clase llamada "Usuarios" y las aloje en un array llamado "instancias".
 
-    - Tambien crea un boto pn queermita ver los usuarios registrados en la pagina web.
+    - Tambien crea un boton que permita ver los usuarios registrados en la pagina web.
 */
 
 // Primero definimos la clase "Usuarios" con un constructor que recibe los parametros "nombre", "apellido" y "edad".
@@ -27,6 +29,9 @@ const botonVerRegistros = document.getElementById("verRegistros");
 const divRegistro = document.getElementById("registros");
 
 function crearUsuario(){
+    /* La funcion crear usuario recibe los datos del formulario y los guarda en la variable "instancias" como un objeto "usuario-n" esto se hace con un contador que se incrementa cada vez que se crea un nuevo usuario, y luego se guarda la instancia en el array "instancias".
+    
+    para posteriormente mostrarlos */
     i++;
     instancias[`usuario-${i}`] = new Usuario(
         document.getElementById("nombre").value,

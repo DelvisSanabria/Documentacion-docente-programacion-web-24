@@ -1,0 +1,276 @@
+// Variables
+$primary-color: #3498db
+$secondary-color: #2ecc71
+$success-color: #27ae60
+$danger-color: #e74c3c
+$text-color: #2c3e50
+$light-color: #ecf0f1
+$dark-color: #34495e
+$border-radius: 8px
+$spacing-sm: 8px
+$spacing-md: 16px
+$spacing-lg: 24px
+$font-size-sm: 14px
+$font-size-md: 16px
+$font-size-lg: 20px
+$font-size-xl: 24px
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+
+// Mixin sin parámetros
+@mixin reset-list
+  margin: 0
+  padding: 0
+  list-style: none
+
+// Mixin con parámetros
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+// Mixin para flexbox
+@mixin flex-center($direction: row)
+  display: flex
+  flex-direction: $direction
+  justify-content: center
+  align-items: center
+
+//Clases con % en SASS: Placeholders para @extend
+//En SASS, los selectores que comienzan con el símbolo % se llaman placeholders. Son una característica especial que te permite definir estilos que no se compilarán a CSS por sí mismos, sino que están destinados a ser extendidos (usados con @extend).
+
+//¿Qué son exactamente los placeholders?
+//Los placeholders son como "clases fantasma" que:
+
+//No se compilan a CSS por sí mismas
+
+//Solo existen para ser extendidas por otras reglas
+
+//Ayudan a mantener tu CSS final más limpio y eficiente   
+
+
+// Extend para sombras
+%shadow
+  box-shadow: $shadow
+
+// Extend para transiciones
+%transition
+  transition: all 0.3s ease
+
+// Estilos base
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  line-height: 1.6
+  color: $text-color
+  background-color: #f9f9f9
+  padding: $spacing-md
+
+// Header
+.header
+  text-align: center
+  margin-bottom: $spacing-lg
+  padding: $spacing-lg
+  background: linear-gradient(135deg, $primary-color, darken($primary-color, 15%))
+  color: white
+  @include border-radius($border-radius)
+  @extend %shadow
+
+  h1
+    margin-bottom: $spacing-sm
+
+// Main content
+.main
+  max-width: 1200px
+  margin: 0 auto
+
+// Sections
+.section
+  margin-bottom: $spacing-lg * 2
+  padding: $spacing-lg
+  background-color: white
+  @include border-radius($border-radius)
+  @extend %shadow
+
+  &__title
+    font-size: $font-size-xl
+    margin-bottom: $spacing-lg
+    color: darken($primary-color, 20%)
+    border-bottom: 2px solid lighten($primary-color, 30%)
+    padding-bottom: $spacing-sm
+
+  &__content
+    @include flex-center(column)
+    gap: $spacing-md
+
+    &--cards
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: stretch
+
+// Botones (BEM)
+.btn
+  display: inline-block
+  padding: $spacing-sm $spacing-md
+  border: none
+  @include border-radius($border-radius)
+  font-size: $font-size-md
+  cursor: pointer
+  @extend %transition
+  @extend %shadow
+  @include flex-center
+
+  // Estados
+  &:hover
+    transform: translateY(-2px)
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15)
+
+  &:active
+    transform: translateY(0)
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+  // Modificadores de color
+  &--primary
+    background-color: $primary-color
+    color: white
+
+    &:hover
+      background-color: darken($primary-color, 10%)
+
+  &--secondary
+    background-color: $secondary-color
+    color: white
+
+    &:hover
+      background-color: darken($secondary-color, 10%)
+
+  &--success
+    background-color: $success-color
+    color: white
+
+    &:hover
+      background-color: darken($success-color, 10%)
+
+  &--danger
+    background-color: $danger-color
+    color: white
+
+    &:hover
+      background-color: darken($danger-color, 10%)
+
+  // Modificadores de tamaño
+  &--small
+    font-size: $font-size-sm
+    padding: $spacing-sm / 2 $spacing-sm
+
+  &--large
+    font-size: $font-size-lg
+    padding: $spacing-md $spacing-lg
+
+  // Modificador de estado
+  &--disabled
+    opacity: 0.6
+    cursor: not-allowed
+
+    &:hover
+      transform: none
+      box-shadow: $shadow
+
+// Tarjetas (BEM)
+.card
+  width: 300px
+  background-color: white
+  @include border-radius($border-radius)
+  overflow: hidden
+  @extend %shadow
+  @extend %transition
+
+  &:hover
+    transform: translateY(-5px)
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1)
+
+  // Elementos
+  &__image
+    width: 100%
+    height: 200px
+    overflow: hidden
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      @extend %transition
+
+    &:hover img
+      transform: scale(1.05)
+
+  &__content
+    padding: $spacing-md
+
+  &__title
+    font-size: $font-size-lg
+    margin-bottom: $spacing-sm
+    color: $dark-color
+
+  &__text
+    margin-bottom: $spacing-md
+    color: lighten($text-color, 20%)
+
+  &__footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: $spacing-md
+    border-top: 1px solid lighten($text-color, 60%)
+
+  &__date
+    font-size: $font-size-sm
+    color: lighten($text-color, 40%)
+
+  &__badge
+    background-color: $secondary-color
+    color: white
+    padding: 2px $spacing-sm
+    @include border-radius(10px)
+    font-size: $font-size-sm
+
+  // Modificadores
+  &--highlighted
+    border: 2px solid $primary-color
+
+    .card__title
+      color: $primary-color
+
+// Footer
+.footer
+  text-align: center
+  margin-top: $spacing-lg * 2
+  padding: $spacing-md
+  background-color: $dark-color
+  color: white
+  @include border-radius($border-radius)
+
+// Comentarios en SASS
+// Este es un comentario que no se compilará a CSS
+
+/* 
+ * Este es un comentario multilínea
+ * que sí se compilará a CSS
+ */
+
+// Media queries para responsividad
+@media (max-width: 768px)
+  .section__content--cards
+    flex-direction: column
+    align-items: center
+
+  .card
+    margin-bottom: $spacing-md
+
+  .btn
+    width: 100%
+    max-width: 250px

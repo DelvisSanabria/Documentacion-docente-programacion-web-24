@@ -1,4 +1,6 @@
 /*
+Archivo 36
+
     ¿Que es LocalStorage?
     localStorage es una forma de almacenamiento que permite a una aplicación web guardar datos de 
     manera PERSISTENTE en el navegador del usuario. 
@@ -31,13 +33,13 @@
 // Guardar datos
 
 // Ejemplo 1: Guardar un valor simple
-localStorage.setItem("Nombre", "Diego");
+localStorage.setItem("Nombre", "Delvis");
 
 
 // Ejemplo 2: Obtener un valor simple
 let nombreUsuario = localStorage.getItem("Nombre");
 
-console.log(nombreUsuario); // Diego
+console.log(nombreUsuario); // Delvis
 
 // Ejemplo 3: Eliminar un valor simple
 localStorage.removeItem("Nombre");
@@ -46,13 +48,13 @@ localStorage.removeItem("Nombre");
 
 // Guardar un objeto
 let persona = {
-    nombre: "Diego",
-    edad: 28,
-    correo: "diego@gmail.com",
+    nombre: "Delvis",
+    edad: 23,
+    correo: "delvis@gmail.com",
     telefono: "1234567890",
     direccion: "Calle 123",
-    ciudad: "Bogota",
-    pais: "Colombia",
+    ciudad: "Caracas",
+    pais: "Venezuela",
     online: true,
     profesion: "Desarrollador"
 };
@@ -85,10 +87,7 @@ let frutasGuardadas = JSON.parse(localStorage.getItem("Frutas"));
     y evitar brechas de seguridad. 
 */
 // Vaciar el localStorage
-// localStorage.clear();
-
-
-
+localStorage.clear();
 
 
 
@@ -107,21 +106,18 @@ let frutasGuardadas = JSON.parse(localStorage.getItem("Frutas"));
 
 
 // Guardar datos
-sessionStorage.setItem("Nombre", "Diego 2");
+sessionStorage.setItem("Nombre", "Delvis 2");
 
 // Obtener datos
 let nombreSession = sessionStorage.getItem("Nombre");
 
-console.log(nombreSession); // Diego 2
+console.log(nombreSession); // Delvis 2
 
 // Eliminar datos
 sessionStorage.removeItem("Nombre");
 
 // Vaciar el sessionStorage
-// sessionStorage.clear();
-
-
-
+sessionStorage.clear();
 
 
 
@@ -141,15 +137,15 @@ sessionStorage.removeItem("Nombre");
 // Arreglo de usuarios
 let usuarios = [
     {
-        usuario: "diego",
+        usuario: "Delvis",
         clave: "dar321"
     },
     {
-        usuario: "victor",
+        usuario: "Santiago",
         clave: "vic123"
     },
     {
-        usuario: "daniel",
+        usuario: "Manuel",
         clave: "dan789"
     },
     {
@@ -207,7 +203,7 @@ btnLogin.addEventListener("click", () => {
             location.reload();
 
             // Ejemplo redireccionar a otra pagina
-            // window.location.href = "https://www.google.com";
+            window.location.href = "https://www.google.com";
         });
     }else{
         alert("Usuario o contraseña incorrectos");

@@ -1,3 +1,5 @@
+//Archivo 16
+
 // Los métodos de objetos son funciones que se pueden llamar en un objeto específico. 
 // En JavaScript, los métodos son propiedades de un objeto que tienen como valor una función.
 
@@ -66,4 +68,3 @@ console.log(persona.hasOwnProperty("salario"));
 // .toString(): Este metodo devuelve una cadena que representa al objeto.
 const objetoEnString = persona.toString();
 console.log(objetoEnString);
-

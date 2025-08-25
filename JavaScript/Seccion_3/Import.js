@@ -1,4 +1,6 @@
-/* 
+/*
+Archivo 25
+
     Las funciones import y export se utilizan para importar y exportar código de otros módulos en JavaScript. 
     
     ¿Que son módulos?

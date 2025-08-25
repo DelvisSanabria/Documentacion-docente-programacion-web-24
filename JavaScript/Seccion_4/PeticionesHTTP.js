@@ -1,4 +1,6 @@
 /* 
+Archivo 32
+
     ¿Que son las peticiones HTTP?
     Las peticiones HTTP son solicitudes que se realizan a un servidor para obtener informacion, 
     estas peticiones se pueden realizar desde el cliente (navegador) o desde el servidor.
@@ -28,6 +30,7 @@
     por el servidor debido a un error interno.
     
     Referencia: https://developer.mozilla.org/es/docs/Web/HTTP/Status
+    Se puede revisar httpcats para obtener mas informacion: https://http.cat/
 
 
     Tabla de codigos de estado HTTP:

@@ -1,4 +1,6 @@
 /*
+Archivo 37
+
     ¿Que son Cookies?
     Son pequeños fragmentos de datos que un servidor web envía al navegador del usuario 
     para almacenar en el lado del cliente. 
@@ -36,7 +38,7 @@
 
 
 // Guardando un valor
-document.cookie = "nombre=Diego";
+document.cookie = "nombre=Delvis";
 
 
 // Guardando un valor con fecha de expiración
@@ -44,19 +46,19 @@ document.cookie = "nombre=Diego";
 // Crear una fecha de expiración
 let fecha = new Date();
 fecha.setTime(fecha.getTime() + 60000); // 60 segundos
-document.cookie = `nombre2=Diego; expires=${fecha.toUTCString()}` ;
+document.cookie = `nombre2=Delvis; expires=${fecha.toUTCString()}` ;
 
 
 // Crear una cookie con valor, fecha de expiración, directorio
-document.cookie = `nombre3=Diego; expires=${fecha.toUTCString()}; path=/`;
+document.cookie = `nombre3=Delvis; expires=${fecha.toUTCString()}; path=/`;
 
 
 // Crear una cookie con valor, fecha de expiración, directorio, dominio
-document.cookie = `nombre4=Diego; expires=${fecha.toUTCString()}; path=/; domain=127.0.0.1`;
+document.cookie = `nombre4=Delvis; expires=${fecha.toUTCString()}; path=/; domain=127.0.0.1`;
 
 
 // Crear una cookie con valor, fecha de expiración, directorio, dominio y seguridad
-document.cookie = `nombre5=Diego; expires=${fecha.toUTCString()}; path=/; domain=127.0.0.1; secure`;
+document.cookie = `nombre5=Delvis; expires=${fecha.toUTCString()}; path=/; domain=127.0.0.1; secure`;
 
 /*
     ¿Que hace la propiedad secure?
@@ -74,13 +76,14 @@ let nombreUsuario = document.getElementById("nombre");
 
 // Si el usuario acepta iniciar sesion, se creara una cookie con el nombre de usuario
 // y se imprimira en el elemento "h3", de lo contrario se imprimira un valor por defecto.
+/* confirm es una ventana de alerta que nos permite preguntar al usuario por una decision true o false */
 if(confirm("Desea iniciar sesion?")) {
     // Crear una fecha de expiración
     let fecha = new Date();
     fecha.setTime(fecha.getTime() + 60000); // 60 segundos
     
     // Crear una cookie con valor, fecha de expiración
-    document.cookie = `usuario=Diego; expires=${fecha.toUTCString()}` ;
+    document.cookie = `usuario=Delvis; expires=${fecha.toUTCString()}` ;
     
     // Mensaje de alerta
     alert("Sesion iniciada");

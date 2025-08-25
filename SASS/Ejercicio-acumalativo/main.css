@@ -1,0 +1,218 @@
+@charset "UTF-8";
+.card, .btn, .section, .header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card__image img, .card, .btn {
+  transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f9f9f9;
+  padding: 16px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  background: linear-gradient(135deg, #3498db, rgb(29.2970711297, 110.6778242678, 165.2029288703));
+  color: white;
+  border-radius: 8px;
+}
+.header h1 {
+  margin-bottom: 8px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 48px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+}
+.section__title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: rgb(25.4560669456, 96.1673640167, 143.5439330544);
+  border-bottom: 2px solid rgb(181.9539748954, 217.9372384937, 242.0460251046);
+  padding-bottom: 8px;
+}
+.section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.section__content--cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn--primary {
+  background-color: #3498db;
+  color: white;
+}
+.btn--primary:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+.btn--secondary {
+  background-color: #2ecc71;
+  color: white;
+}
+.btn--secondary:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+.btn--success {
+  background-color: #27ae60;
+  color: white;
+}
+.btn--success:hover {
+  background-color: rgb(29.661971831, 132.338028169, 73.014084507);
+}
+.btn--danger {
+  background-color: #e74c3c;
+  color: white;
+}
+.btn--danger:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}
+.btn--small {
+  font-size: 14px;
+  padding: 4px 8px;
+}
+.btn--large {
+  font-size: 20px;
+  padding: 16px 24px;
+}
+.btn--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn--disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__image:hover img {
+  transform: scale(1.05);
+}
+.card__content {
+  padding: 16px;
+}
+.card__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+.card__text {
+  margin-bottom: 16px;
+  color: rgb(80.1935483871, 113, 145.8064516129);
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid rgb(203.3870967742, 215, 226.6129032258);
+}
+.card__date {
+  font-size: 14px;
+  color: rgb(137.5806451613, 164, 190.4193548387);
+}
+.card__badge {
+  background-color: #2ecc71;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.card--highlighted {
+  border: 2px solid #3498db;
+}
+.card--highlighted .card__title {
+  color: #3498db;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 48px;
+  padding: 16px;
+  background-color: #34495e;
+  color: white;
+  border-radius: 8px;
+}
+
+/* * Este es un comentario multilínea
+ * * que sí se compilará a CSS
+ * */
+@media (max-width: 768px) {
+  .section__content--cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-bottom: 16px;
+  }
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,6 @@
 /*
+Archivo 14
+
     Un array es un objeto que contiene una colección ordenada de valores. 
     Cada valor se almacena en una posición específica dentro del array, y se puede acceder a estos 
     mediante un índice numérico que determina su posicion.
@@ -94,13 +96,18 @@ console.log(colores);
 
 
 
-
-
-
 //¿Que es Iterar?: Iterar es el proceso de recorrer un conjunto de datos, como una lista o un array.
 // Con el proposito de realizar una accion con cada elemento o valor.
 
 
+/* Que son las funciones de orden superior:
+    Las funciones de orden superior son aquellas que pueden recibir otras funciones como argumentos o devolverlas como resultado. 
+    Estas funciones permiten crear código más modular y reutilizable, facilitando la manipulación de datos y la creación de estructuras más complejas.\
+
+    entre las mas usadas en js tenemos a: 
+    forEach, map, filter, find, every, some, sort, reverse, fill.
+
+*/
 
 
 /*  filter: es una función de los arrays que permite filtrar los elementos 
@@ -149,11 +156,6 @@ console.log(numeroPares3);
 
 
 
-
-
-
-
-
 //Ejemplo 2: Excluir uvas de un array.
 let frutas = ["🍇","🍍","🍇","🍓","🍇","🍎","🍇", "🍐", "🍑", "🥝"]; 
 console.log(frutas);
@@ -182,9 +184,6 @@ console.log(frutasSinUvas2);
 // Metodo 3: filter con funcion de flecha y retorno implicito.
 const frutasSinUvas3 = frutas.filter( fruta => fruta !== "🍇");
 console.log(frutasSinUvas3);
-
-
-
 
 
 
@@ -243,17 +242,15 @@ console.log(correosGmail3);
 
 
 
-
-
-
-
-
-
-
-
-
 // find: devuelve el valor del primer elemento del array que cumpla (retorne true) con la función definida. 
 // Si ningún elemento cumple con la funcion (si retorna false), devuelve undefined.
+
+/* Su estructura y forma de uso es la siguiente:
+    array.find( funcionDeRetornoBooleana );
+    
+    La función de retorno booleana se aplica a cada elemento del array y solo el primer elemento 
+    para el cual la función devuelve true se incluye en el resultado.
+*/
 
 // Ejemplo 1: Buscar el elemento que sea "🧀"
 let comidas = ["🍖","🥩","🧀","🥓","🥙"];
@@ -324,6 +321,7 @@ console.log(patitoDeHule);
 // Ejemplo: array.fill(elementoNuevo, posicionDeInicio, posicionFinal)
 
 // Ejemplo 1: Reemplazar "🥑","🥦","🥕","🥩" por "🧁"
+
 let compra = ["🧃","🧁","🥑","🥦","🥕","🥩","🍞"];
 
 compra.fill("🧁" ,2, 6);
@@ -440,8 +438,8 @@ console.log( lista2.every(numero => numero % 2 === 1) );
 // Ejemplo 2:
 const invitados = [
     {
-        nombre: "Diego",
-        apellido: "Rodriguez",
+        nombre: "Delvis",
+        apellido: "Sanabria",
         asistio: true
     },
     {
@@ -455,8 +453,8 @@ const invitados = [
         asistio: true
     },
     {
-        nombre: "Yaneisis",
-        apellido: "Yaguara",
+        nombre: "Alejandro",
+        apellido: "Diaz",
         asistio: true
     },
     {
@@ -525,7 +523,7 @@ console.log(noVegetal);
 
 const clientes = [
     {
-        nombre: "Diego",
+        nombre: "Delvis",
         pago: false
     },
     {
@@ -533,11 +531,11 @@ const clientes = [
         pago: true
     },
     {
-        nombre: "Jesus",
+        nombre: "Santiago",
         pago: true
     },
     {
-        nombre: "luis",
+        nombre: "Mauricio",
         pago: true
     }
 ];
@@ -600,7 +598,7 @@ console.log( valores.sort( (a, b) => b - a) );
 
 
 // Ejemplo 2:
-let nombres = ["Diego", "Victor", "Hugo", "Douglas", "Luis", "Jesus", "Edward", "Humberto","Yaneisis"];
+let nombres = ["Delvis", "Victor", "Hugo", "Mauricio", "Luis", "Jesus", "Santiago", "Humberto","David"];
 nombres.sort();
 console.log(nombres);
 
@@ -634,7 +632,3 @@ console.log(saludos2);
 // Metodo 2: Funcion de flecha y retorno implicito
 const saludos3 = estudiantes.map( persona => `Hola ${persona}, ¿cómo estás?`);
 console.log(saludos3);
-
-
-
-

@@ -1,4 +1,6 @@
 /* 
+Archivo 19
+
     ¿Que es la desestructuración?
     Es una forma de extraer o desempaquetar datos de un array o un objeto y asignarlos a variables.
     Esto facilita la manipulación de los datos y permite lograr un código más limpio y legible.
@@ -37,17 +39,15 @@ console.log(var4);
 
 
 
-
-
 // Desestructuración de objetos
 
 const persona = {
-    nombre: 'Diego',
-    apellido: 'Rodriguez',
-    edad: 28,
-    ciudad: 'Segovia',
+    nombre: 'Delvis',
+    apellido: 'Sanabria',
+    edad: 23,
+    ciudad: 'Css',
     sexo: 'Masculino',
-    correo: 'diego@gmail.com'
+    correo: 'delvis@gmail.com'
 };
 
 
@@ -73,21 +73,21 @@ console.log(`Hola soy ${nombre} ${apellido}, vivo en ${ciudad} y mi correo es ${
 
 // Desestructurar objetos anidados
 const persona2 = {
-    nombre2: 'Diego',
-    apellido2: 'Rodriguez',
-    edad: 28,
+    nombre2: 'Delvis',
+    apellido2: 'Sanabria',
+    edad: 23,
     ubicacion: {
-        ciudad2: 'Segovia',
-        pais: 'España',
-        direccion: 'Calle 123'
+        ciudad2: 'Css',
+        pais: 'Venezuela',
+        direccion: 'En algun lugar muy muy lejano'
     }
 };
 
 
 // Forma tradicional
-const nombrePersona2 = persona2.nombre;
-const apellidoPersona2 = persona2.apellido;
-const ciudadPersona2 = persona2.ubicacion.ciudad;
+const nombrePersona2 = persona2.nombre2;
+const apellidoPersona2 = persona2.apellido2;
+const ciudadPersona2 = persona2.ubicacion.ciudad2;
 const paisPersona2 = persona2.ubicacion.pais;
 
 console.log(`Hola soy ${nombrePersona2} ${apellidoPersona2}, vivo en ${ciudadPersona2}, ${paisPersona2}`);
@@ -96,5 +96,10 @@ console.log(`Hola soy ${nombrePersona2} ${apellidoPersona2}, vivo en ${ciudadPer
 
 // Con desestructuración
 const {nombre2, apellido2, ubicacion:{ciudad2, pais}} = persona2;
+
+/* Cuando quiero desestructurar objetos anidadas debo
+    especificar el nombre del objeto y luego el nombre de la propiedad que quiero extraer.
+    En este caso, "ubicacion" es el objeto anidado dentro de "persona2", y "ciudad2" y "pais" son sus propiedades.
+*/
 
 console.log(`Hola soy ${nombre2} ${apellido2}, vivo en ${ciudad2}, ${pais}`);

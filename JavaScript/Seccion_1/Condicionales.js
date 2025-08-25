@@ -11,23 +11,31 @@ Archivo 7
 //if (Si)
 // prompt: es una funcion nativa de JavaScript que muestra una ventana de entrada en el navegador.
 
+/* 
 
-// let numero = +prompt("Ingresa un numero","Primer placeholder de if");
-// let otroNumero = +prompt("Ingresa otro numero","Segundo placeholder de if");
+If-else (si-sino): La expresión if ejecuta una instrucción si una condición lógica es true.  de lo contrario else para ejecuta una instrucción si la condición es false.
+Ejemplo:
+
+*/
+
+let numero = +prompt("Ingresa un numero","Primer placeholder de if");
+let otroNumero = +prompt("Ingresa otro numero","Segundo placeholder de if");
 
 // //Si numero es  menor que otroNumero
-// if (numero < otroNumero){
+if (numero < otroNumero){
 //     // Template String: permite mostrar texto y variables en una sola expresion, mediante la concatenacion simplificada.
 //     // `` (backticks, comillas literales o comillas invertidas) facilita la concatenacion.
-//     alert(`El numero ${numero} es menor que ${otroNumero}`);
-//     alert("El numero " + numero + " es menor que " + otroNumero);
-// }
+     alert(`El numero ${numero} es menor que ${otroNumero}`);
+     alert("El numero " + numero + " es menor que " + otroNumero);
+}
 
 
 
 
 
 //if-else
+
+
 let numero2 = +prompt("Ingresa un numero","Primer place holder de If-else");
 let otroNumero2 = +prompt("Ingresa otro numero","Segundo placeholder de If-else");
 
@@ -38,17 +46,21 @@ if (numero2 > otroNumero2){
 }
 
 
-//Operador Ternario
+//Operador Ternario (es una forma de escribir una sentencia condicional acortada)
 let numero2A = +prompt("Ingresa un numero","If-else Ternario");
 let otroNumero2A = +prompt("Ingresa otro numero","If-else Ternario");
 
-//                       "Si"                                                         "Sino"
+//                       "Si"                                                      "Sino"
 (numero2A < otroNumero2A) ? alert(`El numero ${numero2A} es menor que ${otroNumero2A}`) : alert(`El numero ${numero2A} es mayor que ${otroNumero2A}`);
 
 
 
 
 //if - else if - else (Si - Sino Si - Sino)
+
+/* else if (sino sí): realiza una validación adicional en caso de que la validación previa resultara en false.
+Ejemplo: */
+
 let uno = +prompt("Ingresa un numero","if - else if - else");
 let dos = +prompt("Ingresa otro numero","if - else if - else");
 
@@ -131,7 +143,9 @@ if(campo1 === campo2){
 
 
 
-/*Switch: Permite ejecutar un bloque de codigo basandose en casos.
+/*Switch: 
+
+    Permite ejecutar un bloque de codigo basandose en casos.
     La sintaxis de switch consiste en una expresion a evaluar y en base a los resultados esperados,
     se desarrollan los casos a ejecutar (case), adicional se coloca break para evitar que se ejecuten los demas
     casos y default para una respuesta por defecto por si ningun caso se cumple.
@@ -186,49 +200,49 @@ switch(dia){
     Utilizar: prompt y switch, No se deben utilizar variables.
 */
 
-// switch(prompt(`
-// Minimarket 🛒\n
-// ¿Que desea comprar?:
-// 1) Carne 🥩
-// 2) Verduras 🥬
-// 3) Frutas 🍎
-// 4) Dulces 🧁
-// 5) Bebidas 🥤
-// 6) Productos de aseo personal 🧼
-// 7) Medicamentos 💊
-// 8) Papeleria ✉️
-// 9) No veo lo que busco 🤷
-// `)){
-//     case "1":
-//         alert("Has seleccionado Carne 🥩");
-//         break;
-//     case "2":
-//         alert("Has seleccionado Verduras 🥬");
-//         break;
-//     case "3":
-//         alert("Has seleccionado Frutas 🍎");
-//         break;
-//     case "4":
-//         alert("Has seleccionado Dulces 🧁");
-//         break;
-//     case "5":
-//         alert("Has seleccionado Bebidas 🥤");
-//         break;
-//     case "6":
-//         alert("Has seleccionado Productos de aseo personal 🧼");
-//         break;
-//     case "7":
-//         alert("Has seleccionado Medicamentos 💊");
-//         break;
-//     case "8":
-//         alert("Has seleccionado Papeleria ✉️");
-//         break;
-//     case "9":
-//         alert("Lo sentimos pronto tendremos mas productos 🛒");
-//         break;
-//     default:
-//         alert("Lo sentimos el producto no se encuentra disponible");
-// };
+switch(prompt(`
+Minimarket 🛒\n
+¿Que desea comprar?:
+1) Carne 🥩
+2) Verduras 🥬
+3) Frutas 🍎
+4) Dulces 🧁
+5) Bebidas 🥤
+6) Productos de aseo personal 🧼
+7) Medicamentos 💊
+8) Papeleria ✉️
+9) No veo lo que busco 🤷
+`)){
+     case "1":
+        alert("Has seleccionado Carne 🥩");
+        break;
+     case "2":
+         alert("Has seleccionado Verduras 🥬");
+         break;
+    case "3":
+        alert("Has seleccionado Frutas 🍎");
+         break;
+     case "4":
+         alert("Has seleccionado Dulces 🧁");
+         break;
+     case "5":
+         alert("Has seleccionado Bebidas 🥤");
+        break;
+     case "6":
+         alert("Has seleccionado Productos de aseo personal 🧼");
+         break;
+     case "7":
+         alert("Has seleccionado Medicamentos 💊");
+         break;
+     case "8":
+         alert("Has seleccionado Papeleria ✉️");
+         break;
+     case "9":
+         alert("Lo sentimos pronto tendremos mas productos 🛒");
+        break;
+     default:
+         alert("Lo sentimos el producto no se encuentra disponible");
+};
 
 
 /* 

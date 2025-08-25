@@ -1,6 +1,8 @@
 /******  FUNCIONES  ******/
 
 /*
+    Archivo 9
+    
     ¿Que son las Funciones?
     Las funciones son bloques de código que se pueden reutilizar en multiples partes del programa.
     estos bloques de codigo se pueden definir con parametros y sin ellos.
@@ -30,9 +32,25 @@
 
 // Funciones declarativas
 
-// Esta es una funcion declarada sin parametrs con retorno explicito.
+// Esto es una funcion declarada sin parametros sin retorno.
+function sumar(){
+    total = 50 + 50;
+    console.log(total);
+};
+
+let total = 0;
+console.log(total);
+
+sumar();
+console.log(total);
+
+
+// Esta es una funcion declarada sin parametros con retorno explicito.
+
+/* El retorno se refiere delvolver fuera del bloque cerrado de la funcion el resultado
+de su ejecucion y se usa la palabra reservada "return" */
 function saludar() {
-    return "Hola Diego";
+    return "Hola Delvis";
 };
 
 // ¿Como se ejecuta una funcion?
@@ -47,23 +65,16 @@ console.log( saludoDoble )
 
 
 
-// Esto es una funcion declarada sin parametros sin retorno.
-function sumar(){
-    total = 50 + 50;
-    console.log(total);
-};
-
-let total = 0;
-console.log(total);
-
-sumar();
-console.log(total);
-
-
-
-
 
 // Funciones de expresion o anonimas
+
+/* 
+
+Funciones de expresión: En la función de expresión, la declaración se inicia con una de las palabras reservadas let o const donde se generará una variable que guardará una función anónima:
+
+se refiere a crear una funcion dentro de una variable, y esta funcion no tiene nombre, por lo que se le conoce como funcion anonima.
+
+*/
 
 // Funcion anonima sin parametros con retorno explicito.
 const multiplicar = function(){
@@ -97,14 +108,25 @@ const iniciarSesion = function(){
 
 // Funcion declarada con parametros con retorno.
 
-// const numero1 = +prompt("Ingresa un numero");
-// const numero2 = +prompt("Ingresa otro numero");
-// const resultado = restar(numero1, numero2);
-// alert(`La resta de ${numero1} - ${numero2} es: ${resultado}`);
+const numero1 = +prompt("Ingresa un numero");
+const numero2 = +prompt("Ingresa otro numero");
+//Al ser una funcion declarada puedo llamarla antes de declararla por el hoisting.
+const resultado = restar(numero1, numero2);
+alert(`La resta de ${numero1} - ${numero2} es: ${resultado}`);
 
-// function restar(num1, num2){
-//     return num1 - num2;
-// };
+/* 
+
+¿Que es el Hoisting?
+
+El "hoisting" es un comportamiento que ocurre durante la fase de compilación del código, antes de que se ejecute. Se refiere a cómo las declaraciones de variables y funciones se mueven hacia arriba (hacia la parte superior) de su ámbito o contexto antes de que se ejecute el código.
+
+Esto significa que, a las funciones declarativas, podemos llamarlas antes de que éstas sean declaradas, y con las funciones de expresión, no, tendríamos que declararlas primero, y después llamarlas.
+
+*/
+
+function restar(num1, num2){
+     return num1 - num2;
+};
 
 
 
@@ -160,6 +182,22 @@ const iniciarSesion = function(){
 // Funciones de flecha o arrow function
 
 
+/* Una función flecha (arrow function) en JavaScript es una forma concisa de escribir funciones anónimas, introducida en ES6. Se caracterizan por su sintaxis más compacta, utilizando => en lugar de la palabra clave function. Pueden ser de una sola línea o de múltiples líneas, y su manejo de this es diferente al de las funciones tradicionales. 
+
+Características principales:
+
+Sintaxis más corta:
+    Permiten escribir funciones de manera más compacta, especialmente cuando son funciones de una sola línea. 
+
+Retorno implícito:
+    En funciones de una sola línea, el valor de retorno se puede omitir, siendo implícito (siempre que no haya llaves). 
+
+Funciones anónimas:
+    Normalmente, se utilizan para funciones anónimas, aunque también se pueden asignar a variables. 
+
+*/
+
+
 // Funcion de flecha sin parametros y con retorno implicito
 const resta = () => 10 - 5;
 
@@ -173,6 +211,8 @@ console.log(suma(5, 5));
 
 
 // Ejemplo 3: funcion de flecha con parametros y retorno explicito
+
+/* Si hay llaves debemos especificar siempre lo que querramos retornar */
 const multiplicacion = (param1,param2)=>{
     return param1 * param2
 };

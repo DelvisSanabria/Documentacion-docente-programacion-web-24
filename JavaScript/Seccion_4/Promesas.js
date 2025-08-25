@@ -1,4 +1,6 @@
 /*
+Archivo 30
+
     ¿Que son Promesas?
     Las promesas son la forma mas sencilla de manejar la asincronía.
     
@@ -72,7 +74,6 @@ let EvaluarIgualdad = new Promise( (resolve, reject) => {
 
 // Con funcion de flecha.
 
-/*
 EvaluarIgualdad
 // Se encadena el metodo .then para manejar la respuesta satisfactoria de la promesa (resolve). 
     .then( respuesta => console.log(respuesta) )
@@ -86,8 +87,6 @@ EvaluarIgualdad
 EvaluarIgualdad
     .then( function(respuesta){console.log(respuesta)} )
     .catch( function(error){console.log(error)} );
-*/
-
 
 
 
@@ -107,6 +106,7 @@ let EvaluarIgualdadAsincrona = new Promise( (resolve, reject) => {
 });
 
 
+// Manejo de la promesa con funcion anonima.
 EvaluarIgualdadAsincrona
     .then(
         function(respuesta){
@@ -134,13 +134,13 @@ EvaluarIgualdadAsincrona
 let peliculas = [
     {
         id: 1,
-        titulo:"Dr. Strange 2",
-        fecha: 2022
+        titulo:"Dr. Strange Multiverse of Madness",
+        fecha: 2023
     },
     {
         id: 2,
-        titulo:"Black Adam",
-        fecha: 2022
+        titulo:"Fantastic 4",
+        fecha: 2025
     },
     {
         id: 3,

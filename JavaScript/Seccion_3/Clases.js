@@ -1,4 +1,6 @@
 /* CLASES:
+//Archivo 23.1
+
     Una clase es una plantilla o molde para crear objetos(instancias), 
     que tienen propiedades y métodos en común. 
 

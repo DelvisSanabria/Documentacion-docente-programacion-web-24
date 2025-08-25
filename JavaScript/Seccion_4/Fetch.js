@@ -1,10 +1,28 @@
 /*
+Archivo 34
+
     ¿Que es una API?
     Una API (Interfaz de Programación de Aplicaciones) es un conjunto de reglas y definiciones que permiten 
     que diferentes aplicaciones se comuniquen entre sí. 
     
     Las API permiten que la comunicacion entre apps sin necesidad de que los usuarios sepan cómo están programadas.
 
+    ### Tipos de API’s
+
+    Existen muchos tipos de API disponibles, pero algunas de las más comunes incluyen:
+
+    -API de Web Services: permite la comunicación entre diferentes software a través de la web.
+    -API de RESTful: este tipo de API utiliza el protocolo HTTP y se basa en los principios de la Arquitectura de Transferencia de Estado Representacional (REST).
+    -API de GraphQL: permite a los clientes definir la estructura de las respuestas de los datos, lo que puede reducir la cantidad de datos que se deben transferir.
+
+    ##¿Qué es la Arquitectura REST?
+
+    La Arquitectura REST (*Representational State Transfer*) es un estilo arquitectónico para la creación de servicios web. Se basa en un conjunto de principios y restricciones, donde las transacciones de datos se realizan a través de operaciones HTTP estándar. Es comúnmente utilizada para construir API's debido a su simplicidad y eficiencia.
+
+    ##Diferencias entre API REST y API RESTful
+
+    -API REST: Es un estilo de arquitectura de software que define ciertos principios y reglas para la creación de servicios web. No se refiere a una API en sí, sino a las directrices para construir una API.
+    -API RESTful: una API que sigue los principios de la arquitectura REST. Permite la interacción entre cliente y servidor mediante protocolos HTTP, y puede manejar diferentes tipos de llamadas, retornar diferentes formatos de datos y responder de manera estándar en caso de errores.
 
     ¿Que es JSON?
     JSON (JavaScript Object Notation - Notación de Objetos de JavaScript) es un formato ligero de intercambio de datos

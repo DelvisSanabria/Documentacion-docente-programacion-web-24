@@ -1,4 +1,8 @@
 /*
+Archivo 38
+
+    Una web API es una interfaz que permite a los desarrolladores interactuar con las funcionalidades del navegador web o del sistema operativo a través de JavaScript.
+
     ¿Que es la Web API de Drag & Drop?
     Es una API que nos permite mover elementos de una parte de la pantalla a otra, es decir, arrastrar y soltar (drag & drop).
 
@@ -35,7 +39,7 @@ personajes.map(personaje => {
         // personajeArrastrado.style.backgroundColor = 'green';
 
         console.log("Se comenzó a arrastrar el personaje")
-        // console.log(personajeArrastrado);
+        console.log(personajeArrastrado);
     });
 
 

@@ -148,4 +148,126 @@
   height: 700px;
   background: skyblue;
   margin: 3.5px 0px 3.5px 0px;
+}
+
+/*  Ejercicios para realizar en casa:
+ *
+ *  1- Crea dos listas 
+ *      1 lista de 15 productos
+ *      1 lista de 15 precios 
+ *  coloca el precio de cada producto usulizando el loop each, ::after y content.
+ *  Ademas, coloca un descuento del 10% a cada producto y muestra el precio final de cada producto, de las siguiente
+ *  manera: "Nombre: xxxxxxxx - Precio: $xxxx - Precio con descuento: $xxxx"
+ *
+ *  2- Crea una lista de 10 numeros y determina cual numero es par o impar
+ *  utilizando el loop each, if, else if y else. 
+ *  Muestra el resultado de la siguiente manera:
+ *      - Si el numero es par: "El numero xx es par"
+ *      - Si el numero es impar: "El numero xx es impar"
+ *  Puedes utilizar los siguientes operadores aritmeticos:
+ *      - Suma: +
+ *      - Resta: -
+ *      - Multiplicacion: *
+ *      - Division: /
+ *      - Modulo o residuo: % */
+/*  Soluciones a los ejercicios:
+ *  */
+.producto-1::after {
+  content: "Camara - Precio: $200 - Precio con descuento: $180";
+}
+
+.producto-2::after {
+  content: "Laptop - Precio: $600 - Precio con descuento: $540";
+}
+
+.producto-3::after {
+  content: "TV - Precio: $500 - Precio con descuento: $450";
+}
+
+.producto-4::after {
+  content: "Microfono - Precio: $100 - Precio con descuento: $90";
+}
+
+.producto-5::after {
+  content: "Teclado - Precio: $50 - Precio con descuento: $45";
+}
+
+.producto-6::after {
+  content: "Audifonos - Precio: $90 - Precio con descuento: $81";
+}
+
+.producto-7::after {
+  content: "Mouse - Precio: $30 - Precio con descuento: $27";
+}
+
+.producto-8::after {
+  content: "RAM - Precio: $150 - Precio con descuento: $135";
+}
+
+.producto-9::after {
+  content: "Silla - Precio: $70 - Precio con descuento: $63";
+}
+
+.producto-10::after {
+  content: "Luces - Precio: $20 - Precio con descuento: $18";
+}
+
+.producto-11::after {
+  content: "Cargador - Precio: $10 - Precio con descuento: $9";
+}
+
+.producto-12::after {
+  content: "Mousepad - Precio: $15 - Precio con descuento: $13.5";
+}
+
+.producto-13::after {
+  content: "Control - Precio: $25 - Precio con descuento: $22.5";
+}
+
+.producto-14::after {
+  content: "Monitor - Precio: $120 - Precio con descuento: $108";
+}
+
+.producto-15::after {
+  content: "Procesador - Precio: $720 - Precio con descuento: $648";
+}
+
+.numero-1::after {
+  content: "El numero 1 es impar";
+}
+
+.numero-2::after {
+  content: "El numero 2 es par";
+}
+
+.numero-3::after {
+  content: "El numero 3 es impar";
+}
+
+.numero-4::after {
+  content: "El numero 4 es par";
+}
+
+.numero-5::after {
+  content: "El numero 5 es impar";
+}
+
+.numero-6::after {
+  content: "El numero 6 es par";
+}
+
+.numero-7::after {
+  content: "El numero 7 es impar";
+}
+
+.numero-8::after {
+  content: "El numero 8 es par";
+}
+
+.numero-9::after {
+  content: "El numero 9 es impar";
+}
+
+.numero-10::after {
+  content: "El numero 10 es par";
 }/*# sourceMappingURL=style.css.map */

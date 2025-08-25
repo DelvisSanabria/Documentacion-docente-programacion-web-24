@@ -1,4 +1,6 @@
 /*
+Archivo 39
+
     API de Geolocalización
     La API de geolocalización proporciona información sobre la ubicación del usuario
     a través del navegador. La API de geolocalización se puede utilizar para obtener
@@ -65,80 +67,80 @@ const direccion = document.getElementById("direccion");
 
 
 // Verificar si el navegador soporta la geolocalización
-// if ("geolocation" in navigator) {
-//     console.log("Geolocalización soportada");
+if ("geolocation" in navigator) {
+    console.log("Geolocalización soportada");
 
 //     // Obtener la ubicación actual del usuario
-//     navigator.geolocation.getCurrentPosition((position) => {
+ navigator.geolocation.getCurrentPosition((position) => {
 //         // Obtener las coordenadas de latitud y longitud
-//         let user_latitud = position.coords.latitude;
-//         let user_longitud = position.coords.longitude;
-//         let user_precision = position.coords.accuracy;
-//         let user_altitud = position.coords.altitude;
-//         let user_velocidad = position.coords.speed;
-//         let user_direccion = position.coords.heading;
+        let user_latitud = position.coords.latitude;
+        let user_longitud = position.coords.longitude;
+        let user_precision = position.coords.accuracy;
+        let user_altitud = position.coords.altitude;
+        let user_velocidad = position.coords.speed;
+        let user_direccion = position.coords.heading;
 
-//         let user_fecha = new Date(position.timestamp).toLocaleString();
+        /* debemos convertir el timestamp en una fecha humanamente legible */
+        let user_fecha = new Date(position.timestamp).toLocaleString();
 
 //         // Hacer algo con las coordenadas, como mostrarlas en la página o en consola.
-//         console.log(`Latitud: ${user_latitud}`);
-//         console.log(`Longitud: ${user_longitud}`);
-//         console.log(`Precisión: ${user_precision}`);
-//         console.log(`Altitud: ${user_altitud}`);
-//         console.log(`Velocidad: ${user_velocidad}`);
-//         console.log(`Dirección: ${user_direccion}`);
-//         console.log(`Fecha: ${user_fecha}`);
-//     });
-// } else {
-//     console.log("Geolocalización no soportada");
-// };
+        console.log(`Latitud: ${user_latitud}`);
+        console.log(`Longitud: ${user_longitud}`);
+        console.log(`Precisión: ${user_precision}`);
+         console.log(`Altitud: ${user_altitud}`);
+         console.log(`Velocidad: ${user_velocidad}`);
+         console.log(`Dirección: ${user_direccion}`);
+         console.log(`Fecha: ${user_fecha}`);
+     });
+} else {
+     console.log("Geolocalización no soportada");
+};
 
 
 
 // Ejemplo de uso con watchPosition() y clearWatch():
-// if ("geolocation" in navigator) {
-//     console.log("Geolocalización soportada");
+if ("geolocation" in navigator) {
+    console.log("Geolocalización soportada");
 
 //     // Rastrear los cambios en la ubicación del usuario
-//     let watchId = navigator.geolocation.watchPosition((position) => {
+     let watchId = navigator.geolocation.watchPosition((position) => {
 
-//         console.log("Seguimiento iniciado");
+         console.log("Seguimiento iniciado");
 
-//         // Obtener las coordenadas de latitud y longitud
-//         let user_latitud = position.coords.latitude;
-//         let user_longitud = position.coords.longitude;
-//         let user_precision = position.coords.accuracy;
-//         let user_altitud = position.coords.altitude;
-//         let user_direccion = position.coords.heading;
-//         let user_velocidad = position.coords.speed;
+         // Obtener las coordenadas de latitud y longitud
+         let user_latitud = position.coords.latitude;
+         let user_longitud = position.coords.longitude;
+         let user_precision = position.coords.accuracy;
+         let user_altitud = position.coords.altitude;
+         let user_direccion = position.coords.heading;
+         let user_velocidad = position.coords.speed;
 
 //         // Hacer algo con las coordenadas, como mostrarlas en la página o en consola
-//         console.log(`Latitud: ${user_latitud}`);
-//         console.log(`Longitud: ${user_longitud}`);
-//         console.log(`Precisión: ${user_precision}`);
-//         console.log(`Altitud: ${user_altitud}`);
-//         console.log(`Velocidad: ${user_velocidad}`);
-//         console.log(`Dirección: ${user_direccion}`);
+         console.log(`Latitud: ${user_latitud}`);
+         console.log(`Longitud: ${user_longitud}`);
+         console.log(`Precisión: ${user_precision}`);
+         console.log(`Altitud: ${user_altitud}`);
+         console.log(`Velocidad: ${user_velocidad}`);
+        console.log(`Dirección: ${user_direccion}`);
 
-//         longitud.innerText = user_longitud || "S/N";
-//         latitud.innerText = user_latitud || "S/N";
-//         altitud.innerText = user_altitud || "S/N";
-//         precision.innerText = user_precision || "S/N";
-//         velocidad.innerText = user_velocidad || "S/N";
-//         direccion.innerText = user_direccion || "S/N";
+        longitud.innerText = user_longitud || "S/N";
+       latitud.innerText = user_latitud || "S/N";
+         altitud.innerText = user_altitud || "S/N";
+         precision.innerText = user_precision || "S/N";
+         velocidad.innerText = user_velocidad || "S/N";
+        direccion.innerText = user_direccion || "S/N";
 
+         // Detener el seguimiento después de 30 segundos
+         setTimeout(() => {
+             navigator.geolocation.clearWatch(watchId);
+             console.log("Seguimiento detenido");
+         }, 30000);
+     });
 
-//         // Detener el seguimiento después de 30 segundos
-//         setTimeout(() => {
-//             navigator.geolocation.clearWatch(watchId);
-//             console.log("Seguimiento detenido");
-//         }, 30000);
-//     });
-
-//     console.log("ID de seguimiento: " + watchId);
-// } else {
-//     console.log("Geolocalización no soportada");
-// };
+    console.log("ID de seguimiento: " + watchId);
+ } else {
+    console.log("Geolocalización no soportada");
+};
 
 
 

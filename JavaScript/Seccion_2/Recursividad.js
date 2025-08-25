@@ -1,4 +1,6 @@
 /*
+Archivo 11
+
     Recursividad: la recursividad es una función que se llama a sí misma. 
     Piensa en ello como una alternativa al bucle.
 
@@ -23,8 +25,26 @@
     a la funcion "deduccion", realizando nuevamente el uso de la recursividad.
 */
 
+//Ejemplo 1: Contador que se usa a si mismo hasta acabar la cuenta hacia atras
+function countdown(number) {
+    if (number < 0) {
+        alert("Cuenta regresiva finalizada!");
+        return;
+    }     
+    alert(`la cuenta regresiva va por el numero: ${number}`);
+    // Llamada recursiva con un número menor
+    setTimeout(() => {
+        countdown(number - 1);
+    }, 1000);
+}
+        
+function startCountdown() {
+    countdown(10);
+}
 
-// Ejemplo 1: Funcionalidad de un sistema de cobro de transporte publico
+
+
+// Ejemplo 3: Funcionalidad de un sistema de cobro de transporte publico
 
 
 let viajes = 10;
@@ -35,6 +55,8 @@ function deduccion(){
     if(viajes>0){
         viajes--;
         alert(`Viajes restantes: ${viajes}`);
+        //podemos volver a llamarla en caso de querer hacer un bucle infinito
+        deduccion()
     }else{
         switch(+prompt(`Sado insuficiente, ¿Que deseas hacer?\n1. Recargar 10 viajes\n2. Comprar un bono mensual\n3. Pagar 1 viaje`)){
             case 1:
@@ -54,7 +76,7 @@ function deduccion(){
 
 
 function recargar10(){
-    // Llogica de esta funcion
+    // Logica de esta funcion
     viajes = 10;
 
     alert("Recargaste 10 viajes");

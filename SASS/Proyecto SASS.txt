@@ -1,23 +1,30 @@
-Realizar una pagina web portafolio
+Realizar un clon de la version web de spotify:
+https://open.spotify.com/intl-es
 
-Debe contener las vistas:
-- Inicio: Debe contener un titular que indique de que trata la web, 
-seguido de una mini biografia y un call to action que lleve a la pagina "Sobre Mi".
-- Sobre mi: debe contener foto personal profesional e informacion de contacto como redes sociales, whatsapp o correo.
-Nota 1: editar para crear enlace personal de whatsapp, https://wa.me/+584141234567
-Nota 2: editar para crear enlace personal de correo, mailto:didacusdev@gmail.com
-Nota 3: si no sabes quitar el fondo a una foto con Photoshop, utiliza: https://new.express.adobe.com/tools/remove-background
-- Proyectos: Puedes hacer captura de pantalla de apps o webs que desees colocar como ejemplos de proyectos realizados.
+Debes realizar, la copia lo más parecida posible a la página original:
 
-Ademas cada pagina debe contener Navbar y Footer con redirecciones entre las paginas.
+-utilizando las propiedades correctas de HTML semantico
+-Utilizar Sass como prepocesador de estilado
 
-Puntos fuertes (A criterio del estudiante)
-- Animaciones (animaciones o transiciones)
+la pagina debe ser totalmente responsive:
+
+-Desktop
+-Tablet
+-Mobile (ideado por ustedes, spotify web no cuenta con responsive mobile)
+
+Puntos que deben existir en su proyecto:
+- Animaciones (transiciones)
 - @extend
 - @mixin con y sin parametros
 - $variables
-- modularizacion (@import)
+- modularizacion (el proyecto debe ser totalmente modular) (@import o @use)
+- Metodologia BEM para nombrado de clases
+- Nesting
+
+Entregables:
+
+-Repositorio con el proyecto (Con todos los requirimientos cumplidos 👀)
 
 
-Fecha de Inicio: 26/ENE/2024
-Fecha de Fin: 02/FEB/2024
+Fecha de Inicio: 22/Agosto/2025
+Fecha de Fin: 02/Septiembre/2025

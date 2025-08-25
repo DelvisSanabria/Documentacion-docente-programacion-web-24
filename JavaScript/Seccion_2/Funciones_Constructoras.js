@@ -1,4 +1,6 @@
 /*
+Archivo 17
+
     Funcion Constructora: 
     Estas funciones permiten la creacion de nuevos objetos en base de una estructura predefinida(plantilla)
 
@@ -25,11 +27,11 @@ function Usuario(nombre, apellido, correo, clave){
     this.clave = clave;
 };
 
-const usuario1 = new Usuario("Diego", "Rodriguez", "diego@gmail.com", "diego123");
-const guillermo = new Usuario("Guillermo", "Gonzalez", "guillermo@gmail.com", "guillermo123");
+const usuario1 = new Usuario("Delvis", "Sanabria", "delvisdev@gmail.com", "delvis123");
+const santiago = new Usuario("Santiago", "Gonzalez", "santiago@gmail.com", "santiago123");
 
 // console.log(usuario1);
-// console.log(guillermo);
+// console.log(santiago);
 
 
 

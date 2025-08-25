@@ -1,4 +1,6 @@
 /* 
+Archivo 8
+
     ¿Que es la consola?
     console es un objeto global que proporciona métodos para interactuar con la consola del entorno de ejecución. 
     Este objeto es ampliamente utilizado para depurar y registrar información durante el desarrollo de aplicaciones, 
@@ -44,7 +46,7 @@ console.countReset('Iteración');
 // console.dir(): Muestra una lista interactiva de las propiedades de un objeto.
 const persona = {
     nombre: 'Nestor', 
-    apellido: "Valbuena" ,
+    apellido: "Benavides" ,
     pais: "Venezuela"
 };
 

@@ -1,4 +1,6 @@
 /* 
+//Archivo 24
+
     ¿Qué Son Expresiones Regulares?
     Las expresiones regulares(también conocida como regexp o regex) son una secuencia de caracteres que 
     forman un patrón de búsqueda, y se utilizan para hacer comparaciones con texto.
@@ -110,15 +112,6 @@ const coincidencias5 = parrafo.match(urlCompleto);
 
 
 
-
-
-
-
-
-
-
-
-
 // Desde aqui se crea la logica para manejar el formulario del archivo "regex.html"
 
 // Obtenemos los elementos del formulario
@@ -176,6 +169,18 @@ function validarNacimiento(fecha){
 function validarTelefono(telefono){
     // Actualizar esta regex y adaptarla a el proposito indicado.
     const regex = /^[a-zA-ZäëïöüÄËÏÖÜ]{3,20}$/;
+    /* una solucion seria:
+    const regex = /^\d{3}[-\s]?\d{3}[-\s]?\d{2}[-\s]?\d{2}$/;
+    1. ^ - Inicio de la cadena.
+    2. \d{3} - Dos cifras seguidas.
+    3. [-\s]? - Un guion o espacio opcional.
+    4. \d{3} - Tres cifras seguidas.
+    5. [-\s]? - Un guion o espacio opcional.
+    6. \d{2} - Dos cifras seguidas.
+    7. [-\s]? - Un guion o espacio opcional.
+    8. \d{2} - Dos cifras seguidas.
+    9. $ - Fin de la cadena.    
+    */
     const coincide = regex.test(telefono);
     
     if(coincide){
@@ -190,6 +195,16 @@ function validarTelefono(telefono){
 function validarClave(clave){
     // Actualizar esta regex y adaptarla a el proposito indicado.
     const regex = /^[a-zA-ZäëïöüÄËÏÖÜ]{3,20}$/;
+    /* una solucion seria:
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    1. ^ - Inicio de la cadena.
+    2. (?=.*[a-z]) - Al menos una letra minúscula.
+    3. (?=.*[A-Z]) - Al menos una letra mayúscula.
+    4. (?=.*\d) - Al menos un dígito.
+    5. (?=.*[@$!%*?&]) - Al menos un carácter especial. (@, $, !, %, *, ?, &).
+    6. [A-Za-z\d@$!%*?&]{8,} - Al menos 8 caracteres que pueden ser letras (mayúsculas y minúsculas), dígitos o caracteres especiales.
+    7. $ - Fin de la cadena.
+    */
     const coincide = regex.test(clave);
     
     if(coincide){
@@ -227,5 +242,5 @@ inputClave.addEventListener('keyup', (e) => {
 
 
 
-// Si todos los campos estan bien se procede a realizar el registro, se limpian los campos y automaticamente
+//Tarea: Si todos los campos estan bien se procede a realizar el registro, se limpian los campos y automaticamente
 // se debe mostrar el usuario registrado en el "section-2"

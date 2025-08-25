@@ -1,4 +1,6 @@
 /*
+Archivo 15
+
     los objetos son una de las estructuras de datos fundamentales. 
     Un objeto es un conjunto de pares clave-valor que representan una entidad o un concepto. 
     Las claves son cadenas de texto y los valores pueden ser cualquier tipo de dato.
@@ -43,6 +45,8 @@ console.log( auto.fecha );
 console.log( auto.motor );
 console.log( auto.transmision );
 
+// Para llamar a un metodo de un objeto se utiliza el operador de miembro "."
+// Los metodos son funciones que se pueden llamar en un objeto especifico.
 console.log( auto.avanzar() );
 console.log( auto.frenar() );
 console.log( auto.retroceder() );
@@ -93,7 +97,6 @@ console.log(auto)
         console.log(productos.hogar.electrodomesticos.tipo[2]); //licuadora
         console.log(productos.ropa.damas.temporada[0]); //invierno
 */
-let
 
 // tecnologia,hogar,alimentos,salud,ropa.
 const productos = {

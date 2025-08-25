@@ -1,4 +1,6 @@
-/* 
+/*
+Archivo 27
+
     Try - Catch: es una estructura de control de excepciones que permite probar código para 
     detectar errores y, en caso de que se produzca una excepción, ejecutar un bloque de código 
     de manejo de excepciones para manejar el error.
@@ -25,15 +27,15 @@
 
 //Ejemplo try-catch (Capturar el error al llamar variable no declarada);
 
-// const miVariable = "Hola Mundo";
+const miVariable = "Hola Mundo";
 
-// try {
-//     console.log( miVariable );
-// }catch(error) {
-//     console.log(`¡ERROR! ${error}`);
-// }
+try {
+     console.log( miVariable );
+}catch(error) {
+    console.log(`¡ERROR! ${error}`);
+}
 
-// console.log("El programa sigue ejecutandose, por eso puedes leerme.");
+console.log("El programa sigue ejecutandose, por eso puedes leerme.");
 
 
 
@@ -45,9 +47,9 @@
     y es útil para la limpieza de recursos.
 */
 
-// const objeto = {
-//     propiedad: "Hola Mundo"
-// };
+const objeto = {
+     propiedad: "Hola Mundo"
+};
 
 // Ejemplo try-catch-finally (Accediendo a una propiedad de un objeto que no existe);
 function verPropiedad(){
@@ -63,7 +65,7 @@ function verPropiedad(){
     }
 };
 
-// console.log(verPropiedad());
+console.log(verPropiedad());
 
 
 
@@ -96,12 +98,10 @@ function multiplicar(){
     return(`La multiplicacion de ${numero1} x ${numero2} = ${multiplicacion}`);
 };
 
-// console.log( multiplicar() );
+console.log( multiplicar() );
 
 // multiplicacion not found
-// console.log(multiplicacion); 
-
-
+console.log(multiplicacion); 
 
 
 

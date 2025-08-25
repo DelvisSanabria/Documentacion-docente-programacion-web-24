@@ -1,10 +1,12 @@
 /*
+Archivo 10
+
     Iniciemos con un ejemplo:
 
     Hay una fiesta de niños y una caja de juguetes.
 
     Si el niño de la casa donde se realiza la fiesta (El cumpleañero) tiene la caja de juguetes en su habitación, 
-    solo las personas que en su habitación podrán jugar con los juguetes de la caja. 
+    solo las personas que entren en su habitación podrán jugar con los juguetes de la caja. 
     En este caso, la caja de juguetes tiene un scope (Alcance) local en la fiesta.
 
     Pero si el niño lleva la caja de juguetes al patio, todos los niños presentes podrán jugar 
@@ -20,11 +22,13 @@
 
 // Ejemplo 1
 
-let variableGlobal = "Diego";
+/* Podra ser accedida desde cualquier parte de la aplicacion */
+let variableGlobal = "Delvis";
 
 
 function imprimirNombre(){
-    let variableLocal = "Rodriguez";
+    /* Solo podra ser accedida dentro de la funcion */
+    let variableLocal = "Sanabria";
 
     console.log(`La Variable global es: ${variableGlobal}`);
     console.log(`La Variable local es: ${variableLocal}`);
@@ -34,9 +38,10 @@ function imprimirNombre(){
 
 imprimirNombre();
 
-let variableLocal = "Rodriguez 2";
+let variableLocal = "Delvis 2";
 
 console.log(variableGlobal);
+/* Veremos como variableLocal toma el valor que recien definimos, y si no definimos este valor daria error de definicion */
 console.log(variableLocal);
 
 
@@ -52,7 +57,7 @@ function saludar(usuario){
     console.log(`Hola ${usuario} ${apellido}`);
 
     function saludar2(nombreUsuario, apellidoUsuario, grupo){
-        const pais = "Colombia";
+        const pais = "Venezuela";
 
         console.log(nombre);
         console.log(apellido);
@@ -78,12 +83,8 @@ console.log(nombre);
 
 
 
-
-
-
-
 /*
-    Hoistin
+    Hoisting
 
     ¿Que es el Hoisting?
     El "hoisting" es un comportamiento en JavaScript donde las declaraciones de variables y 
@@ -96,7 +97,7 @@ console.log(nombre);
 
     En palabras simples, el hoisting se aplica a las variables y funciones declaradas en el documento
     cuando el codigo se encuantra en la fase de ejecucion, haciendo que no se puedan llamar a las variables
-    antes de su declaracion, pero esto no sucede con las funciones declaradas (Si con las funciondes de expresion).
+    antes de su declaracion, pero esto no sucede con las funciones declaradas (Si con las funciones de expresion).
 
 
 
@@ -105,7 +106,7 @@ console.log(nombre);
     - Las funciones pueden ser llamadas sin importar que sean declaradas antes o despues.
 */
 
-
+/* Si llamamos a esta variable antes de declararla nos dara error */
 let clase = "Clase de JavaScript";
 
 const miSaludo = function(){
@@ -113,7 +114,7 @@ const miSaludo = function(){
 }
 
 
-misaludo2("Diego");
+misaludo2("Delvis");
 
 function misaludo2(nombre){
     console.log(`Hola, ${nombre}`);

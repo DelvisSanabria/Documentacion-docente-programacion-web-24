@@ -1,9 +1,11 @@
 /*
+Archivo 35
+
     ¿Que es Axios?
     Es una libreria que nos permite hacer peticiones HTTP, es decir, nos permite hacer 
     peticiones a una API, a un servidor, etc.
 
-    Ademas de manejar los metos HTTP, tambien nos permite manejar promesas de forma mas
+    Ademas de manejar los metodos HTTP, tambien nos permite manejar promesas de forma mas
     sencilla.
 
     Con Axios nos podemos ahorrar el proceso de convertir la respuesta de la peticion a
@@ -43,6 +45,6 @@
 */
 
 
-axios.get("https://rickandmortyapi.com/api/characterasd/")
+axios.get("https://rickandmortyapi.com/api/character")
     .then( res => console.table(res.data.results))
     .catch( err => console.error(err));
